@@ -73,4 +73,6 @@ implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'me.relex:circleindicator:2.1.4'
 //    Slide Pager
     implementation 'com.github.DingMouRen:LayoutManagerGroup:1e6f4f96eb'
+//    shadow image view
+    implementation 'com.yinglan.shadowimageview:shadowimageview:1.0.4'
 }

@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
-implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
@@ -73,6 +73,4 @@ implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'me.relex:circleindicator:2.1.4'
 //    Slide Pager
     implementation 'com.github.DingMouRen:LayoutManagerGroup:1e6f4f96eb'
-//    shadow image view
-    implementation 'com.yinglan.shadowimageview:shadowimageview:1.0.4'
 }

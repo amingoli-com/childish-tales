@@ -71,4 +71,6 @@ implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
 //    dotsindicator liber for recyclerview
     implementation 'me.relex:circleindicator:2.1.4'
+//    Slide Pager
+    implementation 'com.github.DingMouRen:LayoutManagerGroup:1e6f4f96eb'
 }

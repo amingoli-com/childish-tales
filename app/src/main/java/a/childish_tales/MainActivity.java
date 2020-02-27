@@ -29,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
 
         add();
 
-        mSkidRightLayoutManager = new SkidRightLayoutManager(1.80f, 0.5f);
+        mSkidRightLayoutManager = new SkidRightLayoutManager(1.3f, 0.9f);
         mRecyclerView.setLayoutManager(mSkidRightLayoutManager);
     }
 
     void add(){
+        itemIntroList.add(new Item(R.drawable.s_1));
         itemIntroList.add(new Item(R.drawable.logo));
-        itemIntroList.add(new Item(R.drawable.logo));
-        itemIntroList.add(new Item(R.drawable.logo));
+        itemIntroList.add(new Item(R.drawable.s_1));
         itemIntroList.add(new Item(R.drawable.logo));
     }
 }

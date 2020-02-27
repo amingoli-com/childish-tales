@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import a.childish_tales.MAIN.MainActivity;
-
 public class SplashActivity extends AppCompatActivity {
 
     @Override

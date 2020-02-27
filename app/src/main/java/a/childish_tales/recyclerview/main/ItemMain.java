@@ -1,15 +1,14 @@
-package a.childish_tales.MAIN;
+package a.childish_tales.recyclerview.main;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import a.childish_tales.TWO.ItemTwo;
+import a.childish_tales.recyclerview.slider.ItemSlider;
 
 public class ItemMain {
     String title;
-    ArrayList<ItemTwo> itemTwos;
+    ArrayList<ItemSlider> itemTwos;
 
-    public ItemMain(String title, ArrayList<ItemTwo> itemTwos) {
+    public ItemMain(String title, ArrayList<ItemSlider> itemTwos) {
         this.title = title;
         this.itemTwos = itemTwos;
     }
@@ -22,11 +21,11 @@ public class ItemMain {
         this.title = title;
     }
 
-    public ArrayList<ItemTwo> getItemTwos() {
+    public ArrayList<ItemSlider> getItemTwos() {
         return itemTwos;
     }
 
-    public void setItemTwos(ArrayList<ItemTwo> itemTwos) {
+    public void setItemTwos(ArrayList<ItemSlider> itemTwos) {
         this.itemTwos = itemTwos;
     }
 }

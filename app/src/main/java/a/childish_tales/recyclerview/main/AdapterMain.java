@@ -1,28 +1,28 @@
-package a.childish_tales.TWO;
+package a.childish_tales.recyclerview.main;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import com.dingmouren.layoutmanagergroup.skidright.SkidRightLayoutManager;
+
 import java.util.List;
 
-import a.childish_tales.MAIN.ItemMain;
 import a.childish_tales.R;
+import a.childish_tales.recyclerview.slider.AdapterSlider;
 
-public class AdapterTwo extends RecyclerView.Adapter<AdapterTwo.ViewHolder>{
+public class AdapterMain extends RecyclerView.Adapter<AdapterMain.ViewHolder>{
 
-  private ArrayList<ItemTwo> itemIntroList;
+  private List<ItemMain> itemIntroList;
   private LayoutInflater mInflater;
   private Context context;
 
   // data is passed into the constructor
-  public AdapterTwo(Context context, ArrayList<ItemTwo> itemIntroList) {
+  public AdapterMain(Context context, List<ItemMain> itemIntroList) {
     this.context = context;
     this.mInflater = LayoutInflater.from(context);
     this.itemIntroList = itemIntroList;
@@ -31,15 +31,27 @@ public class AdapterTwo extends RecyclerView.Adapter<AdapterTwo.ViewHolder>{
   // inflates the row layout from xml when needed
   @Override
   public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    View view = mInflater.inflate(R.layout.item, parent, false);
+    View view = mInflater.inflate(R.layout.main_recycler, parent, false);
     return new ViewHolder(view);
   }
 
   // binds the data to the TextView in each row
   @Override
   public void onBindViewHolder(ViewHolder holder, final int position) {
-    ItemTwo item = itemIntroList.get(position);
-    holder.imageView.setImageResource(item.getImage());
+    ItemMain item = itemIntroList.get(position);
+
+    holder.textView.setText(item.getTitle());
+
+    RecyclerView mRecyclerView;
+    AdapterSlider mAdapter;
+    SkidRightLayoutManager mSkidRightLayoutManager;
+
+    mRecyclerView = holder.recyclerView;
+    mAdapter = new AdapterSlider(context,item.getItemTwos());
+    mRecyclerView.setAdapter(mAdapter);
+
+    mSkidRightLayoutManager = new SkidRightLayoutManager(1.3f, 0.9f);
+    mRecyclerView.setLayoutManager(mSkidRightLayoutManager);
   }
 
   // total number of rows
@@ -51,10 +63,12 @@ public class AdapterTwo extends RecyclerView.Adapter<AdapterTwo.ViewHolder>{
 
   // stores and recycles views as they are scrolled off screen
   public class ViewHolder extends RecyclerView.ViewHolder{
-      ImageView imageView;
+      TextView textView;
+      RecyclerView recyclerView;
     ViewHolder(View itemView) {
       super(itemView);
-      imageView = itemView.findViewById(R.id.image);
+      textView = itemView.findViewById(R.id.text_view);
+      recyclerView = itemView.findViewById(R.id.recycler_view);
     }
   }
   boolean urlIsTrue(String url){

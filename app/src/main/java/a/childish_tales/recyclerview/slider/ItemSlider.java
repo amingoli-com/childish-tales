@@ -1,9 +1,9 @@
-package a.childish_tales.TWO;
+package a.childish_tales.recyclerview.slider;
 
-public class ItemTwo {
+public class ItemSlider {
     int image;
 
-    public ItemTwo(int image) {
+    public ItemSlider(int image) {
         this.image = image;
     }
 

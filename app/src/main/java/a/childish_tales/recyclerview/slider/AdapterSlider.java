@@ -1,6 +1,7 @@
 package a.childish_tales.recyclerview.slider;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import a.childish_tales.InfoStoryActivity;
 import a.childish_tales.R;
 
 public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder>{
@@ -28,7 +30,7 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
   // inflates the row layout from xml when needed
   @Override
   public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    View view = mInflater.inflate(R.layout.item, parent, false);
+    View view = mInflater.inflate(R.layout.item_slider, parent, false);
     return new ViewHolder(view);
   }
 
@@ -37,6 +39,8 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
   public void onBindViewHolder(ViewHolder holder, final int position) {
     ItemSlider item = itemIntroList.get(position);
     holder.imageView.setImageResource(item.getImage());
+    holder.view.setOnClickListener(view
+            -> context.startActivity(new Intent(context, InfoStoryActivity.class)));
   }
 
   // total number of rows
@@ -48,9 +52,11 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
 
   // stores and recycles views as they are scrolled off screen
   public class ViewHolder extends RecyclerView.ViewHolder{
+      View view;
       ImageView imageView;
     ViewHolder(View itemView) {
       super(itemView);
+      view = itemView;
       imageView = itemView.findViewById(R.id.image);
     }
   }

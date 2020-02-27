@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoStoryActivity">
+
+    <ImageView
+        android:src="@drawable/s_1"
+        android:scaleType="centerCrop"
+        android:tint="#8B000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:onClick="back"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/bg_radius_back"
+        android:src="@drawable/ic_falesh"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        tools:ignore="OnClick" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Toy Store 4"
+            android:textSize="@dimen/_25ssp"
+            android:textColor="#eee"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="⭐️⭐️⭐️⭐️⭐️"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="#eee"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Animation, Adventure"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#eee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Woody has always been confident about his place - in the world and that his priority is taking care of - his kid, whether that's Andy or Bonnie. But when - Bonnie adds a reluctant new toy called..."
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#eee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="Buy ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

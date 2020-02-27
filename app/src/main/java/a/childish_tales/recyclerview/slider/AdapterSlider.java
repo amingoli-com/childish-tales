@@ -39,8 +39,11 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
   public void onBindViewHolder(ViewHolder holder, final int position) {
     ItemSlider item = itemIntroList.get(position);
     holder.imageView.setImageResource(item.getImage());
-    holder.view.setOnClickListener(view
-            -> context.startActivity(new Intent(context, InfoStoryActivity.class)));
+    holder.view.setOnClickListener(view -> {
+      Intent intent = new Intent(context, InfoStoryActivity.class);
+      intent.putExtra("image",item.getImage());
+      context.startActivity(intent);
+    });
   }
 
   // total number of rows

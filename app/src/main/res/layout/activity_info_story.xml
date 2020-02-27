@@ -7,6 +7,7 @@
     tools:context=".InfoStoryActivity">
 
     <ImageView
+        android:id="@+id/background_image"
         android:src="@drawable/s_1"
         android:scaleType="centerCrop"
         android:tint="#8B000000"

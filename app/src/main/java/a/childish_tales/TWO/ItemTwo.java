@@ -1,9 +1,9 @@
-package a.childish_tales;
+package a.childish_tales.TWO;
 
-public class Item {
+public class ItemTwo {
     int image;
 
-    public Item(int image) {
+    public ItemTwo(int image) {
         this.image = image;
     }
 

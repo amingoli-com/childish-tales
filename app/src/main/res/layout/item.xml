@@ -12,11 +12,74 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:scaleType="centerCrop"
-            android:id="@+id/image"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/s_1"
+                android:scaleType="centerCrop"
+                android:background="#ddd"
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:alpha="0.45"
+                android:background="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Toy Store 4"
+                    android:textSize="@dimen/_18ssp"
+                    android:textColor="#eee"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="⭐️⭐️⭐️⭐️⭐️"
+                    android:textSize="@dimen/_7ssp"
+                    android:textColor="#eee"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Animation, Adventure"
+                    android:textSize="@dimen/_8ssp"
+                    android:textColor="#eee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Woody has always been confident about his place - in the world and that his priority is taking care of - his kid, whether that's Andy or Bonnie. But when - Bonnie adds a reluctant new toy called..."
+                    android:textSize="@dimen/_9ssp"
+                    android:textColor="#eee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Buy ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
 
     </androidx.cardview.widget.CardView>
 

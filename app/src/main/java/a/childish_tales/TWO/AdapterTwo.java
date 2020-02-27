@@ -1,22 +1,28 @@
-package a.childish_tales;
+package a.childish_tales.TWO;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public class AdapterTest extends RecyclerView.Adapter<AdapterTest.ViewHolder>{
+import a.childish_tales.MAIN.ItemMain;
+import a.childish_tales.R;
 
-  private List<Item> itemIntroList;
+public class AdapterTwo extends RecyclerView.Adapter<AdapterTwo.ViewHolder>{
+
+  private ArrayList<ItemTwo> itemIntroList;
   private LayoutInflater mInflater;
   private Context context;
 
   // data is passed into the constructor
-  public AdapterTest(Context context, List<Item> itemIntroList) {
+  public AdapterTwo(Context context, ArrayList<ItemTwo> itemIntroList) {
     this.context = context;
     this.mInflater = LayoutInflater.from(context);
     this.itemIntroList = itemIntroList;
@@ -32,7 +38,7 @@ public class AdapterTest extends RecyclerView.Adapter<AdapterTest.ViewHolder>{
   // binds the data to the TextView in each row
   @Override
   public void onBindViewHolder(ViewHolder holder, final int position) {
-    Item item = itemIntroList.get(position);
+    ItemTwo item = itemIntroList.get(position);
     holder.imageView.setImageResource(item.getImage());
   }
 
@@ -50,10 +56,7 @@ public class AdapterTest extends RecyclerView.Adapter<AdapterTest.ViewHolder>{
       super(itemView);
       imageView = itemView.findViewById(R.id.image);
     }
-
   }
-
-
   boolean urlIsTrue(String url){
     if (url!=null &&
         url.length()>3 &&

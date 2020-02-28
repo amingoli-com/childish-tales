@@ -11,6 +11,7 @@
 
     <!--activity_info_story.xml-->
     <style name="info_story_key_box">
+        <item name="android:background">@drawable/row_background</item>
         <item name="android:orientation">vertical</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_width">0dp</item>

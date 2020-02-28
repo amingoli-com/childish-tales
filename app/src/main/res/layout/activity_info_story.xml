@@ -30,12 +30,12 @@
 
                 <TextView
                     android:id="@+id/title"
-                    android:background="#B3000000"
+                    android:background="#74000000"
                     android:textSize="@dimen/_17ssp"
                     android:textStyle="bold"
                     android:textColor="#eee"
                     android:layout_alignParentBottom="true"
-                    android:padding="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </RelativeLayout>

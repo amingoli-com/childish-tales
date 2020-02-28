@@ -45,7 +45,6 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_story);
         idFinder();
-
         ColorUtil.setGradient(title,"#00000000","#333333");
 
         bg_image.setImageResource(getIntent().getIntExtra("image",R.drawable.s_1));

@@ -28,6 +28,12 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
     };
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        onWindowFocusChanged(true);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_story);
@@ -48,6 +54,15 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         super.onDestroy();
         stopMedia();
     }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_IMMERSIVE | View.SYSTEM_UI_FLAG_FULLSCREEN);
+    }
+
     /**
      * OnClick */
     public void back(View view) {

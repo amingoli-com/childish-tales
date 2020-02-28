@@ -8,7 +8,7 @@
         android:padding="@dimen/_5sdp"
         android:textStyle="bold"
         android:textSize="@dimen/_14sdp"
-        android:textColor="#eee"
+        android:textColor="#333"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <androidx.recyclerview.widget.RecyclerView

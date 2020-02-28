@@ -14,10 +14,12 @@ import android.widget.TextView;
 
 import java.util.concurrent.TimeUnit;
 
+import a.childish_tales.util.ColorUtil;
+
 public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener, SeekBar.OnSeekBarChangeListener {
     MediaPlayer mp;
     ImageView bg_image,btn_play;
-    TextView title,desc,writer_narrator,time,
+    TextView title,desc,writer_narrator,
              time_player_now,time_music_player;
     View layout_play_sound;
     SeekBar seekBar;
@@ -44,12 +46,13 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         setContentView(R.layout.activity_info_story);
         idFinder();
 
+        ColorUtil.setGradient(title,"#00000000","#333333");
+
         bg_image.setImageResource(getIntent().getIntExtra("image",R.drawable.s_1));
         title.setText(getIntent().getStringExtra("title"));
         desc.setText(getIntent().getStringExtra("desc"));
         writer_narrator.setText(getIntent().getStringExtra("writer"));
         writer_narrator.append(", "+getIntent().getStringExtra("narrator"));
-        time.setText(getIntent().getStringExtra("time"));
         seekBar.setOnSeekBarChangeListener(this);
         time_music_player.setText(getIntent().getStringExtra("time"));
     }
@@ -84,6 +87,14 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
                 break;
             default:
                 stopMedia();
+                break;
+        }
+    }
+
+    public void intent(View view) {
+        switch (view.getTag().toString()){
+            case "":
+
                 break;
         }
     }
@@ -133,15 +144,15 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
 
     private void idFinder(){
         layout_play_sound = findViewById(R.id.layout_play_sound);
+        writer_narrator = layout_play_sound.findViewById(R.id.writer_narrator);
         seekBar = layout_play_sound.findViewById(R.id.seekbar);
         time_player_now = layout_play_sound.findViewById(R.id.time_player_now);
         time_music_player = layout_play_sound.findViewById(R.id.time_music_player);
         btn_play = layout_play_sound.findViewById(R.id.btn_play);
+
         bg_image = findViewById(R.id.background_image);
         title = findViewById(R.id.title);
         desc = findViewById(R.id.desc);
-        writer_narrator = findViewById(R.id.writer_narrator);
-        time = findViewById(R.id.time);
     }
 
     /**

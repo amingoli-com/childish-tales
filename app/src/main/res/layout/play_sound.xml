@@ -33,6 +33,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <TextView
+                    android:id="@+id/writer_narrator"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/_7ssp"
+                    android:textAlignment="center"
+                    android:textColor="#333"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
                 <SeekBar
                     android:id="@+id/seekbar"
                     android:progressTint="#333"

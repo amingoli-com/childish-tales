@@ -59,11 +59,17 @@
             android:layout_height="wrap_content"/>
 
         <Button
-            android:onClick="play"
+            android:onClick="play_sound"
+            android:tag="play"
             android:layout_marginTop="@dimen/_5sdp"
             android:text="پخش داستان"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+        <include
+            android:id="@+id/layout_play_sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/play_sound"/>
 
 
     </LinearLayout>

@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import a.childish_tales.InfoStoryActivity;
+import a.childish_tales.activtiy.InfoStoryActivity;
 import a.childish_tales.R;
 
 public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder>{

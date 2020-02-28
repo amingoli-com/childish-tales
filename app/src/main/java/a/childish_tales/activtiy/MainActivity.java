@@ -1,4 +1,4 @@
-package a.childish_tales;
+package a.childish_tales.activtiy;
 
 import android.os.Bundle;
 
@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import a.childish_tales.R;
 import a.childish_tales.recyclerview.main.AdapterMain;
 import a.childish_tales.recyclerview.main.ItemMain;
 import a.childish_tales.recyclerview.slider.ItemSlider;

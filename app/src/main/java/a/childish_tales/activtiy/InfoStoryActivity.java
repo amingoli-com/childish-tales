@@ -1,4 +1,4 @@
-package a.childish_tales;
+package a.childish_tales.activtiy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import java.util.concurrent.TimeUnit;
 
+import a.childish_tales.R;
 import a.childish_tales.util.ColorUtil;
 
 public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener, SeekBar.OnSeekBarChangeListener {

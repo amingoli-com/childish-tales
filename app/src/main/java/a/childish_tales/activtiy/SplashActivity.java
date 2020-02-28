@@ -1,10 +1,12 @@
-package a.childish_tales;
+package a.childish_tales.activtiy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import a.childish_tales.R;
 
 public class SplashActivity extends AppCompatActivity {
 

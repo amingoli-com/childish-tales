@@ -2,6 +2,7 @@ package a.childish_tales;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,10 +12,13 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import java.util.concurrent.TimeUnit;
+
 public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener, SeekBar.OnSeekBarChangeListener {
     MediaPlayer mp;
-    ImageView bg_image;
-    TextView title,desc,writer_narrator,time;
+    ImageView bg_image,btn_play;
+    TextView title,desc,writer_narrator,time,
+             time_player_now,time_music_player;
     View layout_play_sound;
     SeekBar seekBar;
 
@@ -23,6 +27,7 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         @Override
         public void run() {
             seekBar.setProgress(mp.getCurrentPosition());
+            setTimePlayer(mp.getCurrentPosition(),time_player_now);
             mSeekbarUpdateHandler.postDelayed(this, 50);
         }
     };
@@ -46,7 +51,7 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         writer_narrator.append(", "+getIntent().getStringExtra("narrator"));
         time.setText(getIntent().getStringExtra("time"));
         seekBar.setOnSeekBarChangeListener(this);
-
+        time_music_player.setText(getIntent().getStringExtra("time"));
     }
 
     @Override
@@ -86,31 +91,52 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
      * private void */
     private void playtMedia(){
         if (mp==null){
+            btn_play.setTag("stop");
+            btn_play.setImageResource(R.drawable.ic_pause);
             mp = MediaPlayer.create(getApplication(), R.raw.story);
             mp.setOnCompletionListener(this);
             seekBar.setMax(mp.getDuration());
             mSeekbarUpdateHandler.postDelayed(mUpdateSeekbar, 0);
+            setTimePlayer(mp.getDuration(),time_music_player);
         }
         mp.start();
     }
     private void pausetMedia(){
         if (mp!=null){
+            btn_play.setTag("play");
+            btn_play.setImageResource(R.drawable.ic_play);
             mp.pause();
         }
     }
     private void stopMedia(){
         if (mp!=null){
+            btn_play.setTag("play");
+            btn_play.setImageResource(R.drawable.ic_play);
             seekBar.setProgress(0);
             mp.stop();
             mp.release();
             mSeekbarUpdateHandler.removeCallbacks(mUpdateSeekbar);
             mp = null;
+            time_player_now.setText(R.string.sec_zero);
         }
+    }
+
+    private void setTimePlayer(int duration , TextView textView){
+        @SuppressLint("DefaultLocale")
+        String time = String.format("%02d:%02d",
+                TimeUnit.MILLISECONDS.toMinutes(duration),
+                TimeUnit.MILLISECONDS.toSeconds(duration) -
+                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration))
+        );
+        textView.setText(time);
     }
 
     private void idFinder(){
         layout_play_sound = findViewById(R.id.layout_play_sound);
         seekBar = layout_play_sound.findViewById(R.id.seekbar);
+        time_player_now = layout_play_sound.findViewById(R.id.time_player_now);
+        time_music_player = layout_play_sound.findViewById(R.id.time_music_player);
+        btn_play = layout_play_sound.findViewById(R.id.btn_play);
         bg_image = findViewById(R.id.background_image);
         title = findViewById(R.id.title);
         desc = findViewById(R.id.desc);
@@ -128,8 +154,10 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
     /* Seek Bar*/
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-        if (fromUser && progress != mp.getDuration())
-            mp.seekTo(progress);
+        if (mp!=null){
+            if (fromUser && progress != mp.getDuration())
+                mp.seekTo(progress);
+        }
     }
     @Override
     public void onStartTrackingTouch(SeekBar seekBar) {}

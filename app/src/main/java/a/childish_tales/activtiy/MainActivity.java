@@ -1,6 +1,9 @@
 package a.childish_tales.activtiy;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import a.childish_tales.Database.DatabaseStory;
+import a.childish_tales.Database.Query;
 import a.childish_tales.R;
 import a.childish_tales.recyclerview.main.AdapterMain;
 import a.childish_tales.recyclerview.main.ItemMain;
@@ -36,49 +41,93 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void add(){
+        String   id = null
+                ,title = null
+                ,desc = null
+                ,text = null
+                ,image = null
+                ,time = null
+                ,writer = null
+                ,narrator = null
+                ,file_sound = null
+                ,my_sound = null
+                ,memory = null;
+        int file_sound2 = 0,
+                image2 = 0,
+                displayed= 0,
+                favorite = 0;
         ArrayList<ItemSlider> itemTwos = new ArrayList<>();
-        itemTwos.add(new ItemSlider(
-                "1",
-                "موش زیرک",
-                "داستان کودکانه «موش زیرک» تقدیم به بچه های خوب «در یکی از روزهای قشنگ پاییزی موش کوچولو در دل جنگل سبز قدم می زد که روباهی یک دفعه او را دید و دهانش آب افتاد: کجا میروی موش کوچولو؟ به کلبه ی زیر زمینی من بیا و...",
-                null,
-                null,
-                "https://niniban.com/files/fa/news/1398/12/6/396225_362.mp3",
-                R.drawable.s_1,
-                "داستان ۵ دقیقه زمان میبره",
-                "فاطمه فرهاد","زهرا خدایار",
-                "", "",
-                3,
-                false,false));
-        itemTwos.add(new ItemSlider(
-                "1",
-                "موش زیرک",
-                "داستان کودکانه «موش زیرک» تقدیم به بچه های خوب «در یکی از روزهای قشنگ پاییزی موش کوچولو در دل جنگل سبز قدم می زد که روباهی یک دفعه او را دید و دهانش آب افتاد: کجا میروی موش کوچولو؟ به کلبه ی زیر زمینی من بیا و...",
-                null,
-                null,
-                "https://niniban.com/files/fa/news/1398/12/6/396225_362.mp3",
-                R.drawable.s_2,
-                "داستان ۱۰ دقیقه زمان میبره",
-                "فاطمه فرهاد","زهرا خدایار",
-                "", "",
-                3,
-                false,false));
-        itemTwos.add(new ItemSlider(
-                "1",
-                "موش زیرک",
-                "داستان کودکانه «موش زیرک» تقدیم به بچه های خوب «در یکی از روزهای قشنگ پاییزی موش کوچولو در دل جنگل سبز قدم می زد که روباهی یک دفعه او را دید و دهانش آب افتاد: کجا میروی موش کوچولو؟ به کلبه ی زیر زمینی من بیا و...",
-                null,
-                null,
-                "https://niniban.com/files/fa/news/1398/12/6/396225_362.mp3",
-                R.drawable.s_3,
-                "داستان ۱۰ دقیقه زمان میبره",
-                "فاطمه فرهاد","زهرا خدایار",
-                "", "",
-                3,
-                false,false));
 
+        SQLiteDatabase databaseStory = new DatabaseStory(getApplication()).getReadableDatabase();
+        Cursor rawQuery = Query.select_all_table_list(databaseStory);
+        while (rawQuery.moveToNext()){
+            id = rawQuery.getString(rawQuery.getColumnIndex("id")) ;
+            title = rawQuery.getString(rawQuery.getColumnIndex("title")) ;
+            desc = rawQuery.getString(rawQuery.getColumnIndex("desc")) ;
+            text = rawQuery.getString(rawQuery.getColumnIndex("text")) ;
+            image = rawQuery.getString(rawQuery.getColumnIndex("image")) ;
+            time = rawQuery.getString(rawQuery.getColumnIndex("time")) ;
+            writer = rawQuery.getString(rawQuery.getColumnIndex("writer")) ;
+            narrator = rawQuery.getString(rawQuery.getColumnIndex("narrator")) ;
+            file_sound = rawQuery.getString(rawQuery.getColumnIndex("file_sound")) ;
+            my_sound = rawQuery.getString(rawQuery.getColumnIndex("my_sound")) ;
+            memory = rawQuery.getString(rawQuery.getColumnIndex("memory")) ;
+            displayed = rawQuery.getInt(rawQuery.getColumnIndex("displayed")) ;
+            favorite = rawQuery.getInt(rawQuery.getColumnIndex("favorite")) ;
+
+            if (file_sound.startsWith("R") && image.startsWith("R")){
+                image2 = R.drawable.s_1;
+                file_sound2 = R.raw.s_1;
+            }
+            itemTwos.add(new ItemSlider(
+                    id,
+                    title,
+                    desc,
+                    text,
+                    file_sound,
+                    null,
+                    image,
+                    time,
+                    writer,narrator,
+                    my_sound, memory,
+                    0,
+                    image2,
+                    displayed,
+                    favorite));
+            itemTwos.add(new ItemSlider(
+                    id,
+                    title,
+                    desc,
+                    text,
+                    file_sound,
+                    null,
+                    image,
+                    time,
+                    writer,narrator,
+                    my_sound, memory,
+                    0,
+                    image2,
+                    displayed,
+                    favorite));
+            itemTwos.add(new ItemSlider(
+                    id,
+                    title,
+                    desc,
+                    text,
+                    file_sound,
+                    null,
+                    image,
+                    time,
+                    writer,narrator,
+                    my_sound, memory,
+                    0,
+                    image2,
+                    displayed,
+                    favorite));
+        }
+        databaseStory.close();
+        rawQuery.close();
 
         itemIntroList.add(new ItemMain("قصه های آموزنده",itemTwos));
-        itemIntroList.add(new ItemMain("قصه های قرآنی",itemTwos));
     }
 }

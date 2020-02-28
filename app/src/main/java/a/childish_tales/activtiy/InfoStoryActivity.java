@@ -104,7 +104,7 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         if (mp==null){
             btn_play.setTag("stop");
             btn_play.setImageResource(R.drawable.ic_pause);
-            mp = MediaPlayer.create(getApplication(), R.raw.story);
+            mp = MediaPlayer.create(getApplication(), R.raw.s_1);
             mp.setOnCompletionListener(this);
             seekBar.setMax(mp.getDuration());
             mSeekbarUpdateHandler.postDelayed(mUpdateSeekbar, 0);

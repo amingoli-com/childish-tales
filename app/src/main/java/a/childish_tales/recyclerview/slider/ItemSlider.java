@@ -2,10 +2,9 @@ package a.childish_tales.recyclerview.slider;
 
 public class ItemSlider {
     String id,title,desc,text,sound_file,sound_url,image,time,writer,narrator,my_sound,memory;
-    int star, image_drawable;
-    boolean displayed,favorite;
+    int star, image_drawable,displayed,favorite;
 
-    public ItemSlider(String id, String title, String desc, String text, String sound_file, String sound_url, String image, String time, String writer, String narrator, String my_sound, String memory, int star, boolean displayed, boolean favorite) {
+    public ItemSlider(String id, String title, String desc, String text, String sound_file, String sound_url, String image, String time, String writer, String narrator, String my_sound, String memory, int star, int image_drawable, int displayed, int favorite) {
         this.id = id;
         this.title = title;
         this.desc = desc;
@@ -19,23 +18,7 @@ public class ItemSlider {
         this.my_sound = my_sound;
         this.memory = memory;
         this.star = star;
-        this.displayed = displayed;
-        this.favorite = favorite;
-    }
-    public ItemSlider(String id, String title, String desc, String text, String sound_file, String sound_url, int image_drawable, String time, String writer, String narrator, String my_sound, String memory, int star, boolean displayed, boolean favorite) {
-        this.id = id;
-        this.title = title;
-        this.desc = desc;
-        this.text = text;
-        this.sound_file = sound_file;
-        this.sound_url = sound_url;
         this.image_drawable = image_drawable;
-        this.time = time;
-        this.writer = writer;
-        this.narrator = narrator;
-        this.my_sound = my_sound;
-        this.memory = memory;
-        this.star = star;
         this.displayed = displayed;
         this.favorite = favorite;
     }
@@ -153,18 +136,24 @@ public class ItemSlider {
     }
 
     public boolean isDisplayed() {
-        return displayed;
+        if (displayed==1){
+            return true;
+        }
+        return false;
     }
 
-    public void setDisplayed(boolean displayed) {
+    public void setDisplayed(int displayed) {
         this.displayed = displayed;
     }
 
     public boolean isFavorite() {
-        return favorite;
+        if (favorite==1){
+            return true;
+        }
+        return false;
     }
 
-    public void setFavorite(boolean favorite) {
+    public void setFavorite(int favorite) {
         this.favorite = favorite;
     }
 }

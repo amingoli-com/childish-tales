@@ -73,4 +73,6 @@ dependencies {
     implementation 'me.relex:circleindicator:2.1.4'
 //    Slide Pager
     implementation 'com.github.DingMouRen:LayoutManagerGroup:1e6f4f96eb'
+//    Sql
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
 }

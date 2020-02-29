@@ -75,6 +75,4 @@ dependencies {
     implementation 'com.github.DingMouRen:LayoutManagerGroup:1e6f4f96eb'
 //    Sql
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
-//    Zip & Unzio & Rar Manager
-    implementation 'com.github.ghost1372:Mzip-Android:0.4.0'
 }

@@ -19,7 +19,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:src="@drawable/s_1"
+                android:src="@drawable/logo"
                 android:scaleType="centerCrop"
                 android:background="#ddd"
                 android:id="@+id/image"

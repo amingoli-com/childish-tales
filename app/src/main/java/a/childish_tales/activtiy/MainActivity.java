@@ -75,10 +75,6 @@ public class MainActivity extends AppCompatActivity {
             displayed = rawQuery.getInt(rawQuery.getColumnIndex("displayed")) ;
             favorite = rawQuery.getInt(rawQuery.getColumnIndex("favorite")) ;
 
-            if (file_sound.startsWith("R") && image.startsWith("R")){
-                image2 = R.drawable.s_1;
-                file_sound2 = R.raw.s_1;
-            }
             itemTwos.add(new ItemSlider(
                     id,
                     title,

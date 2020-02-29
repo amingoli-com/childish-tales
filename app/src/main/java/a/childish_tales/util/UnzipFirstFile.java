@@ -1,10 +1,7 @@
 package a.childish_tales.util;
 
 import android.content.Context;
-import android.os.Environment;
 import android.util.Log;
-
-import androidx.annotation.Nullable;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -12,11 +9,9 @@ import java.io.FileOutputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import a.childish_tales.BuildConfig;
 import a.childish_tales.R;
 
 public class UnzipFirstFile {
-  private static final String QURAN_BASE = "salam_quran/";
   private Boolean isUnziping = false;
   private Context context;
 
@@ -33,7 +28,7 @@ public class UnzipFirstFile {
       ZipInputStream zis = new ZipInputStream(context.getResources().openRawResource(R.raw.archive));
       ZipEntry entry;
       while ((entry = zis.getNextEntry()) != null) {
-        File file = new File(getQuranBaseDirectory() + entry.getName());
+        File file = new File(FileUtil.getBaseDirectory(context) + entry.getName());
         if (file.exists()) {
           Log.d("amingol", "extractZipfile: "+file.getAbsolutePath());
           continue;
@@ -64,37 +59,6 @@ public class UnzipFirstFile {
     }
   }
 
-  @Nullable
-  private String getQuranBaseDirectory() {
-    return getQuranBaseDirectory(context);
-  }
 
-  @Nullable
-  private String getQuranBaseDirectory(Context context) {
-    String basePath = QuranSettings.getInstance(context).getAppCustomLocation();
-
-    if (!isSDCardMounted()) {
-      // if our best guess suggests that we won't have access to the data due to the sdcard not
-      // being mounted, then set the base path to null for now.
-      if (basePath == null || basePath.equals(
-          Environment.getExternalStorageDirectory().getAbsolutePath()) ||
-          (basePath.contains(BuildConfig.APPLICATION_ID) && context.getExternalFilesDir(null) == null)) {
-        basePath = null;
-      }
-    }
-
-    if (basePath != null) {
-      if (!basePath.endsWith(File.separator)) {
-        basePath += File.separator;
-      }
-      return basePath + QURAN_BASE;
-    }
-    return null;
-  }
-
-  private boolean isSDCardMounted() {
-    String state = Environment.getExternalStorageState();
-    return state.equals(Environment.MEDIA_MOUNTED);
-  }
 
 }

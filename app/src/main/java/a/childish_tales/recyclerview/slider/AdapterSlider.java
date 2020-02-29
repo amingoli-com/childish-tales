@@ -3,6 +3,8 @@ package a.childish_tales.recyclerview.slider;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,10 +13,13 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import a.childish_tales.activtiy.InfoStoryActivity;
 import a.childish_tales.R;
+import a.childish_tales.util.FileUtil;
+import a.childish_tales.util.ViewUtil;
 
 public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder>{
 
@@ -41,11 +46,14 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
   @Override
   public void onBindViewHolder(ViewHolder holder, final int position) {
     ItemSlider item = itemIntroList.get(position);
-    holder.imageView.setImageResource(item.getImage_drawable());
+    ViewUtil.setImageResource(context,holder.imageView,item.getImage());
+
     holder.title.setText(item.getTitle());
     holder.desc.setText(item.getDesc());
     holder.writer_narrator.setText(item.getWriter()+", "+item.getNarrator());
     holder.time.setText(item.getTime());
+
+
 
     if (item.getStar()>0){
       for (int i = 0; i < item.getStar(); i++) {
@@ -55,7 +63,8 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
 
     holder.view.setOnClickListener(view -> {
       Intent intent = new Intent(context, InfoStoryActivity.class);
-      intent.putExtra("image",item.getImage_drawable());
+      intent.putExtra("image",item.getImage());
+      intent.putExtra("audio",item.getSound_file());
       intent.putExtra("title",item.getTitle());
       intent.putExtra("desc",item.getDesc());
       intent.putExtra("writer",item.getWriter());

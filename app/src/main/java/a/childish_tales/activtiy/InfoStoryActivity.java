@@ -12,13 +12,17 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import a.childish_tales.R;
 import a.childish_tales.util.ColorUtil;
+import a.childish_tales.util.FileUtil;
+import a.childish_tales.util.ViewUtil;
 
 public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener, SeekBar.OnSeekBarChangeListener {
     MediaPlayer mp;
+    String audio_story = null;
     ImageView bg_image,btn_play;
     TextView title,desc,writer_narrator,
              time_player_now,time_music_player;
@@ -48,7 +52,8 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         idFinder();
         ColorUtil.setGradient(title,"#00000000","#333333");
 
-        bg_image.setImageResource(getIntent().getIntExtra("image",R.drawable.s_1));
+        audio_story = getIntent().getStringExtra("audio");
+        ViewUtil.setImageResource(this,bg_image,getIntent().getStringExtra("image"));
         title.setText(getIntent().getStringExtra("title"));
         desc.setText(getIntent().getStringExtra("desc"));
         writer_narrator.setText(getIntent().getStringExtra("writer"));
@@ -104,11 +109,17 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         if (mp==null){
             btn_play.setTag("stop");
             btn_play.setImageResource(R.drawable.ic_pause);
-            mp = MediaPlayer.create(getApplication(), R.raw.s_1);
-            mp.setOnCompletionListener(this);
-            seekBar.setMax(mp.getDuration());
-            mSeekbarUpdateHandler.postDelayed(mUpdateSeekbar, 0);
-            setTimePlayer(mp.getDuration(),time_music_player);
+            mp = new MediaPlayer();
+            try {
+                mp.setDataSource(FileUtil.getFileAudioStory(this,audio_story).getAbsolutePath());
+                mp.prepare();
+                mp.setOnCompletionListener(this);
+                seekBar.setMax(mp.getDuration());
+                mSeekbarUpdateHandler.postDelayed(mUpdateSeekbar, 0);
+                setTimePlayer(mp.getDuration(),time_music_player);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         mp.start();
     }

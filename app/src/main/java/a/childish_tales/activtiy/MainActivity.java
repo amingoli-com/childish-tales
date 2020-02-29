@@ -3,7 +3,6 @@ package a.childish_tales.activtiy;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import a.childish_tales.Database.DatabaseStory;
-import a.childish_tales.Database.Query;
+import a.childish_tales.util.Database.DatabaseStory;
+import a.childish_tales.util.Database.Query;
 import a.childish_tales.R;
 import a.childish_tales.recyclerview.main.AdapterMain;
 import a.childish_tales.recyclerview.main.ItemMain;

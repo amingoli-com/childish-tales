@@ -1,4 +1,4 @@
-package a.childish_tales.util;
+package a.childish_tales.util.view;
 
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;

@@ -3,8 +3,6 @@ package a.childish_tales.recyclerview.slider;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,13 +11,11 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.io.File;
 import java.util.ArrayList;
 
 import a.childish_tales.activtiy.InfoStoryActivity;
 import a.childish_tales.R;
-import a.childish_tales.util.FileUtil;
-import a.childish_tales.util.ViewUtil;
+import a.childish_tales.util.view.ViewUtil;
 
 public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder>{
 

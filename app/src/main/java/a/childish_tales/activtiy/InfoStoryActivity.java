@@ -6,7 +6,6 @@ import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -16,9 +15,9 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import a.childish_tales.R;
-import a.childish_tales.util.ColorUtil;
-import a.childish_tales.util.FileUtil;
-import a.childish_tales.util.ViewUtil;
+import a.childish_tales.util.view.ColorUtil;
+import a.childish_tales.util.file.FileUtil;
+import a.childish_tales.util.view.ViewUtil;
 
 public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener, SeekBar.OnSeekBarChangeListener {
     MediaPlayer mp;

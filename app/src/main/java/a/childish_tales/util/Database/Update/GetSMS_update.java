@@ -1,7 +1,4 @@
-package a.childish_tales.Database.Update;
-
-import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
+package a.childish_tales.util.Database.Update;
 
 public class GetSMS_update {
 

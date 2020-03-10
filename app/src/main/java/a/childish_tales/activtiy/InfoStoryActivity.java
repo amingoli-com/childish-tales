@@ -62,17 +62,12 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         sound_name = getIntent().getStringExtra("sound_name");
         sound_url = getIntent().getStringExtra("sound_url");
 
-        /*String id = getIntent().getStringExtra("id");
-        String title = getIntent().getStringExtra("title");
-        String desc = getIntent().getStringExtra("desc");
-        String imageـurl = getIntent().getStringExtra("imageـurl");
-        String time = getIntent().getStringExtra("time");
-        String recorder = getIntent().getStringExtra("recorder");
-        String sound_name = getIntent().getStringExtra("sound_name");
-        String sound_url = getIntent().getStringExtra("sound_url");*/
-
-        if (!audioExists(sound_name)){
-            download(sound_url,sound_name);
+        if (sound_url!=null){
+            Log.d(TAG, "onCreate: "+sound_url);
+            layout_play_sound.setVisibility(View.VISIBLE);
+            if (!audioExists(sound_name)){
+                download(sound_url,sound_name);
+            }
         }
 
         ViewUtil.setImageResource(this,bg_image,getIntent().getStringExtra("image"));

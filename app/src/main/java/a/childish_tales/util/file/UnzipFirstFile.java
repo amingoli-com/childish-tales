@@ -12,11 +12,12 @@ import java.util.zip.ZipInputStream;
 import a.childish_tales.R;
 
 public class UnzipFirstFile {
+  private String TAG = "amingoli-zip";
   private Context context;
 
   public UnzipFirstFile(Context context) {
     this.context = context;
-    if (!FileUtil.getFileImageStory(context,"s_1.png").exists()){
+    if (!FileUtil.getFileImageStory(context,"s_2.png").exists()){
       unzip();
     }
   }
@@ -40,14 +41,17 @@ public class UnzipFirstFile {
         FileOutputStream fos = new FileOutputStream(file);
         dest = new BufferedOutputStream(fos, 2048);
         while ((count = zis.read(data, 0, 2048)) != -1) {
+          Log.d(TAG, "unzip: "+count);
           dest.write(data, 0, count);
         }
         dest.flush();
         dest.close();
       }
       zis.close();
+      Log.d(TAG, "unzip: finish");
     } catch (Exception e) {
       e.printStackTrace();
+      Log.e(TAG, "unzip: ",e);
     }
   }
 

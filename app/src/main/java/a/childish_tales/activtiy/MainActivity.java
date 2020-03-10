@@ -89,36 +89,6 @@ public class MainActivity extends AppCompatActivity {
                     image2,
                     displayed,
                     favorite));
-            itemTwos.add(new ItemSlider(
-                    id,
-                    title,
-                    desc,
-                    text,
-                    file_sound,
-                    null,
-                    image,
-                    time,
-                    writer,narrator,
-                    my_sound, memory,
-                    0,
-                    image2,
-                    displayed,
-                    favorite));
-            itemTwos.add(new ItemSlider(
-                    id,
-                    title,
-                    desc,
-                    text,
-                    file_sound,
-                    null,
-                    image,
-                    time,
-                    writer,narrator,
-                    my_sound, memory,
-                    0,
-                    image2,
-                    displayed,
-                    favorite));
         }
         databaseStory.close();
         rawQuery.close();

@@ -1,26 +1,18 @@
 package a.childish_tales.recyclerview.slider;
 
 public class ItemSlider {
-    String id,title,desc,text,sound_file,sound_url,image,time,writer,narrator,my_sound,memory;
-    int star, image_drawable,displayed,favorite;
+    String id,title,desc,text,imageـurl,time,recorder,sound_name,sound_url;
 
-    public ItemSlider(String id, String title, String desc, String text, String sound_file, String sound_url, String image, String time, String writer, String narrator, String my_sound, String memory, int star, int image_drawable, int displayed, int favorite) {
+    public ItemSlider(String id, String title, String desc, String text, String imageـurl,String time, String recorder, String sound_name, String sound_url) {
         this.id = id;
         this.title = title;
         this.desc = desc;
         this.text = text;
-        this.sound_file = sound_file;
-        this.sound_url = sound_url;
-        this.image = image;
+        this.imageـurl = imageـurl;
         this.time = time;
-        this.writer = writer;
-        this.narrator = narrator;
-        this.my_sound = my_sound;
-        this.memory = memory;
-        this.star = star;
-        this.image_drawable = image_drawable;
-        this.displayed = displayed;
-        this.favorite = favorite;
+        this.recorder = recorder;
+        this.sound_name = sound_name;
+        this.sound_url = sound_url;
     }
 
     public String getId() {
@@ -55,28 +47,12 @@ public class ItemSlider {
         this.text = text;
     }
 
-    public String getSound_file() {
-        return sound_file;
+    public String getImageـurl() {
+        return imageـurl;
     }
 
-    public void setSound_file(String sound_file) {
-        this.sound_file = sound_file;
-    }
-
-    public String getSound_url() {
-        return sound_url;
-    }
-
-    public void setSound_url(String sound_url) {
-        this.sound_url = sound_url;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
+    public void setImageـurl(String imageـurl) {
+        this.imageـurl = imageـurl;
     }
 
     public String getTime() {
@@ -87,73 +63,27 @@ public class ItemSlider {
         this.time = time;
     }
 
-    public String getWriter() {
-        return writer;
+    public String getRecorder() {
+        return recorder;
     }
 
-    public void setWriter(String writer) {
-        this.writer = writer;
+    public void setRecorder(String recorder) {
+        this.recorder = recorder;
     }
 
-    public String getNarrator() {
-        return narrator;
+    public String getSound_name() {
+        return sound_name;
     }
 
-    public void setNarrator(String narrator) {
-        this.narrator = narrator;
+    public void setSound_name(String sound_name) {
+        this.sound_name = sound_name;
     }
 
-    public String getMy_sound() {
-        return my_sound;
+    public String getSound_url() {
+        return sound_url;
     }
 
-    public void setMy_sound(String my_sound) {
-        this.my_sound = my_sound;
-    }
-
-    public String getMemory() {
-        return memory;
-    }
-
-    public void setMemory(String memory) {
-        this.memory = memory;
-    }
-
-    public int getStar() {
-        return star;
-    }
-
-    public void setStar(int star) {
-        this.star = star;
-    }
-
-    public int getImage_drawable() {
-        return image_drawable;
-    }
-
-    public void setImage_drawable(int image_drawable) {
-        this.image_drawable = image_drawable;
-    }
-
-    public boolean isDisplayed() {
-        if (displayed==1){
-            return true;
-        }
-        return false;
-    }
-
-    public void setDisplayed(int displayed) {
-        this.displayed = displayed;
-    }
-
-    public boolean isFavorite() {
-        if (favorite==1){
-            return true;
-        }
-        return false;
-    }
-
-    public void setFavorite(int favorite) {
-        this.favorite = favorite;
+    public void setSound_url(String sound_url) {
+        this.sound_url = sound_url;
     }
 }

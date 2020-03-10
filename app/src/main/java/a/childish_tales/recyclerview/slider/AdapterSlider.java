@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 import a.childish_tales.activtiy.InfoStoryActivity;
@@ -42,31 +44,25 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
   @Override
   public void onBindViewHolder(ViewHolder holder, final int position) {
     ItemSlider item = itemIntroList.get(position);
-    ViewUtil.setImageResource(context,holder.imageView,item.getImage());
+//    ViewUtil.setImageResource(context,holder.imageView,item.getImage());
 
+    Glide.with(context).load(item.getImageـurl()).into(holder.imageView);
     holder.title.setText(item.getTitle());
     holder.desc.setText(item.getDesc());
-    holder.writer_narrator.setText(item.getWriter()+", "+item.getNarrator());
+    holder.writer_narrator.setText(item.getRecorder());
     holder.time.setText(item.getTime());
-
-
-
-    if (item.getStar()>0){
-      for (int i = 0; i < item.getStar(); i++) {
-        /*holder.star.append("⭐️");*/
-      }
-    }
 
     holder.view.setOnClickListener(view -> {
       Intent intent = new Intent(context, InfoStoryActivity.class);
-      intent.putExtra("image",item.getImage());
-      intent.putExtra("audio",item.getSound_file());
+      intent.putExtra("id",item.getId());
       intent.putExtra("title",item.getTitle());
       intent.putExtra("desc",item.getDesc());
-      intent.putExtra("writer",item.getWriter());
-      intent.putExtra("narrator",item.getNarrator());
+      intent.putExtra("text",item.getText());
+      intent.putExtra("imageـurl",item.getImageـurl());
       intent.putExtra("time",item.getTime());
-      intent.putExtra("star",item.getStar());
+      intent.putExtra("recorder",item.getRecorder());
+      intent.putExtra("sound_name",item.getSound_name());
+      intent.putExtra("sound_url",item.getSound_url());
       context.startActivity(intent);
     });
   }

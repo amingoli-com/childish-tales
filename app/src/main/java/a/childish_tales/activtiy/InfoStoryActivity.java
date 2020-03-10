@@ -6,10 +6,15 @@ import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.downloader.Error;
+import com.downloader.OnDownloadListener;
+import com.downloader.PRDownloader;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -20,11 +25,14 @@ import a.childish_tales.util.file.FileUtil;
 import a.childish_tales.util.view.ViewUtil;
 
 public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener, SeekBar.OnSeekBarChangeListener {
+    private String TAG = "amingoli78-InfoStoryActivity";
+    int downloadId = 0;
+    String sound_name = null;
+    String sound_url = null;
     MediaPlayer mp;
-    String audio_story = null;
     ImageView bg_image,btn_play;
     TextView title,desc,writer_narrator,
-             time_player_now,time_music_player;
+            time_player_now,time_music_player;
     View layout_play_sound;
     SeekBar seekBar;
 
@@ -51,12 +59,26 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         idFinder();
         ColorUtil.setGradient(title,"#00000000","#333333");
 
-        audio_story = getIntent().getStringExtra("audio");
+        sound_name = getIntent().getStringExtra("sound_name");
+        sound_url = getIntent().getStringExtra("sound_url");
+
+        /*String id = getIntent().getStringExtra("id");
+        String title = getIntent().getStringExtra("title");
+        String desc = getIntent().getStringExtra("desc");
+        String imageـurl = getIntent().getStringExtra("imageـurl");
+        String time = getIntent().getStringExtra("time");
+        String recorder = getIntent().getStringExtra("recorder");
+        String sound_name = getIntent().getStringExtra("sound_name");
+        String sound_url = getIntent().getStringExtra("sound_url");*/
+
+        if (!audioExists(sound_name)){
+            download(sound_url,sound_name);
+        }
+
         ViewUtil.setImageResource(this,bg_image,getIntent().getStringExtra("image"));
         title.setText(getIntent().getStringExtra("title"));
         desc.setText(getIntent().getStringExtra("desc"));
-        writer_narrator.setText(getIntent().getStringExtra("writer"));
-        writer_narrator.append(", "+getIntent().getStringExtra("narrator"));
+        writer_narrator.setText(getIntent().getStringExtra("recorder"));
         seekBar.setOnSeekBarChangeListener(this);
         time_music_player.setText(getIntent().getStringExtra("time"));
     }
@@ -65,6 +87,7 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
     protected void onDestroy() {
         super.onDestroy();
         stopMedia();
+        PRDownloader.cancelAll();
     }
 
     @Override
@@ -110,7 +133,12 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
             btn_play.setImageResource(R.drawable.ic_pause);
             mp = new MediaPlayer();
             try {
-                mp.setDataSource(FileUtil.getFileAudioStory(this,audio_story).getAbsolutePath());
+                if (audioExists(sound_name)){
+                    mp.setDataSource(FileUtil.getFileAudioStory(this, sound_name)
+                            .getAbsolutePath());
+                }else {
+                    mp.setDataSource(sound_url);
+                }
                 mp.prepare();
                 mp.setOnCompletionListener(this);
                 seekBar.setMax(mp.getDuration());
@@ -165,8 +193,41 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         desc = findViewById(R.id.desc);
     }
 
+    private Boolean audioExists(String fileName){
+        return FileUtil.getFileAudioStory(this,fileName).exists();
+    }
+
+    private void download(String url,String fileName){
+        downloadId =
+                PRDownloader.download(url,FileUtil.getFileAudioDirectory(this), fileName)
+                .build()
+                .setOnStartOrResumeListener(() -> {
+                    Log.d(TAG, "setOnStartOrResumeListener: ");
+                })
+                .setOnPauseListener(() -> {
+                    Log.d(TAG, "setOnPauseListener: ");
+                })
+                .setOnCancelListener(() -> {
+                    Log.d(TAG, "setOnCancelListener: ");
+                })
+                .setOnProgressListener(progress -> {
+                    Log.d(TAG, "setOnProgressListener: "+progress);
+                })
+                .start(new OnDownloadListener() {
+                    @Override
+                    public void onDownloadComplete() {
+                        Log.d(TAG, "onDownloadComplete: ");
+                    }
+
+                    @Override
+                    public void onError(Error error) {
+                        Log.d(TAG, "onError: "+error);
+                    }
+                });
+    }
+
     /**
-    *  Listener */
+     *  Listener */
     /* Media Player */
     @Override
     public void onCompletion(MediaPlayer mediaPlayer) {

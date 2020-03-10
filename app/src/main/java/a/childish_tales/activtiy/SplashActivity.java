@@ -54,41 +54,6 @@ public class SplashActivity extends AppCompatActivity {
                 .build();
         PRDownloader.initialize(getApplicationContext(), config2);
 
-
-
-
-        int downloadId =
-                PRDownloader.download(
-                        "https://khadije.com/static/images/homepage-v3/salavat.jpg",
-                        FileUtil.getBaseDirectory(this),
-                        "test.jpg")
-                .build()
-                .setOnStartOrResumeListener(() -> {
-                    Log.d(TAG, "setOnStartOrResumeListener: ");
-                })
-                .setOnPauseListener(() -> {
-                    Log.d(TAG, "setOnPauseListener: ");
-                })
-                .setOnCancelListener(() -> {
-                    Log.d(TAG, "setOnCancelListener: ");
-                })
-                .setOnProgressListener(progress -> {
-                    Log.d(TAG, "setOnProgressListener: "+progress);
-                })
-                .start(new OnDownloadListener() {
-                    @Override
-                    public void onDownloadComplete() {
-                        Log.d(TAG, "onDownloadComplete: ");
-                    }
-
-                    @Override
-                    public void onError(Error error) {
-                        Log.d(TAG, "onError: "+error);
-                    }
-                });
-
-
-
 //        new UnzipFirstFile(this);
 
 //        String root = Environment.getExternalStorageDirectory().toString();
@@ -139,11 +104,11 @@ public class SplashActivity extends AppCompatActivity {
     public void writeFileExternalStorage() {
         ContextWrapper contextWrapper = new ContextWrapper(getApplicationContext());
         File directory = contextWrapper.getDir(getFilesDir().getName(), Context.MODE_PRIVATE);
-        File file =  new File(directory,"fileName");
+        File file =  new File(directory,"sound_name");
         String data = "TEST DATA";
         FileOutputStream fos = null; // save
         try {
-            fos = new FileOutputStream("fileName", true);
+            fos = new FileOutputStream("sound_name", true);
             fos.write(data.getBytes());
             fos.close();
         } catch (FileNotFoundException e) {

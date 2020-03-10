@@ -147,6 +147,9 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }else {
+            btn_play.setTag("stop");
+            btn_play.setImageResource(R.drawable.ic_pause);
         }
         mp.start();
     }

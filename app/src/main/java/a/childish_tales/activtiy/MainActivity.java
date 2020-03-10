@@ -1,7 +1,7 @@
 package a.childish_tales.activtiy;
 
 import android.os.Bundle;
-import android.util.Log;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,7 +17,7 @@ import a.childish_tales.recyclerview.slider.ItemSlider;
 import a.childish_tales.util.file.FileUtil;
 
 public class MainActivity extends AppCompatActivity {
-    private String TAG = "amnigoli-MainActivity.class";
+    private String TAG = "amnigoli-MainActivity";
 
     List<ItemMain> itemIntroList;
     RecyclerView mRecyclerView;
@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recycler_view);
         mAdapter = new AdapterMain(this,itemIntroList);
         mRecyclerView.setAdapter(mAdapter);
-        addByJson();
+        addItemFromJson();
         layoutManager= new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         mRecyclerView.setLayoutManager(layoutManager);
     }
 
-    void addByJson(){
+    void addItemFromJson(){
         ArrayList<ItemSlider> itemTwos = new ArrayList<>();
         try {
             JSONArray jsonArray =

@@ -24,7 +24,8 @@ public class UnzipFirstFile {
   private void unzip(){
     try {
       BufferedOutputStream dest = null;
-      ZipInputStream zis = new ZipInputStream(context.getResources().openRawResource(R.raw.archive));
+      ZipInputStream zis = null;
+//              new ZipInputStream(context.getResources().openRawResource(R.raw.archive));
       ZipEntry entry;
       while ((entry = zis.getNextEntry()) != null) {
         File file = new File(FileUtil.getBaseDirectory(context) + entry.getName());

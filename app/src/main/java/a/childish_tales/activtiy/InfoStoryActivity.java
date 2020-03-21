@@ -131,9 +131,6 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         }
     }
 
-    public void try_again(View view) {
-        PRDownloader.resume(downloadId);
-    }
     /**
      * private void */
     private void playtMedia(){
@@ -211,21 +208,17 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
 
     private void download(String url,String fileName){
         final View customView = getLayoutInflater().inflate(R.layout.item_progress_dialog, null);
-        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setView(customView);
-        builder.setCancelable(false);
 
         RoundCornerProgressBar cornerProgressBar = customView.findViewById(R.id.RoundCornerProgressBar);
         LottieAnimationView lottie = customView.findViewById(R.id.lottie);
         TextView try_again = customView.findViewById(R.id.try_again);
 
-        AlertDialog alertdialog = builder.create();
-        alertdialog.setButton(AlertDialog.BUTTON_POSITIVE, "لغو", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                PRDownloader.cancelAll();
-                finish();
-            }
+        AlertDialog alertdialog = new AlertDialog.Builder(this).create();
+        alertdialog.setView(customView);
+        alertdialog.setCancelable(false);
+        alertdialog.setButton(AlertDialog.BUTTON_POSITIVE, getString(R.string.exit), (dialogInterface, i) -> {
+            PRDownloader.cancelAll();
+            finish();
         });
         alertdialog.show();
 
@@ -233,21 +226,23 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
                 PRDownloader.download(url,FileUtil.getFileAudioDirectory(this), fileName)
                 .build()
                 .setOnStartOrResumeListener(() -> {
+                    try_again.setText("درحال دریافت");
                     cornerProgressBar.animate().setDuration(500).alpha(1);
-                    try_again.setVisibility(View.GONE);
                     Log.d(TAG, "setOnStartOrResumeListener: ");
                 })
                 .setOnPauseListener(() -> {
-                    try_again.setVisibility(View.VISIBLE);
+                    try_again.setText("دانلود متوقف شد");
                     Log.d(TAG, "setOnPauseListener: ");
                 })
                 .setOnCancelListener(() -> {
-                    Log.d(TAG, "setOnCancelListener: ");
                     lottie.setAnimation("error.json");
-                    lottie.showContextMenu();
-                    try_again.setVisibility(View.VISIBLE);
                 })
                 .setOnProgressListener(progress -> {
+
+                    String kb = String.valueOf(progress.currentBytes/1024/512);
+                    String mb = String.valueOf(progress.currentBytes/1024/1024);
+                    try_again.setText(mb+"."+kb+"MP");
+
                     cornerProgressBar.setMax((int) progress.totalBytes);
                     cornerProgressBar.setProgress((int) progress.currentBytes);
                     Log.d(TAG, "setOnProgressListener: "+progress);
@@ -255,17 +250,17 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
                 .start(new OnDownloadListener() {
                     @Override
                     public void onDownloadComplete() {
+                        try_again.setText("دانلود تمام شد");
                         alertdialog.dismiss();
                         Log.d(TAG, "onDownloadComplete: ");
                     }
 
                     @Override
                     public void onError(Error error) {
+                        try_again.setText("دانلود ارور داد");
                         Log.d(TAG, "onError: "+error);
-                        PRDownloader.pause(downloadId);
                         lottie.setAnimation("error.json");
-                        lottie.showContextMenu();
-                        try_again.setVisibility(View.VISIBLE);
+                        lottie.playAnimation();
                     }
                 });
 

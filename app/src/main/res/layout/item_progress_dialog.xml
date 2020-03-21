@@ -10,8 +10,6 @@
         android:id="@+id/lottie"
         app:lottie_speed="1"
         android:tint="#000"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_100sdp"
         android:scaleType="centerInside"
@@ -22,14 +20,15 @@
     <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
         android:id="@+id/RoundCornerProgressBar"
         android:alpha="0.5"
-        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_25sdp"
         app:rcProgress="0"
         app:rcSecondaryProgress="0"
         app:rcMax="100"
         app:rcRadius="@dimen/_5sdp"
-        app:rcBackgroundPadding="@dimen/_5sdp"
+        app:rcBackgroundPadding="@dimen/_2sdp"
         app:rcReverse="false"
         app:rcProgressColor="#0eb3a0"
         app:rcSecondaryProgressColor="#14948d"
@@ -37,12 +36,12 @@
 
     <TextView
         android:id="@+id/try_again"
-        android:onClick="try_again"
-        android:visibility="gone"
         android:background="@drawable/row_background"
+        android:text="وضعیت دانلود"
         android:layout_gravity="center"
-        android:text="تلاش مجدد"
-        android:padding="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:textSize="@dimen/_8ssp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

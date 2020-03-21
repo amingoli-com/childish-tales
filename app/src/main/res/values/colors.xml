@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#eee</color>
     <color name="colorPrimaryDark">#333</color>
-    <color name="colorAccent">#eee</color>
+    <color name="colorAccent">#333</color>
     <!--On click-->
     <color name="onClick_activated">#333333</color>
     <color name="onClick_pressed">#FFFFFF</color>

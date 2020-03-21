@@ -3,18 +3,29 @@ package a.childish_tales.activtiy;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar;
+import com.bumptech.glide.Glide;
 import com.downloader.Error;
 import com.downloader.OnDownloadListener;
 import com.downloader.PRDownloader;
+
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -69,8 +80,7 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
                 download(sound_url,sound_name);
             }
         }
-
-        ViewUtil.setImageResource(this,bg_image,getIntent().getStringExtra("image"));
+        Glide.with(this).load(getIntent().getStringExtra("imageـurl")).into(bg_image);
         title.setText(getIntent().getStringExtra("title"));
         desc.setText(getIntent().getStringExtra("desc"));
         writer_narrator.setText(getIntent().getStringExtra("recorder"));
@@ -119,6 +129,10 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
 
                 break;
         }
+    }
+
+    public void try_again(View view) {
+        PRDownloader.resume(downloadId);
     }
     /**
      * private void */
@@ -196,32 +210,67 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
     }
 
     private void download(String url,String fileName){
+        final View customView = getLayoutInflater().inflate(R.layout.item_progress_dialog, null);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setView(customView);
+        builder.setCancelable(false);
+
+        RoundCornerProgressBar cornerProgressBar = customView.findViewById(R.id.RoundCornerProgressBar);
+        LottieAnimationView lottie = customView.findViewById(R.id.lottie);
+        TextView try_again = customView.findViewById(R.id.try_again);
+
+        AlertDialog alertdialog = builder.create();
+        alertdialog.setButton(AlertDialog.BUTTON_POSITIVE, "لغو", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                PRDownloader.cancelAll();
+                finish();
+            }
+        });
+        alertdialog.show();
+
         downloadId =
                 PRDownloader.download(url,FileUtil.getFileAudioDirectory(this), fileName)
                 .build()
                 .setOnStartOrResumeListener(() -> {
+                    cornerProgressBar.animate().setDuration(500).alpha(1);
+                    try_again.setVisibility(View.GONE);
                     Log.d(TAG, "setOnStartOrResumeListener: ");
                 })
                 .setOnPauseListener(() -> {
+                    try_again.setVisibility(View.VISIBLE);
                     Log.d(TAG, "setOnPauseListener: ");
                 })
                 .setOnCancelListener(() -> {
                     Log.d(TAG, "setOnCancelListener: ");
+                    lottie.setAnimation("error.json");
+                    lottie.showContextMenu();
+                    try_again.setVisibility(View.VISIBLE);
                 })
                 .setOnProgressListener(progress -> {
+                    cornerProgressBar.setMax((int) progress.totalBytes);
+                    cornerProgressBar.setProgress((int) progress.currentBytes);
                     Log.d(TAG, "setOnProgressListener: "+progress);
                 })
                 .start(new OnDownloadListener() {
                     @Override
                     public void onDownloadComplete() {
+                        alertdialog.dismiss();
                         Log.d(TAG, "onDownloadComplete: ");
                     }
 
                     @Override
                     public void onError(Error error) {
                         Log.d(TAG, "onError: "+error);
+                        PRDownloader.pause(downloadId);
+                        lottie.setAnimation("error.json");
+                        lottie.showContextMenu();
+                        try_again.setVisibility(View.VISIBLE);
                     }
                 });
+
+
+
     }
 
     /**

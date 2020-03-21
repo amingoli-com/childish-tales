@@ -77,4 +77,6 @@ dependencies {
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
 //    DownloadManager
     implementation 'com.mindorks.android:prdownloader:0.6.0'
+//    Progress Download
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
 }

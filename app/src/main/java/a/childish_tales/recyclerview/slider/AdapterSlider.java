@@ -12,11 +12,13 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.util.Util;
 
 import java.util.ArrayList;
 
 import a.childish_tales.activtiy.InfoStoryActivity;
 import a.childish_tales.R;
+import a.childish_tales.util.view.ColorUtil;
 import a.childish_tales.util.view.ViewUtil;
 
 public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder>{
@@ -52,6 +54,8 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
     holder.writer_narrator.setText(item.getRecorder());
     holder.time.setText(item.getTime());
 
+    ColorUtil.setGradient(holder.box_detail,"#00000000","#333333");
+
     holder.view.setOnClickListener(view -> {
       Intent intent = new Intent(context, InfoStoryActivity.class);
       intent.putExtra("id",item.getId());
@@ -76,7 +80,7 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
 
   // stores and recycles views as they are scrolled off screen
   public class ViewHolder extends RecyclerView.ViewHolder{
-      View view;
+      View view,box_detail;
       ImageView imageView;
       TextView title,star,desc,text,writer_narrator,time;
     ViewHolder(View itemView) {
@@ -87,6 +91,7 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
       time = itemView.findViewById(R.id.time);
       desc = itemView.findViewById(R.id.desc);
       writer_narrator = itemView.findViewById(R.id.writer_narrator);
+      box_detail = itemView.findViewById(R.id.box_detail);
     }
   }
   boolean urlIsTrue(String url){

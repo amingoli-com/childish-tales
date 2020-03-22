@@ -1,83 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layoutDirection="ltr"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <androidx.cardview.widget.CardView
-        android:layout_margin="@dimen/_7sdp"
-        app:cardCornerRadius="@dimen/_15sdp"
+
+    <LinearLayout
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:paddingStart="@dimen/_2sdp"
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:progressTint="#e74d88"
+            android:thumbTint="#e74d88"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:paddingStart="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp"
-            android:orientation="horizontal"
-            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <TextView
+                android:text=""
+                android:id="@+id/time_player_now"
+                android:layout_alignParentStart="true"
+                android:textColor="#333"
+                android:textSize="@dimen/_7ssp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text=""
+                android:id="@+id/time_music_player"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_alignParentEnd="true"
+                android:textColor="#333"
+                android:textSize="@dimen/_7ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:text="سلامشسی"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="#333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/desc"
+        android:text="سلامشسی"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="#e75c94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#ecf3ff"
+            app:cardCornerRadius="@dimen/_25sdp"
+            style="@style/player_cardview">
+            <ImageView
+                android:src="@drawable/ic_back"
+                style="@style/player_image_btn"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#ecf3ff"
+            app:cardCornerRadius="@dimen/_25sdp"
+            style="@style/player_cardview">
             <ImageView
                 android:id="@+id/btn_play"
                 android:tag="play"
-                android:src="@drawable/ic_play"
-                android:tint="#000000"
-                android:alpha="0.7"
                 android:onClick="play_sound"
-                android:layout_margin="@dimen/_5sdp"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_40sdp"/>
+                android:src="@drawable/ic_play"
+                style="@style/player_image_btn"/>
+        </androidx.cardview.widget.CardView>
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#ecf3ff"
+            app:cardCornerRadius="@dimen/_25sdp"
+            style="@style/player_cardview">
+            <ImageView
+                android:src="@drawable/ic_next"
+                style="@style/player_image_btn"/>
+        </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/writer_narrator"
-                    android:textSize="@dimen/_7ssp"
-                    android:textAlignment="center"
-                    android:textColor="#333"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+    </LinearLayout>
 
-                <SeekBar
-                    android:id="@+id/seekbar"
-                    android:progressTint="#333"
-                    android:thumbTint="#333"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-                <RelativeLayout
-                    android:paddingStart="@dimen/_10sdp"
-                    android:paddingEnd="@dimen/_10sdp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/time_player_now"
-                        android:layout_alignParentStart="true"
-                        android:textColor="#333"
-                        android:textSize="@dimen/_7ssp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:id="@+id/time_music_player"
-                        android:layout_alignParentEnd="true"
-                        android:textColor="#333"
-                        android:textSize="@dimen/_7ssp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-
-
-</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/your_dialog_root_element"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:onClick="intent"
+        android:tag="close"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/_6sdp"
+        android:background="@drawable/row_background"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"/>
+
+    <TextView
+        android:id="@+id/donwloading"
+        android:text="@string/downloading"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#333"
+        android:textSize="@dimen/_10ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:id="@+id/box"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/donwloading"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/darsad"
+            android:text="0%"
+            android:alpha="0.3"
+            android:textColor="#333"
+            android:textSize="@dimen/_10ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/total_download"
+            android:alpha="0"
+            android:text=""
+            android:paddingStart="@dimen/_7sdp"
+            android:paddingEnd="@dimen/_7sdp"
+            android:textColor="#99333333"
+            android:textSize="@dimen/_7ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+<!--    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        app:lottie_speed="1"
+        android:tint="#000"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:scaleType="centerInside"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="progress.json"
+        app:lottie_loop="true" />-->
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/RoundCornerProgressBar"
+        android:layout_below="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:rcProgress="0"
+        app:rcSecondaryProgress="0"
+        app:rcMax="100"
+        app:rcRadius="@dimen/_3sdp"
+        app:rcBackgroundPadding="@dimen/_1sdp"
+        app:rcReverse="true"
+        app:rcProgressColor="#2262f2"
+        app:rcSecondaryProgressColor="#2262f2"
+        app:rcBackgroundColor="#33E9EAEC" />
+
+    <Button
+        android:id="@+id/try_again"
+        android:visibility="gone"
+        android:layout_below="@+id/RoundCornerProgressBar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

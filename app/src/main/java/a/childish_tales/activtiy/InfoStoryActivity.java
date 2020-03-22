@@ -1,39 +1,32 @@
 package a.childish_tales.activtiy;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.airbnb.lottie.LottieAnimationView;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar;
 import com.bumptech.glide.Glide;
 import com.downloader.Error;
 import com.downloader.OnDownloadListener;
 import com.downloader.PRDownloader;
-
-import org.json.JSONObject;
+import com.downloader.PRDownloaderConfig;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import a.childish_tales.R;
-import a.childish_tales.util.view.ColorUtil;
 import a.childish_tales.util.file.FileUtil;
-import a.childish_tales.util.view.ViewUtil;
 
 public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener, SeekBar.OnSeekBarChangeListener {
     private String TAG = "amingoli78-InfoStoryActivity";
@@ -42,7 +35,7 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
     String sound_url = null;
     MediaPlayer mp;
     ImageView bg_image,btn_play;
-    TextView title,desc,writer_narrator,
+    TextView title,desc,
             time_player_now,time_music_player;
     View layout_play_sound;
     SeekBar seekBar;
@@ -68,7 +61,13 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_story);
         idFinder();
-        ColorUtil.setGradient(title,"#00000000","#333333");
+
+        // Setting timeout globally for the download network requests:
+        PRDownloaderConfig config = PRDownloaderConfig.newBuilder()
+                .setReadTimeout(30_000)
+                .setConnectTimeout(30_000)
+                .build();
+        PRDownloader.initialize(getApplicationContext(), config);
 
         sound_name = getIntent().getStringExtra("sound_name");
         sound_url = getIntent().getStringExtra("sound_url");
@@ -83,9 +82,8 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         Glide.with(this).load(getIntent().getStringExtra("imageـurl")).into(bg_image);
         title.setText(getIntent().getStringExtra("title"));
         desc.setText(getIntent().getStringExtra("desc"));
-        writer_narrator.setText(getIntent().getStringExtra("recorder"));
         seekBar.setOnSeekBarChangeListener(this);
-        time_music_player.setText(getIntent().getStringExtra("time"));
+//        time_music_player.setText(getIntent().getStringExtra("time"));
     }
 
     @Override
@@ -125,8 +123,9 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
 
     public void intent(View view) {
         switch (view.getTag().toString()){
-            case "":
-
+            case "close":
+                PRDownloader.cancelAll();
+                finish();
                 break;
         }
     }
@@ -191,15 +190,14 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
 
     private void idFinder(){
         layout_play_sound = findViewById(R.id.layout_play_sound);
-        writer_narrator = layout_play_sound.findViewById(R.id.writer_narrator);
         seekBar = layout_play_sound.findViewById(R.id.seekbar);
         time_player_now = layout_play_sound.findViewById(R.id.time_player_now);
         time_music_player = layout_play_sound.findViewById(R.id.time_music_player);
         btn_play = layout_play_sound.findViewById(R.id.btn_play);
+        title = layout_play_sound.findViewById(R.id.title);
+        desc = layout_play_sound.findViewById(R.id.desc);
 
         bg_image = findViewById(R.id.background_image);
-        title = findViewById(R.id.title);
-        desc = findViewById(R.id.desc);
     }
 
     private Boolean audioExists(String fileName){
@@ -207,42 +205,39 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
     }
 
     private void download(String url,String fileName){
-        final View customView = getLayoutInflater().inflate(R.layout.item_progress_dialog, null);
-
+        final View customView = getLayoutInflater().inflate(R.layout.item_progress_downloading, null);
         RoundCornerProgressBar cornerProgressBar = customView.findViewById(R.id.RoundCornerProgressBar);
-        LottieAnimationView lottie = customView.findViewById(R.id.lottie);
-        TextView try_again = customView.findViewById(R.id.try_again);
-
+        TextView total_download = customView.findViewById(R.id.total_download);
+        TextView darsad = customView.findViewById(R.id.darsad);
+        TextView donwloading = customView.findViewById(R.id.donwloading);
+        donwloading.setText(getString(R.string.downloading));
+        donwloading.setTextColor(Color.parseColor("#333333"));
+        Button try_again = customView.findViewById(R.id.try_again);
         AlertDialog alertdialog = new AlertDialog.Builder(this).create();
         alertdialog.setView(customView);
         alertdialog.setCancelable(false);
-        alertdialog.setButton(AlertDialog.BUTTON_POSITIVE, getString(R.string.exit), (dialogInterface, i) -> {
-            PRDownloader.cancelAll();
-            finish();
-        });
         alertdialog.show();
 
         downloadId =
                 PRDownloader.download(url,FileUtil.getFileAudioDirectory(this), fileName)
                 .build()
                 .setOnStartOrResumeListener(() -> {
-                    try_again.setText("درحال دریافت");
-                    cornerProgressBar.animate().setDuration(500).alpha(1);
                     Log.d(TAG, "setOnStartOrResumeListener: ");
                 })
                 .setOnPauseListener(() -> {
-                    try_again.setText("دانلود متوقف شد");
                     Log.d(TAG, "setOnPauseListener: ");
                 })
                 .setOnCancelListener(() -> {
-                    lottie.setAnimation("error.json");
                 })
                 .setOnProgressListener(progress -> {
-
-                    String kb = String.valueOf(progress.currentBytes/1024/512);
-                    String mb = String.valueOf(progress.currentBytes/1024/1024);
-                    try_again.setText(mb+"."+kb+"MP");
-
+                    int percent = (int) ((progress.currentBytes * 100) / progress.totalBytes);
+                    int total_MB = (int) (progress.totalBytes/1024/1024);
+                    darsad.setText(percent+"%");
+                    total_download.setText("از "+total_MB+"مگابایت");
+                    if (total_download.getAlpha()==0){
+                        total_download.animate().alpha(1).setDuration(1000);
+                        darsad.animate().alpha(1).setDuration(1000);
+                    }
                     cornerProgressBar.setMax((int) progress.totalBytes);
                     cornerProgressBar.setProgress((int) progress.currentBytes);
                     Log.d(TAG, "setOnProgressListener: "+progress);
@@ -250,24 +245,72 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
                 .start(new OnDownloadListener() {
                     @Override
                     public void onDownloadComplete() {
-                        try_again.setText("دانلود تمام شد");
                         alertdialog.dismiss();
                         Log.d(TAG, "onDownloadComplete: ");
                     }
 
                     @Override
                     public void onError(Error error) {
-                        try_again.setText("دانلود ارور داد");
+                        donwloading.setText(getString(R.string.warn_download));
+                        donwloading.setTextColor(Color.RED);
+                        try_again.setVisibility(View.VISIBLE);
+                        try_again.setOnClickListener(view ->
+                                download(url,fileName,alertdialog,darsad,total_download,
+                                donwloading,try_again,cornerProgressBar));
                         Log.d(TAG, "onError: "+error);
-                        lottie.setAnimation("error.json");
-                        lottie.playAnimation();
                     }
                 });
-
-
-
     }
 
+    private void download(String url,String fileName,AlertDialog alertdialog,TextView darsad,
+                          TextView total_download,TextView donwloading,Button try_again,
+                          RoundCornerProgressBar cornerProgressBar){
+        donwloading.setText(getString(R.string.downloading));
+        donwloading.setTextColor(Color.parseColor("#333333"));
+        try_again.setVisibility(View.GONE);
+        downloadId =
+                PRDownloader.download(url,FileUtil.getFileAudioDirectory(this), fileName)
+                        .build()
+                        .setOnStartOrResumeListener(() -> {
+                            Log.d(TAG, "setOnStartOrResumeListener: ");
+                        })
+                        .setOnPauseListener(() -> {
+                            Log.d(TAG, "setOnPauseListener: ");
+                        })
+                        .setOnCancelListener(() -> {
+                        })
+                        .setOnProgressListener(progress -> {
+                            int percent = (int) ((progress.currentBytes * 100) / progress.totalBytes);
+                            int total_MB = (int) (progress.totalBytes/1024/1024);
+                            darsad.setText(percent+"%");
+                            total_download.setText("از "+total_MB+"مگابایت");
+                            if (total_download.getAlpha()==0){
+                                total_download.animate().alpha(1).setDuration(1000);
+                                darsad.animate().alpha(1).setDuration(1000);
+                            }
+                            cornerProgressBar.setMax((int) progress.totalBytes);
+                            cornerProgressBar.setProgress((int) progress.currentBytes);
+                            Log.d(TAG, "setOnProgressListener: "+progress);
+                        })
+                        .start(new OnDownloadListener() {
+                            @Override
+                            public void onDownloadComplete() {
+                                alertdialog.dismiss();
+                                Log.d(TAG, "onDownloadComplete: ");
+                            }
+
+                            @Override
+                            public void onError(Error error) {
+                                donwloading.setText(getString(R.string.warn_download));
+                                donwloading.setTextColor(Color.RED);
+                                try_again.setVisibility(View.VISIBLE);
+                                try_again.setOnClickListener(view ->
+                                        download(url,fileName,alertdialog,darsad,total_download,
+                                        donwloading,try_again,cornerProgressBar));
+                                Log.d(TAG, "onError: "+error);
+                            }
+                        });
+    }
     /**
      *  Listener */
     /* Media Player */

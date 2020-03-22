@@ -34,4 +34,17 @@
         <item name="android:layout_height">@dimen/_30sdp</item>
     </style>
 
+
+    <style name="player_cardview">
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+        <item name="android:layout_width">@dimen/_48sdp</item>
+        <item name="android:layout_height">@dimen/_48sdp</item>
+    </style>
+
+    <style name="player_image_btn">
+        <item name="android:tint">#e74d88</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
 </resources>

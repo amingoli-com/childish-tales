@@ -2,4 +2,7 @@
     <string name="app_name">قصه‌های کودکانه</string>
     <string name="sec_zero">00:00</string>
     <string name="exit">لغو</string>
+    <string name="downloading">درحال دریافت فایل صوتی داستان</string>
+    <string name="warn_download">دریافت فایل با شکست مواجه شد!</string>
+    <string name="try_again">تلاش مجدد</string>
 </resources>

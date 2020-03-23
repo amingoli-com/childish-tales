@@ -1,0 +1,100 @@
+{
+  "one": {
+    "name": "فرستادگان خداوند",
+    "array": [
+      {
+        "id":         "4a",
+        "title":      "داستان آفرینش",
+        "desc":       "آفرینش حضرت آدم (علیه السلام) اولین انسان",
+        "text":       "خداوند به فرشتگان فرمود تا آدم را سجده کنند. آنها همگی بر آدم سجده کردند اما ابلیس سجده نکرد. زیرا او از جنس آتش بود و آدم از جنس خاک. ابلیس خود را از آدم برتر می دانست و فرمان خداوند برای سجده کردن آدم را قبول نکرد. پس خداوند او را از درگاهش راند. او تصمیم گرفت انسان ها را گول بزند تا کارهای ناشابست انجام دهند.\nخداوند آدم و حوّا را در بهشت دنیا سکونت داد، و فرمود: « شما آزادید از همه میوه\u200F ها و نعمت\u200F هاى بهشت بخورید، ولى تنها از آن درخت سیب نخورید» ولى شیطان به سراغ آن دو آمد و آنها را وسوسه کرد و گفت: «به خاطر این از آن درخت محروم شدید که زندگی جاودانه به شما می دهد و برای همیشه در بهشت می مانید ،قسم می خورم من خیرخواه شما هستم»\n\nهنگامى که آنها فریب شیطان را خوردند، و از میوه ی آن درخت چشیدند، از بهشت ارانده شدند و به زمین آمدند.\n\nحضرت آدم و حوا در زمین با هم ازدواج کردند و صاحب فرزند شدند. فرزندان آنان بزرگ شدند. هابیل و قابیل دو فرزند پسر آدم و حوا بودند.\nقابیل شغل کشاورزى را انتخاب کرد و هابیل به دامدارى مشغول شد.\nوقتى آنها به سن ازدواج رسیدند خداوند به آدم - علیه السلام - وحى کرد که برای آنها همسر انتخاب کند ...",
+        "image_url":  "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
+        "time":       "۱۴ دقیقه",
+        "recorder":   "",
+        "sound_name": "adam.mp3",
+        "sound_url": "https://github.com/amingoli78/childish-tales/raw/master/sound/adam.mp3"
+      },
+      {
+        "id":         "5a",
+        "title":      "هابیل برگزیده خداوند",
+        "desc":       "داستان حضرت هابیل (علیه السلام) و برادرش قابیل",
+        "text":       "هابیل صاحب گله بود و او را انسانی باتقوا و عابد معرفی کرده\u200Cاند و از همین رو هابیل به فرمان خدا جانشین و وصی حضرت آدم (ع)، نخستین پیامبر الهی شد.",
+        "image_url":  "https://github.com/amingoli78/childish-tales/raw/master/image/cain-and-able.jpg",
+        "time":       "۱۳ دقیقه",
+        "recorder":   "",
+        "sound_name": "habil-ghabil.mp3",
+        "sound_url": "https://github.com/amingoli78/childish-tales/raw/master/sound/habil-ghabil.mp3"
+      },
+      {
+        "id":         "1a",
+        "title":      "اول نوبت توست",
+        "desc":       "داستان‌های پیامبر مهربانی",
+        "text":       "",
+        "image_url":  "https://files.olgoirani.com/Files/Content/1397/12/60/1.jpg",
+        "time":       "۴ دقیقه",
+        "recorder":   "شیده معاونه",
+        "sound_name": "aval_nobat_tost.mp3",
+        "sound_url": "https://github.com/amingoli78/childish-tales/raw/master/sound/aval_nobat_tost.mp3"
+      },
+      {
+        "id":         "2a",
+        "title":      "حرفی از افطار نزد",
+        "desc":       "داستان‌های پیامبر مهربانی",
+        "text":       "",
+        "image_url":  "https://lh4.googleusercontent.com/proxy/ekOMPR7YBGYsOGnkXhMnlAqxRqHrvYdxp_O9ImjNIckvKvGM5-xcSPUzlNXqdd_YQUZgk6EaLZDKj3YrvaZc11gv-MYddEQAJW2eU0aAfTKa_FJ48uw",
+        "time":       "۲ دقیقه",
+        "recorder":   "شیده معاونه",
+        "sound_name": "harfi_az_eftar_nazad.mp3",
+        "sound_url": "https://github.com/amingoli78/childish-tales/raw/master/sound/harfi_az_eftar_nazad.mp3"
+      },
+      {
+        "id":         "3a",
+        "title":      "با سنگ نزن",
+        "desc":       "داستان‌های پیامبر مهربانی",
+        "text":       "",
+        "image_url":  "https://www.shahanifood.com/wp-content/uploads/2018/04/V8A6041-1030x687.jpg",
+        "time":       "۳ دقیقه",
+        "recorder":   "شیده معاونه",
+        "sound_name": "ba_sang_nazan.mp3",
+        "sound_url": "https://github.com/amingoli78/childish-tales/raw/master/sound/ba_sang_nazan.mp3"
+      }
+    ]
+  },
+  "two": {
+    "name": "شما قصه بگو",
+    "array": [
+      {
+        "id":         "1a",
+        "title":      "اولین پیامبر",
+        "desc":       "در دنیا جایی خوب و شاداب وجود داشت كه به آن بهشت دنیا مى\u200Fگفتند. خداوند آدم - علیه السلام - را در همانجا آفرید و روح انسانى را در او دمید، و به فرشتگان فرمان داد تا او را سجده كنند.",
+        "text":       "",
+        "image_url":  "https://files.olgoirani.com/Files/Content/1397/12/60/1.jpg",
+        "time":       "۴ دقیقه",
+        "recorder":   "شیده معاونه",
+        "sound_name": "aval_nobat_tost.mp3",
+        "sound_url":  null
+      },
+      {
+        "id":         "2a",
+        "title":      "حرفی از افطار نزد",
+        "desc":       "داستان‌های پیامبر مهربانی",
+        "text":       "",
+        "image_url":  "https://lh4.googleusercontent.com/proxy/ekOMPR7YBGYsOGnkXhMnlAqxRqHrvYdxp_O9ImjNIckvKvGM5-xcSPUzlNXqdd_YQUZgk6EaLZDKj3YrvaZc11gv-MYddEQAJW2eU0aAfTKa_FJ48uw",
+        "time":       "۲ دقیقه",
+        "recorder":   "شیده معاونه",
+        "sound_name": "harfi_az_eftar_nazad.mp3",
+        "sound_url":  null
+      },
+      {
+        "id":         "3a",
+        "title":      "با سنگ نزن",
+        "desc":       "داستان‌های پیامبر مهربانی",
+        "text":       "",
+        "image_url":  "https://www.shahanifood.com/wp-content/uploads/2018/04/V8A6041-1030x687.jpg",
+        "time":       "۳ دقیقه",
+        "recorder":   "شیده معاونه",
+        "sound_name": "ba_sang_nazan.mp3",
+        "sound_url":  null
+      }
+    ]
+  }
+}

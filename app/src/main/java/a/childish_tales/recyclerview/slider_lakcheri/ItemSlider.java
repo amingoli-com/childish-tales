@@ -1,4 +1,4 @@
-package a.childish_tales.recyclerview.slider;
+package a.childish_tales.recyclerview.slider_lakcheri;
 
 public class ItemSlider {
     String id,title,desc,text,imageـurl,time,recorder,sound_name,sound_url;

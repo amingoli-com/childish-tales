@@ -1,12 +1,10 @@
 package a.childish_tales.recyclerview.main;
 
 import android.content.Context;
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,7 +13,7 @@ import com.dingmouren.layoutmanagergroup.skidright.SkidRightLayoutManager;
 import java.util.List;
 
 import a.childish_tales.R;
-import a.childish_tales.recyclerview.slider.AdapterSlider;
+import a.childish_tales.recyclerview.slider_lakcheri.AdapterSlider;
 
 public class AdapterMain extends RecyclerView.Adapter<AdapterMain.ViewHolder>{
 

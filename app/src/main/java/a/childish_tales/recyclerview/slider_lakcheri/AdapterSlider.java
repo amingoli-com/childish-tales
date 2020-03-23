@@ -1,4 +1,4 @@
-package a.childish_tales.recyclerview.slider;
+package a.childish_tales.recyclerview.slider_lakcheri;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,14 +12,12 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.util.Util;
 
 import java.util.ArrayList;
 
 import a.childish_tales.activtiy.InfoStoryActivity;
 import a.childish_tales.R;
 import a.childish_tales.util.view.ColorUtil;
-import a.childish_tales.util.view.ViewUtil;
 
 public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder>{
 

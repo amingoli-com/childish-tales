@@ -15,7 +15,7 @@ import java.util.List;
 import a.childish_tales.R;
 import a.childish_tales.recyclerview.main.AdapterMain;
 import a.childish_tales.recyclerview.main.ItemMain;
-import a.childish_tales.recyclerview.slider.ItemSlider;
+import a.childish_tales.recyclerview.slider_lakcheri.ItemSlider;
 import a.childish_tales.util.file.FileUtil;
 
 public class MainActivity extends AppCompatActivity {

@@ -2,7 +2,7 @@ package a.childish_tales.recyclerview.main;
 
 import java.util.ArrayList;
 
-import a.childish_tales.recyclerview.slider.ItemSlider;
+import a.childish_tales.recyclerview.slider_lakcheri.ItemSlider;
 
 public class ItemMain {
     String title;

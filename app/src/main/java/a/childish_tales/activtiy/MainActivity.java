@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         MultiItem item = new MultiItem();
         item.setType(MultiItem.IMAGE);
         item.setImage(image);
-        item.setText(title);
+        item.setTitle(title);
         return item;
     }
     MultiItem IMAGE(String image){

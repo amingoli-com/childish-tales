@@ -54,20 +54,31 @@
 
 
 
-    <TextView
-        android:id="@+id/title"
-        android:text="سلامشسی"
-        android:textSize="@dimen/_14ssp"
-        android:textColor="#333"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/desc"
-        android:text="سلامشسی"
-        android:textSize="@dimen/_10ssp"
-        android:textColor="#e75c94"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:text="سلامشسی"
+            android:maxLines="1"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/desc"
+            android:text="سلامشسی"
+            android:textSize="@dimen/_10ssp"
+            android:maxLines="2"
+            android:textColor="#e75c94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
 
     <LinearLayout
         android:gravity="center"

@@ -12,6 +12,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
+        android:layout_centerVertical="true"
         android:layout_margin="@dimen/_5sdp"
         app:cardCornerRadius="@dimen/_10sdp"
         android:layout_width="@dimen/_60sdp"
@@ -30,6 +31,7 @@
 
     <LinearLayout
         android:layout_toEndOf="@+id/cardview"
+        android:layout_centerVertical="true"
         android:layout_marginTop="@dimen/_7sdp"
         android:layout_toStartOf="@+id/btn_play"
         android:orientation="vertical"

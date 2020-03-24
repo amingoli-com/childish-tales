@@ -46,9 +46,9 @@ public class AdapterSliderVertical extends RecyclerView.Adapter<AdapterSliderVer
     MultiItem item = itemIntroList.get(position);
 //    ViewUtil.setImageResource(context,holder.imageView,item.getImage());
 
-    Glide.with(context).load(item.getImage()).into(holder.imageView);
-    holder.title.setText(item.getTitle());
-    holder.desc.setText(item.getDesc());
+    Glide.with(context).load(item.getStory_image()).into(holder.imageView);
+    holder.title.setText(item.getStory_title());
+    holder.desc.setText(item.getStory_desc());
 
     holder.view.setOnClickListener(view -> {
       Intent intent = new Intent(context, InfoStoryActivity.class);

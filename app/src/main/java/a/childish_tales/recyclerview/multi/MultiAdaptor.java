@@ -209,7 +209,7 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     AdapterSliderHorezontal adapter_H;
 
                     recyclerView_H = ((holder_SliderHorizontal)holder).recyclerView;
-                    adapter_H = null;/*new AdapterSliderLakcheri(mContext,object.getItemSliderLakcheri());*/
+                    adapter_H = new AdapterSliderHorezontal(mContext,object.getArrayList());
 
                     recyclerView_H.setAdapter(adapter_H);
                     RecyclerView.LayoutManager layout_H= new LinearLayoutManager(mContext,LinearLayoutManager.HORIZONTAL,false);
@@ -221,7 +221,7 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     AdapterSliderVertical adapter_V;
 
                     recyclerView_V = ((holder_SliderVertical)holder).recyclerView;
-                    adapter_V = null;/*new AdapterSliderLakcheri(mContext,object.getItemSliderLakcheri());*/
+                    adapter_V = new AdapterSliderVertical(mContext,object.getArrayList());
 
                     recyclerView_V.setAdapter(adapter_V);
                     RecyclerView.LayoutManager layout_V= new LinearLayoutManager(mContext,LinearLayoutManager.VERTICAL,false);

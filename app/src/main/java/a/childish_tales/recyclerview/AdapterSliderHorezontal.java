@@ -48,8 +48,8 @@ public class AdapterSliderHorezontal extends RecyclerView.Adapter<AdapterSliderH
     MultiItem item = itemIntroList.get(position);
 //    ViewUtil.setImageResource(context,holder.imageView,item.getImage());
 
-    Glide.with(context).load(item.getImage()).into(holder.imageView);
-    holder.title.setText(item.getTitle());
+    Glide.with(context).load(item.getStory_image()).into(holder.imageView);
+    holder.title.setText(item.getStory_title());
 
     holder.view.setOnClickListener(view -> {
       Intent intent = new Intent(context, InfoStoryActivity.class);

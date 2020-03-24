@@ -188,7 +188,7 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
                     break;
                 case MultiItem.SLIDER_LAKCHERI:
-                    RecyclerView mRecyclerView;
+/*                    RecyclerView mRecyclerView;
                     AdapterSlider mAdapter;
                     SkidRightLayoutManager mSkidRightLayoutManager;
 
@@ -198,7 +198,7 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
                     mSkidRightLayoutManager = new SkidRightLayoutManager(1.3f, 0.9f);
 //                    RecyclerView.LayoutManager layoutManager= new LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false);
-                    mRecyclerView.setLayoutManager(mSkidRightLayoutManager);
+                    mRecyclerView.setLayoutManager(mSkidRightLayoutManager);*/
                     break;
                 case MultiItem.IMAGE:
 
@@ -212,8 +212,8 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 case MultiItem.TITLE:
                     TextView title = ((holder_Title)holder).textView;
                     ImageView icon = ((holder_Title)holder).icon;
-                    title.setText(object.getText_itemTitle());
-                    if (object.isShow_flash()){
+                    title.setText(object.getText_TITLE());
+                    if (object.isShow_flash_TITLE()){
                         icon.setVisibility(View.VISIBLE);
                     }else {
                         icon.setVisibility(View.INVISIBLE);

@@ -47,19 +47,19 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
     MultiItem item = itemIntroList.get(position);
 //    ViewUtil.setImageResource(context,holder.imageView,item.getImage());
 
-    Glide.with(context).load(item.getImage_story()).into(holder.imageView);
-    holder.title.setText(item.getTitle());
-    holder.desc.setText(item.getDesc_story());
+    Glide.with(context).load(item.getImage_LAKCHERI()).into(holder.imageView);
+    holder.title.setText(item.getTitle_LAKCHERI());
+    holder.desc.setText(item.getDesc_LAKCHERI());
 
     ColorUtil.setGradient(holder.box_detail,"#00000000","#333333");
 
     holder.view.setOnClickListener(view -> {
       Intent intent = new Intent(context, InfoStoryActivity.class);
-      intent.putExtra("title",item.getTitle());
-      intent.putExtra("desc",item.getDesc_story());
-      intent.putExtra("imageـurl",item.getImage_story());
-      intent.putExtra("sound_name",item.getSound_name_story());
-      intent.putExtra("sound_url",item.getSound_story());
+      intent.putExtra("title",item.getTitle_LAKCHERI());
+      intent.putExtra("desc",item.getDesc_LAKCHERI());
+      intent.putExtra("imageـurl",item.getImage_LAKCHERI());
+      intent.putExtra("sound_name",item.getSound_name_LAKCHERI());
+      intent.putExtra("sound_url",item.getSound_LAKCHERI());
       context.startActivity(intent);
     });
   }

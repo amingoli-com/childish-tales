@@ -12,36 +12,36 @@ public class MultiItem {
     public static final int TITLE = 303;
 
     int type;
-    String textBox;
-    String image_1,text_1,image_2,text_2;
-    String title_story,desc_story,image_story,sound_name_story,sound_story;
+    String text_TEXTBOX;
+    String image_1_TWOICON, text_1_TWOICON, image_2_TWOICON, text_2_TWOICON;
+    String title_LAKCHERI, desc_LAKCHERI, image_LAKCHERI, sound_name_LAKCHERI, sound_LAKCHERI;
     ArrayList<MultiItem> itemSliderLakcheri;
 
-    String image,title;
-    String image_v,title_v,desc_v;
-    String text_itemTitle;
-    boolean show_flash = false;
+    String image_IMAGE_and_SHORIZONTAL,title_IMAGE_and_SHORIZONTAL;
+    String image_SVERTICAL,title_SVERTICAL,desc_SVERTICAL;
+    String text_TITLE;
+    boolean show_flash_TITLE = false;
 
-    public MultiItem(int type, String textBox) {
+    public MultiItem(int type, String text) {
         this.type = TEXT_BOX;
-        this.textBox = textBox;
+        this.text_TEXTBOX = text;
     }
 
     public MultiItem(int type, String image_1, String text_1, String image_2, String text_2) {
         this.type = TWO_ICON;
-        this.image_1 = image_1;
-        this.text_1 = text_1;
-        this.image_2 = image_2;
-        this.text_2 = text_2;
+        this.image_1_TWOICON = image_1;
+        this.text_1_TWOICON = text_1;
+        this.image_2_TWOICON = image_2;
+        this.text_2_TWOICON = text_2;
     }
 
     public MultiItem(int type,String title_story, String desc_story, String image_story, String sound_name_story, String sound_story) {
         this.type = SLIDER_LAKCHERI;
-        this.title_story = title_story;
-        this.desc_story = desc_story;
-        this.image_story = image_story;
-        this.sound_name_story = sound_name_story;
-        this.sound_story = sound_story;
+        this.title_LAKCHERI = title_story;
+        this.desc_LAKCHERI = desc_story;
+        this.image_LAKCHERI = image_story;
+        this.sound_name_LAKCHERI = sound_name_story;
+        this.sound_LAKCHERI = sound_story;
     }
 
     public MultiItem(ArrayList<MultiItem> itemSliderLakcheri) {
@@ -52,165 +52,25 @@ public class MultiItem {
         this.type = IMAGE;
         if (type==SLIDER_HORIZONTAL)
             this.type = SLIDER_HORIZONTAL ;
-        this.image = image;
-        this.title = title;
+        this.image_IMAGE_and_SHORIZONTAL = image;
+        this.title_IMAGE_and_SHORIZONTAL = title;
     }
 
     public MultiItem(int type, String image_v, String title_v, String desc_v) {
         this.type = SLIDER_VERTICAL;
-        this.image_v = image_v;
-        this.title_v = title_v;
-        this.desc_v = desc_v;
+        this.image_SVERTICAL = image_v;
+        this.title_SVERTICAL = title_v;
+        this.desc_SVERTICAL = desc_v;
     }
 
     public MultiItem(int type, String text_itemTitle, boolean show_flash) {
         this.type = TITLE;
-        this.text_itemTitle = text_itemTitle;
-        this.show_flash = show_flash;
+        this.text_TITLE = text_itemTitle;
+        this.show_flash_TITLE = show_flash;
     }
 
     public static int getTextBox() {
         return TEXT_BOX;
-    }
-
-    public void setTextBox(String textBox) {
-        this.textBox = textBox;
-    }
-
-    public String getImage_1() {
-        return image_1;
-    }
-
-    public void setImage_1(String image_1) {
-        this.image_1 = image_1;
-    }
-
-    public String getText_1() {
-        return text_1;
-    }
-
-    public void setText_1(String text_1) {
-        this.text_1 = text_1;
-    }
-
-    public String getImage_2() {
-        return image_2;
-    }
-
-    public void setImage_2(String image_2) {
-        this.image_2 = image_2;
-    }
-
-    public String getText_2() {
-        return text_2;
-    }
-
-    public void setText_2(String text_2) {
-        this.text_2 = text_2;
-    }
-
-    public String getTitle_story() {
-        return title_story;
-    }
-
-    public void setTitle_story(String title_story) {
-        this.title_story = title_story;
-    }
-
-    public String getDesc_story() {
-        return desc_story;
-    }
-
-    public void setDesc_story(String desc_story) {
-        this.desc_story = desc_story;
-    }
-
-    public String getImage_story() {
-        return image_story;
-    }
-
-    public void setImage_story(String image_story) {
-        this.image_story = image_story;
-    }
-
-    public String getSound_name_story() {
-        return sound_name_story;
-    }
-
-    public void setSound_name_story(String sound_name_story) {
-        this.sound_name_story = sound_name_story;
-    }
-
-    public String getSound_story() {
-        return sound_story;
-    }
-
-    public void setSound_story(String sound_story) {
-        this.sound_story = sound_story;
-    }
-
-    public ArrayList<MultiItem> getItemSliderLakcheri() {
-        return itemSliderLakcheri;
-    }
-
-    public void setItemSliderLakcheri(ArrayList<MultiItem> itemSliderLakcheri) {
-        this.itemSliderLakcheri = itemSliderLakcheri;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getImage_v() {
-        return image_v;
-    }
-
-    public void setImage_v(String image_v) {
-        this.image_v = image_v;
-    }
-
-    public String getTitle_v() {
-        return title_v;
-    }
-
-    public void setTitle_v(String title_v) {
-        this.title_v = title_v;
-    }
-
-    public String getDesc_v() {
-        return desc_v;
-    }
-
-    public void setDesc_v(String desc_v) {
-        this.desc_v = desc_v;
-    }
-
-    public String getText_itemTitle() {
-        return text_itemTitle;
-    }
-
-    public void setText_itemTitle(String text_itemTitle) {
-        this.text_itemTitle = text_itemTitle;
-    }
-
-    public boolean isShow_flash() {
-        return show_flash;
-    }
-
-    public void setShow_flash(boolean show_flash) {
-        this.show_flash = show_flash;
     }
 
     public static int getTwoIcon() {
@@ -243,5 +103,149 @@ public class MultiItem {
 
     public void setType(int type) {
         this.type = type;
+    }
+
+    public String getText_TEXTBOX() {
+        return text_TEXTBOX;
+    }
+
+    public void setText_TEXTBOX(String text_TEXTBOX) {
+        this.text_TEXTBOX = text_TEXTBOX;
+    }
+
+    public String getImage_1_TWOICON() {
+        return image_1_TWOICON;
+    }
+
+    public void setImage_1_TWOICON(String image_1_TWOICON) {
+        this.image_1_TWOICON = image_1_TWOICON;
+    }
+
+    public String getText_1_TWOICON() {
+        return text_1_TWOICON;
+    }
+
+    public void setText_1_TWOICON(String text_1_TWOICON) {
+        this.text_1_TWOICON = text_1_TWOICON;
+    }
+
+    public String getImage_2_TWOICON() {
+        return image_2_TWOICON;
+    }
+
+    public void setImage_2_TWOICON(String image_2_TWOICON) {
+        this.image_2_TWOICON = image_2_TWOICON;
+    }
+
+    public String getText_2_TWOICON() {
+        return text_2_TWOICON;
+    }
+
+    public void setText_2_TWOICON(String text_2_TWOICON) {
+        this.text_2_TWOICON = text_2_TWOICON;
+    }
+
+    public String getTitle_LAKCHERI() {
+        return title_LAKCHERI;
+    }
+
+    public void setTitle_LAKCHERI(String title_LAKCHERI) {
+        this.title_LAKCHERI = title_LAKCHERI;
+    }
+
+    public String getDesc_LAKCHERI() {
+        return desc_LAKCHERI;
+    }
+
+    public void setDesc_LAKCHERI(String desc_LAKCHERI) {
+        this.desc_LAKCHERI = desc_LAKCHERI;
+    }
+
+    public String getImage_LAKCHERI() {
+        return image_LAKCHERI;
+    }
+
+    public void setImage_LAKCHERI(String image_LAKCHERI) {
+        this.image_LAKCHERI = image_LAKCHERI;
+    }
+
+    public String getSound_name_LAKCHERI() {
+        return sound_name_LAKCHERI;
+    }
+
+    public void setSound_name_LAKCHERI(String sound_name_LAKCHERI) {
+        this.sound_name_LAKCHERI = sound_name_LAKCHERI;
+    }
+
+    public String getSound_LAKCHERI() {
+        return sound_LAKCHERI;
+    }
+
+    public void setSound_LAKCHERI(String sound_LAKCHERI) {
+        this.sound_LAKCHERI = sound_LAKCHERI;
+    }
+
+    public ArrayList<MultiItem> getItemSliderLakcheri() {
+        return itemSliderLakcheri;
+    }
+
+    public void setItemSliderLakcheri(ArrayList<MultiItem> itemSliderLakcheri) {
+        this.itemSliderLakcheri = itemSliderLakcheri;
+    }
+
+    public String getImage_IMAGE_and_SHORIZONTAL() {
+        return image_IMAGE_and_SHORIZONTAL;
+    }
+
+    public void setImage_IMAGE_and_SHORIZONTAL(String image_IMAGE_and_SHORIZONTAL) {
+        this.image_IMAGE_and_SHORIZONTAL = image_IMAGE_and_SHORIZONTAL;
+    }
+
+    public String getTitle_IMAGE_and_SHORIZONTAL() {
+        return title_IMAGE_and_SHORIZONTAL;
+    }
+
+    public void setTitle_IMAGE_and_SHORIZONTAL(String title_IMAGE_and_SHORIZONTAL) {
+        this.title_IMAGE_and_SHORIZONTAL = title_IMAGE_and_SHORIZONTAL;
+    }
+
+    public String getImage_SVERTICAL() {
+        return image_SVERTICAL;
+    }
+
+    public void setImage_SVERTICAL(String image_SVERTICAL) {
+        this.image_SVERTICAL = image_SVERTICAL;
+    }
+
+    public String getTitle_SVERTICAL() {
+        return title_SVERTICAL;
+    }
+
+    public void setTitle_SVERTICAL(String title_SVERTICAL) {
+        this.title_SVERTICAL = title_SVERTICAL;
+    }
+
+    public String getDesc_SVERTICAL() {
+        return desc_SVERTICAL;
+    }
+
+    public void setDesc_SVERTICAL(String desc_SVERTICAL) {
+        this.desc_SVERTICAL = desc_SVERTICAL;
+    }
+
+    public String getText_TITLE() {
+        return text_TITLE;
+    }
+
+    public void setText_TITLE(String text_TITLE) {
+        this.text_TITLE = text_TITLE;
+    }
+
+    public boolean isShow_flash_TITLE() {
+        return show_flash_TITLE;
+    }
+
+    public void setShow_flash_TITLE(boolean show_flash_TITLE) {
+        this.show_flash_TITLE = show_flash_TITLE;
     }
 }

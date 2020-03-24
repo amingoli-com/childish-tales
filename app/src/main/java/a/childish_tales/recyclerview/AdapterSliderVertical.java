@@ -64,8 +64,7 @@ public class AdapterSliderVertical extends RecyclerView.Adapter<AdapterSliderVer
   // total number of rows
   @Override
   public int getItemCount() {
-//    return itemIntroList.size();
-    return 3;
+    return itemIntroList.size();
   }
 
 

@@ -110,24 +110,21 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             case MultiItem.TEXT_BOX :
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_text_box, parent, false);
                 return new holder_TextBox(view);
-            case MultiItem.TWO_ICON :
-                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_two_icon, parent, false);
-                return new holder_TwoIcon(view);
-            case MultiItem.SLIDER_LAKCHERI :
-                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recylcerview, parent, false);
-                return new holder_SliderLackcheri(view);
             case MultiItem.IMAGE :
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_image, parent, false);
                 return new holder_Image(view);
+            case MultiItem.TITLE :
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_title, parent, false);
+                return new holder_Title(view);
+            case MultiItem.SLIDER_LAKCHERI :
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recylcerview, parent, false);
+                return new holder_SliderLackcheri(view);
             case MultiItem.SLIDER_HORIZONTAL :
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recylcerview, parent, false);
                 return new holder_SliderHorizontal(view);
             case MultiItem.SLIDER_VERTICAL :
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recylcerview, parent, false);
                 return new holder_SliderVertical(view);
-            case MultiItem.TITLE :
-                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_title, parent, false);
-                return new holder_Title(view);
         }
         return null;
     }
@@ -191,42 +188,28 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     break;
 
                 case MultiItem.SLIDER_LAKCHERI:
-                    RecyclerView mRecyclerView;
-                    AdapterSliderLakcheri mAdapter;
-                    SkidRightLayoutManager mSkidRightLayoutManager;
-
-                    mRecyclerView = ((holder_SliderLackcheri)holder).recyclerView;
-                    mAdapter = new AdapterSliderLakcheri(mContext,object.getArrayList());
+                    RecyclerView mRecyclerView = ((holder_SliderLackcheri)holder).recyclerView;
+                    AdapterSliderLakcheri mAdapter = new AdapterSliderLakcheri(mContext,object.getArrayList());
                     mRecyclerView.setAdapter(mAdapter);
-
-//                    mSkidRightLayoutManager = new SkidRightLayoutManager(1.3f, 0.9f);
-                  RecyclerView.LayoutManager layoutManager= new LinearLayoutManager(mContext,LinearLayoutManager.HORIZONTAL,false);
-                    mRecyclerView.setLayoutManager(layoutManager);
+                    RecyclerView.LayoutManager layou= new LinearLayoutManager(mContext,LinearLayoutManager.HORIZONTAL,false);
+                    SkidRightLayoutManager mSkidRightLayoutManager = new SkidRightLayoutManager(1.3f, 0.9f);
+                    mRecyclerView.setLayoutManager(layou);
                     break;
 
                 case MultiItem.SLIDER_HORIZONTAL:
-                    RecyclerView recyclerView_H;
-                    AdapterSliderHorezontal adapter_H;
-
-                    recyclerView_H = ((holder_SliderHorizontal)holder).recyclerView;
-                    adapter_H = new AdapterSliderHorezontal(mContext,object.getArrayList());
-
+                    RecyclerView recyclerView_H = ((holder_SliderHorizontal)holder).recyclerView;
+                    AdapterSliderHorezontal adapter_H = new AdapterSliderHorezontal(mContext,object.getArrayList());
                     recyclerView_H.setAdapter(adapter_H);
                     RecyclerView.LayoutManager layout_H= new LinearLayoutManager(mContext,LinearLayoutManager.HORIZONTAL,false);
                     recyclerView_H.setLayoutManager(layout_H);
-
                     break;
+
                 case MultiItem.SLIDER_VERTICAL:
-                    RecyclerView recyclerView_V;
-                    AdapterSliderVertical adapter_V;
-
-                    recyclerView_V = ((holder_SliderVertical)holder).recyclerView;
-                    adapter_V = new AdapterSliderVertical(mContext,object.getArrayList());
-
+                    RecyclerView recyclerView_V = ((holder_SliderVertical)holder).recyclerView;
+                    AdapterSliderVertical adapter_V = new AdapterSliderVertical(mContext,object.getArrayList());
                     recyclerView_V.setAdapter(adapter_V);
                     RecyclerView.LayoutManager layout_V= new LinearLayoutManager(mContext,LinearLayoutManager.VERTICAL,false);
                     recyclerView_V.setLayoutManager(layout_V);
-
                     break;
 
             }

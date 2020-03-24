@@ -45,14 +45,11 @@ public class AdapterSliderLakcheri extends RecyclerView.Adapter<AdapterSliderLak
   @Override
   public void onBindViewHolder(ViewHolder holder, final int position) {
     MultiItem item = itemIntroList.get(position);
-//    ViewUtil.setImageResource(context,holder.imageView,item.getImage());
 
     Glide.with(context).load(item.getStory_image()).into(holder.imageView);
     holder.title.setText(item.getStory_title());
     holder.desc.setText(item.getStory_desc());
-
     ColorUtil.setGradient(holder.box_detail,"#00000000","#333333");
-
     holder.view.setOnClickListener(view -> {
       Intent intent = new Intent(context, InfoStoryActivity.class);
       intent.putExtra("title",item.getStory_title());
@@ -75,15 +72,13 @@ public class AdapterSliderLakcheri extends RecyclerView.Adapter<AdapterSliderLak
   public class ViewHolder extends RecyclerView.ViewHolder{
       View view,box_detail;
       ImageView imageView;
-      TextView title,star,desc,text,writer_narrator,time;
+      TextView title,desc;
     ViewHolder(View itemView) {
       super(itemView);
       view = itemView;
       imageView = itemView.findViewById(R.id.image);
       title = itemView.findViewById(R.id.title);
-      time = itemView.findViewById(R.id.time);
       desc = itemView.findViewById(R.id.desc);
-      writer_narrator = itemView.findViewById(R.id.writer_narrator);
       box_detail = itemView.findViewById(R.id.box_detail);
     }
   }

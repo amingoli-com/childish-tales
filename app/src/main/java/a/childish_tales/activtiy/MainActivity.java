@@ -52,9 +52,12 @@ public class MainActivity extends AppCompatActivity {
         itemIntroList.add(TEXT_BOX(title));
         itemIntroList.add(IMAGE(image,title));
         itemIntroList.add(IMAGE(image));
-        itemIntroList.add(TITLE(title,true));
         itemIntroList.add(TITLE(title));
-        aVoid();
+        additem_lakcheri();
+        itemIntroList.add(TITLE(title));
+        additem_h();
+        itemIntroList.add(TITLE(title));
+        additem_v();
 
         layoutManager= new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         mRecyclerView.setLayoutManager(layoutManager);
@@ -111,8 +114,19 @@ public class MainActivity extends AppCompatActivity {
         return item;
     }
 
+    MultiItem SLIDER_HORIZONTAL(ArrayList<MultiItem> arrayList){
+        MultiItem item = new MultiItem();
+        item.setType(MultiItem.SLIDER_HORIZONTAL);
+        item.setArrayList(arrayList);
+        return item;
+    }
 
-
+    MultiItem SLIDER_VERTICAL(ArrayList<MultiItem> arrayList){
+        MultiItem item = new MultiItem();
+        item.setType(MultiItem.SLIDER_VERTICAL);
+        item.setArrayList(arrayList);
+        return item;
+    }
 
     MultiItem ADD_STORY_ITEM(String title,String desc,String image,String soundName,String sound){
         MultiItem item = new MultiItem();
@@ -125,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    void aVoid(){
+    void additem_lakcheri(){
         try {
             JSONObject jsonObject = new JSONObject(Objects.requireNonNull
                     (FileUtil.readAssets(this, "list_story.json")));
@@ -150,6 +164,68 @@ public class MainActivity extends AppCompatActivity {
                     itemTwos.add(ADD_STORY_ITEM(title,desc,image_url,sound_name,sound_url));
                 }
                 itemIntroList.add(SLIDER_LAKCHERI(itemTwos));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    void additem_h(){
+        try {
+            JSONObject jsonObject = new JSONObject(Objects.requireNonNull
+                    (FileUtil.readAssets(this, "list_story.json")));
+            Iterator iterator = jsonObject.keys();
+            while(iterator.hasNext()){
+                ArrayList<MultiItem> itemTwos = new ArrayList<>();
+                String key = (String)iterator.next();
+                JSONObject issue = jsonObject.getJSONObject(key);
+                //  get id from  issue
+                String name = issue.optString("name");
+                JSONArray array = issue.getJSONArray("array");
+
+                String sound_url = null;
+                for (int i = 0; i < array.length(); i++) {
+                    JSONObject object = array.getJSONObject(i);
+                    String title = object.getString("title");
+                    String desc = object.getString("desc");
+                    String image_url = object.getString("image_url");
+                    String sound_name = object.getString("sound_name");
+                    if (!object.isNull("sound_url"))
+                        sound_url = object.getString("sound_url");
+                    itemTwos.add(ADD_STORY_ITEM(title,desc,image_url,sound_name,sound_url));
+                }
+                itemIntroList.add(SLIDER_HORIZONTAL(itemTwos));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    void additem_v(){
+        try {
+            JSONObject jsonObject = new JSONObject(Objects.requireNonNull
+                    (FileUtil.readAssets(this, "list_story.json")));
+            Iterator iterator = jsonObject.keys();
+            while(iterator.hasNext()){
+                ArrayList<MultiItem> itemTwos = new ArrayList<>();
+                String key = (String)iterator.next();
+                JSONObject issue = jsonObject.getJSONObject(key);
+                //  get id from  issue
+                String name = issue.optString("name");
+                JSONArray array = issue.getJSONArray("array");
+
+                String sound_url = null;
+                for (int i = 0; i < array.length(); i++) {
+                    JSONObject object = array.getJSONObject(i);
+                    String title = object.getString("title");
+                    String desc = object.getString("desc");
+                    String image_url = object.getString("image_url");
+                    String sound_name = object.getString("sound_name");
+                    if (!object.isNull("sound_url"))
+                        sound_url = object.getString("sound_url");
+                    itemTwos.add(ADD_STORY_ITEM(title,desc,image_url,sound_name,sound_url));
+                }
+                itemIntroList.add(SLIDER_VERTICAL(itemTwos));
             }
         } catch (JSONException e) {
             e.printStackTrace();

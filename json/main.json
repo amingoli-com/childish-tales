@@ -72,28 +72,6 @@
         "recorder":   "شیده معاونه",
         "sound_name": "aval_nobat_tost.mp3",
         "sound_url":  null
-      },
-      {
-        "id":         "2a",
-        "title":      "حرفی از افطار نزد",
-        "desc":       "داستان‌های پیامبر مهربانی",
-        "text":       "",
-        "image_url":  "https://lh4.googleusercontent.com/proxy/ekOMPR7YBGYsOGnkXhMnlAqxRqHrvYdxp_O9ImjNIckvKvGM5-xcSPUzlNXqdd_YQUZgk6EaLZDKj3YrvaZc11gv-MYddEQAJW2eU0aAfTKa_FJ48uw",
-        "time":       "۲ دقیقه",
-        "recorder":   "شیده معاونه",
-        "sound_name": "harfi_az_eftar_nazad.mp3",
-        "sound_url":  null
-      },
-      {
-        "id":         "3a",
-        "title":      "با سنگ نزن",
-        "desc":       "داستان‌های پیامبر مهربانی",
-        "text":       "",
-        "image_url":  "https://www.shahanifood.com/wp-content/uploads/2018/04/V8A6041-1030x687.jpg",
-        "time":       "۳ دقیقه",
-        "recorder":   "شیده معاونه",
-        "sound_name": "ba_sang_nazan.mp3",
-        "sound_url":  null
       }
     ]
   }

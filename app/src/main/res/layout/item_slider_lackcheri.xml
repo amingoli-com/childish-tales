@@ -12,7 +12,7 @@
         android:layout_marginEnd="@dimen/_15sdp"
         app:cardCornerRadius="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="@dimen/_350sdp">
 
         <RelativeLayout
             android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package a.childish_tales.recyclerview.slider_lakcheri;
+package a.childish_tales.recyclerview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -20,14 +20,14 @@ import a.childish_tales.R;
 import a.childish_tales.recyclerview.multi.MultiItem;
 import a.childish_tales.util.view.ColorUtil;
 
-public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder>{
+public class AdapterSliderLakcheri extends RecyclerView.Adapter<AdapterSliderLakcheri.ViewHolder>{
 
   private ArrayList<MultiItem> itemIntroList;
   private LayoutInflater mInflater;
   private Context context;
 
   // data is passed into the constructor
-  public AdapterSlider(Context context, ArrayList<MultiItem> itemIntroList) {
+  public AdapterSliderLakcheri(Context context, ArrayList<MultiItem> itemIntroList) {
     this.context = context;
     this.mInflater = LayoutInflater.from(context);
     this.itemIntroList = itemIntroList;
@@ -47,19 +47,19 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
     MultiItem item = itemIntroList.get(position);
 //    ViewUtil.setImageResource(context,holder.imageView,item.getImage());
 
-    Glide.with(context).load(item.getImage_LAKCHERI()).into(holder.imageView);
-    holder.title.setText(item.getTitle_LAKCHERI());
-    holder.desc.setText(item.getDesc_LAKCHERI());
+    Glide.with(context).load(item.getStory_image()).into(holder.imageView);
+    holder.title.setText(item.getStory_title());
+    holder.desc.setText(item.getStory_desc());
 
     ColorUtil.setGradient(holder.box_detail,"#00000000","#333333");
 
     holder.view.setOnClickListener(view -> {
       Intent intent = new Intent(context, InfoStoryActivity.class);
-      intent.putExtra("title",item.getTitle_LAKCHERI());
-      intent.putExtra("desc",item.getDesc_LAKCHERI());
-      intent.putExtra("imageـurl",item.getImage_LAKCHERI());
-      intent.putExtra("sound_name",item.getSound_name_LAKCHERI());
-      intent.putExtra("sound_url",item.getSound_LAKCHERI());
+      intent.putExtra("title",item.getStory_title());
+      intent.putExtra("desc",item.getStory_desc());
+      intent.putExtra("imageـurl",item.getStory_image());
+      intent.putExtra("sound_name",item.getStory_soundName());
+      intent.putExtra("sound_url",item.getStory_sound());
       context.startActivity(intent);
     });
   }

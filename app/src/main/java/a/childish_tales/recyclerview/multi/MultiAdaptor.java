@@ -12,12 +12,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.dingmouren.layoutmanagergroup.skidright.SkidRightLayoutManager;
 
 import java.util.ArrayList;
 
 import a.childish_tales.R;
-import a.childish_tales.recyclerview.slider_lakcheri.AdapterSlider;
+import a.childish_tales.recyclerview.AdapterSliderHorezontal;
+import a.childish_tales.recyclerview.AdapterSliderLakcheri;
+import a.childish_tales.recyclerview.AdapterSliderVertical;
 
 public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
@@ -42,27 +45,17 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             super(itemView);
             view_1 = itemView.findViewById(R.id.view_1);
             imageView_1 = itemView.findViewById(R.id.image_view_1);
-            textView_1 = itemView.findViewById(R.id.image_view_2);
+            textView_1 = itemView.findViewById(R.id.text_view_1);
             view_2 = itemView.findViewById(R.id.view_2);
-            imageView_2 = itemView.findViewById(R.id.text_view_1);
+            imageView_2 = itemView.findViewById(R.id.image_view_2);
             textView_2 = itemView.findViewById(R.id.text_view_2);
         }
     }
     public static class holder_SliderLackcheri extends RecyclerView.ViewHolder {
-        /*View view,box_detail;
-        ImageView imageView;
-        TextView title,desc,writer_narrator,time;*/
         RecyclerView recyclerView;
         holder_SliderLackcheri(View itemView) {
             super(itemView);
             recyclerView = itemView.findViewById(R.id.recycler_view);
-            /*view = itemView;
-            imageView = itemView.findViewById(R.id.image);
-            title = itemView.findViewById(R.id.title);
-            time = itemView.findViewById(R.id.time);
-            desc = itemView.findViewById(R.id.desc);
-            writer_narrator = itemView.findViewById(R.id.writer_narrator);
-            box_detail = itemView.findViewById(R.id.box_detail);*/
         }
     }
     public static class holder_Image extends RecyclerView.ViewHolder {
@@ -77,27 +70,17 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         }
     }
     public static class holder_SliderHorizontal extends RecyclerView.ViewHolder {
-        View view;
-        ImageView imageView;
-        TextView textView;
+        RecyclerView recyclerView;
         holder_SliderHorizontal(View itemView) {
             super(itemView);
-            view = itemView;
-            imageView = itemView.findViewById(R.id.image_view);
-            textView = itemView.findViewById(R.id.text_view);
+            recyclerView = itemView.findViewById(R.id.recycler_view);
         }
     }
     public static class holder_SliderVertical extends RecyclerView.ViewHolder {
-        View view;
-        ImageView imageView;
-        TextView title,desc;
+        RecyclerView recyclerView;
         holder_SliderVertical(View itemView) {
             super(itemView);
-            view = itemView;
-            imageView = itemView.findViewById(R.id.image_view);
-            title = itemView.findViewById(R.id.title);
-            desc = itemView.findViewById(R.id.desc);
-
+            recyclerView = itemView.findViewById(R.id.recycler_view);
         }
     }
     public static class holder_Title extends RecyclerView.ViewHolder {
@@ -131,16 +114,16 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_two_icon, parent, false);
                 return new holder_TwoIcon(view);
             case MultiItem.SLIDER_LAKCHERI :
-                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_slider_lackcheri_recylcerview, parent, false);
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recylcerview, parent, false);
                 return new holder_SliderLackcheri(view);
             case MultiItem.IMAGE :
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_image, parent, false);
                 return new holder_Image(view);
             case MultiItem.SLIDER_HORIZONTAL :
-                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_slider_horizontal, parent, false);
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recylcerview, parent, false);
                 return new holder_SliderHorizontal(view);
             case MultiItem.SLIDER_VERTICAL :
-                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_slider_vertical, parent, false);
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recylcerview, parent, false);
                 return new holder_SliderVertical(view);
             case MultiItem.TITLE :
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_title, parent, false);
@@ -182,43 +165,70 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         if (object != null) {
             switch (object.type) {
                 case MultiItem.TEXT_BOX:
-
+                    View view = ((holder_TextBox)holder).view;
+                    TextView text = ((holder_TextBox)holder).textView;
+                    text.setText(object.getText());
                     break;
-                case MultiItem.TWO_ICON:
 
-                    break;
-                case MultiItem.SLIDER_LAKCHERI:
-                    RecyclerView mRecyclerView;
-                    AdapterSlider mAdapter;
-                    SkidRightLayoutManager mSkidRightLayoutManager;
-
-                    mRecyclerView = ((holder_SliderLackcheri)holder).recyclerView;
-                    mAdapter = new AdapterSlider(mContext,object.getItemSliderLakcheri());
-                    mRecyclerView.setAdapter(mAdapter);
-
-                    mSkidRightLayoutManager = new SkidRightLayoutManager(1.3f, 0.9f);
-//                  RecyclerView.LayoutManager layoutManager= new LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false);
-                    mRecyclerView.setLayoutManager(mSkidRightLayoutManager);
-                    break;
                 case MultiItem.IMAGE:
+                    View view1 = ((holder_Image)holder).view;
+                    ImageView imageView = ((holder_Image)holder).imageView;
+                    TextView textView = ((holder_Image)holder).textView;
 
+                    Glide.with(mContext).load(object.getImage()).into(imageView);
+                    textView.setText(object.getTitle());
                     break;
-                case MultiItem.SLIDER_HORIZONTAL:
 
-                    break;
-                case MultiItem.SLIDER_VERTICAL:
-
-                    break;
                 case MultiItem.TITLE:
-                    TextView title = ((holder_Title)holder).textView;
+                    TextView title1 = ((holder_Title)holder).textView;
                     ImageView icon = ((holder_Title)holder).icon;
-                    title.setText(object.getText_TITLE());
-                    if (object.isShow_flash_TITLE()){
+                    title1.setText(object.getTitle());
+                    if (object.isBoolean()){
                         icon.setVisibility(View.VISIBLE);
                     }else {
                         icon.setVisibility(View.INVISIBLE);
                     }
                     break;
+
+                case MultiItem.SLIDER_LAKCHERI:
+                    RecyclerView mRecyclerView;
+                    AdapterSliderLakcheri mAdapter;
+                    SkidRightLayoutManager mSkidRightLayoutManager;
+
+                    mRecyclerView = ((holder_SliderLackcheri)holder).recyclerView;
+                    mAdapter = new AdapterSliderLakcheri(mContext,object.getArrayList());
+                    mRecyclerView.setAdapter(mAdapter);
+
+//                    mSkidRightLayoutManager = new SkidRightLayoutManager(1.3f, 0.9f);
+                  RecyclerView.LayoutManager layoutManager= new LinearLayoutManager(mContext,LinearLayoutManager.HORIZONTAL,false);
+                    mRecyclerView.setLayoutManager(layoutManager);
+                    break;
+
+                case MultiItem.SLIDER_HORIZONTAL:
+                    RecyclerView recyclerView_H;
+                    AdapterSliderHorezontal adapter_H;
+
+                    recyclerView_H = ((holder_SliderHorizontal)holder).recyclerView;
+                    adapter_H = null;/*new AdapterSliderLakcheri(mContext,object.getItemSliderLakcheri());*/
+
+                    recyclerView_H.setAdapter(adapter_H);
+                    RecyclerView.LayoutManager layout_H= new LinearLayoutManager(mContext,LinearLayoutManager.HORIZONTAL,false);
+                    recyclerView_H.setLayoutManager(layout_H);
+
+                    break;
+                case MultiItem.SLIDER_VERTICAL:
+                    RecyclerView recyclerView_V;
+                    AdapterSliderVertical adapter_V;
+
+                    recyclerView_V = ((holder_SliderVertical)holder).recyclerView;
+                    adapter_V = null;/*new AdapterSliderLakcheri(mContext,object.getItemSliderLakcheri());*/
+
+                    recyclerView_V.setAdapter(adapter_V);
+                    RecyclerView.LayoutManager layout_V= new LinearLayoutManager(mContext,LinearLayoutManager.VERTICAL,false);
+                    recyclerView_V.setLayoutManager(layout_V);
+
+                    break;
+
             }
         }
     }

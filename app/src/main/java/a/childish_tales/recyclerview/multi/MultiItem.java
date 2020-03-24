@@ -43,8 +43,12 @@ public class MultiItem {
         this.sound_name_LAKCHERI = sound_name_story;
         this.sound_LAKCHERI = sound_story;
     }
-
+    public MultiItem(int type,ArrayList<MultiItem> itemSliderLakcheri) {
+        this.type = SLIDER_LAKCHERI;
+        this.itemSliderLakcheri = itemSliderLakcheri;
+    }
     public MultiItem(ArrayList<MultiItem> itemSliderLakcheri) {
+        this.type = SLIDER_LAKCHERI;
         this.itemSliderLakcheri = itemSliderLakcheri;
     }
 

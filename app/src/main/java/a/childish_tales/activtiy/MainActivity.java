@@ -13,6 +13,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Objects;
 
 import a.childish_tales.R;
 import a.childish_tales.recyclerview.multi.MultiAdaptor;
@@ -42,9 +43,10 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recycler_view);
         mAdapter = new MultiAdaptor(itemIntroList,this);
         mRecyclerView.setAdapter(mAdapter);
-//        addItemFromJson2();
-
+        
         itemIntroList.add(new MultiItem(MultiItem.TITLE,"This is Test",true));
+        addItemFromJson();
+        itemIntroList.add(new MultiItem(MultiItem.TITLE,"This is Test",false));
 
         layoutManager= new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         mRecyclerView.setLayoutManager(layoutManager);
@@ -58,33 +60,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void addItemFromJson(){
-        ArrayList<MultiItem> itemTwos = new ArrayList<>();
         try {
-            JSONArray jsonArray =
-                    new JSONArray(FileUtil.readAssets(this,"list_story.json"));
-            for (int i = 0; i <jsonArray.length() ; i++) {
-                JSONObject object = jsonArray.getJSONObject(i);
-                String id = object.getString("id");
-                String title = object.getString("title");
-                String desc = object.getString("desc");
-                String text = object.getString("text");
-                String image_url = object.getString("image_url");
-                String time = object.getString("time");
-                String recorder = object.getString("recorder");
-                String sound_name = object.getString("sound_name");
-                String sound_url = object.getString("sound_url");
-                    itemTwos.add(new MultiItem(MultiItem.SLIDER_LAKCHERI,title,desc,image_url,sound_name,sound_url));
-            }
-            itemIntroList.add(new MultiItem(itemTwos));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
-
-    void addItemFromJson2(){
-        try {
-            JSONObject jsonObject =
-                    new JSONObject(FileUtil.readAssets(this,"list_story.json"));
+            JSONObject jsonObject = new JSONObject(Objects.requireNonNull
+                    (FileUtil.readAssets(this, "list_story.json")));
             Iterator iterator = jsonObject.keys();
             while(iterator.hasNext()){
                 ArrayList<MultiItem> itemTwos = new ArrayList<>();

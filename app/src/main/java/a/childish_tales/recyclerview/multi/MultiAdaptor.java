@@ -188,7 +188,7 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
                     break;
                 case MultiItem.SLIDER_LAKCHERI:
-/*                    RecyclerView mRecyclerView;
+                    RecyclerView mRecyclerView;
                     AdapterSlider mAdapter;
                     SkidRightLayoutManager mSkidRightLayoutManager;
 
@@ -197,8 +197,8 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     mRecyclerView.setAdapter(mAdapter);
 
                     mSkidRightLayoutManager = new SkidRightLayoutManager(1.3f, 0.9f);
-//                    RecyclerView.LayoutManager layoutManager= new LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false);
-                    mRecyclerView.setLayoutManager(mSkidRightLayoutManager);*/
+//                  RecyclerView.LayoutManager layoutManager= new LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false);
+                    mRecyclerView.setLayoutManager(mSkidRightLayoutManager);
                     break;
                 case MultiItem.IMAGE:
 

@@ -6,24 +6,25 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
+
 import a.childish_tales.R;
-import a.childish_tales.recyclerview.main.AdapterMain;
-import a.childish_tales.recyclerview.main.ItemMain;
-import a.childish_tales.recyclerview.slider_lakcheri.ItemSlider;
+import a.childish_tales.recyclerview.multi.MultiAdaptor;
+import a.childish_tales.recyclerview.multi.MultiItem;
 import a.childish_tales.util.file.FileUtil;
 
 public class MainActivity extends AppCompatActivity {
     private String TAG = "amnigoli-MainActivity";
 
-    List<ItemMain> itemIntroList;
+    ArrayList<MultiItem> itemIntroList;
     RecyclerView mRecyclerView;
-    AdapterMain mAdapter;
+    MultiAdaptor mAdapter;
     RecyclerView.LayoutManager layoutManager;
 
     @Override
@@ -39,9 +40,12 @@ public class MainActivity extends AppCompatActivity {
 
         itemIntroList = new ArrayList<>();
         mRecyclerView = findViewById(R.id.recycler_view);
-        mAdapter = new AdapterMain(this,itemIntroList);
+        mAdapter = new MultiAdaptor(itemIntroList,this);
         mRecyclerView.setAdapter(mAdapter);
-        addItemFromJson2();
+//        addItemFromJson2();
+
+        itemIntroList.add(new MultiItem(MultiItem.TITLE,"This is Test",true));
+
         layoutManager= new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         mRecyclerView.setLayoutManager(layoutManager);
     }
@@ -54,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void addItemFromJson(){
-        ArrayList<ItemSlider> itemTwos = new ArrayList<>();
+        ArrayList<MultiItem> itemTwos = new ArrayList<>();
         try {
             JSONArray jsonArray =
                     new JSONArray(FileUtil.readAssets(this,"list_story.json"));
@@ -69,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
                 String recorder = object.getString("recorder");
                 String sound_name = object.getString("sound_name");
                 String sound_url = object.getString("sound_url");
-                itemTwos.add(new ItemSlider(id, title, desc, text, image_url, time, recorder, sound_name, sound_url));
+                    itemTwos.add(new MultiItem(MultiItem.SLIDER_LAKCHERI,title,desc,image_url,sound_name,sound_url));
             }
-            itemIntroList.add(new ItemMain("قصه های آموزنده",itemTwos));
+            itemIntroList.add(new MultiItem(itemTwos));
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -83,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     new JSONObject(FileUtil.readAssets(this,"list_story.json"));
             Iterator iterator = jsonObject.keys();
             while(iterator.hasNext()){
-                ArrayList<ItemSlider> itemTwos = new ArrayList<>();
+                ArrayList<MultiItem> itemTwos = new ArrayList<>();
                 String key = (String)iterator.next();
                 JSONObject issue = jsonObject.getJSONObject(key);
                 //  get id from  issue
@@ -93,19 +97,15 @@ public class MainActivity extends AppCompatActivity {
                 String sound_url = null;
                 for (int i = 0; i < array.length(); i++) {
                     JSONObject object = array.getJSONObject(i);
-                    String id = object.getString("id");
                     String title = object.getString("title");
                     String desc = object.getString("desc");
-                    String text = object.getString("text");
                     String image_url = object.getString("image_url");
-                    String time = object.getString("time");
-                    String recorder = object.getString("recorder");
                     String sound_name = object.getString("sound_name");
                     if (!object.isNull("sound_url"))
                         sound_url = object.getString("sound_url");
-                    itemTwos.add(new ItemSlider(id, title, desc, text, image_url, time, recorder, sound_name, sound_url));
+                    itemTwos.add(new MultiItem(MultiItem.SLIDER_LAKCHERI,title,desc,image_url,sound_name,sound_url));
                 }
-                itemIntroList.add(new ItemMain(name,itemTwos));
+                itemIntroList.add(new MultiItem(itemTwos));
             }
         } catch (JSONException e) {
             e.printStackTrace();

@@ -17,16 +17,17 @@ import java.util.ArrayList;
 
 import a.childish_tales.activtiy.InfoStoryActivity;
 import a.childish_tales.R;
+import a.childish_tales.recyclerview.multi.MultiItem;
 import a.childish_tales.util.view.ColorUtil;
 
 public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder>{
 
-  private ArrayList<ItemSlider> itemIntroList;
+  private ArrayList<MultiItem> itemIntroList;
   private LayoutInflater mInflater;
   private Context context;
 
   // data is passed into the constructor
-  public AdapterSlider(Context context, ArrayList<ItemSlider> itemIntroList) {
+  public AdapterSlider(Context context, ArrayList<MultiItem> itemIntroList) {
     this.context = context;
     this.mInflater = LayoutInflater.from(context);
     this.itemIntroList = itemIntroList;
@@ -43,28 +44,22 @@ public class AdapterSlider extends RecyclerView.Adapter<AdapterSlider.ViewHolder
   @SuppressLint("SetTextI18n")
   @Override
   public void onBindViewHolder(ViewHolder holder, final int position) {
-    ItemSlider item = itemIntroList.get(position);
+    MultiItem item = itemIntroList.get(position);
 //    ViewUtil.setImageResource(context,holder.imageView,item.getImage());
 
-    Glide.with(context).load(item.getImageـurl()).into(holder.imageView);
+    Glide.with(context).load(item.getImage_story()).into(holder.imageView);
     holder.title.setText(item.getTitle());
-    holder.desc.setText(item.getDesc());
-    holder.writer_narrator.setText(item.getRecorder());
-    holder.time.setText(item.getTime());
+    holder.desc.setText(item.getDesc_story());
 
     ColorUtil.setGradient(holder.box_detail,"#00000000","#333333");
 
     holder.view.setOnClickListener(view -> {
       Intent intent = new Intent(context, InfoStoryActivity.class);
-      intent.putExtra("id",item.getId());
       intent.putExtra("title",item.getTitle());
-      intent.putExtra("desc",item.getDesc());
-      intent.putExtra("text",item.getText());
-      intent.putExtra("imageـurl",item.getImageـurl());
-      intent.putExtra("time",item.getTime());
-      intent.putExtra("recorder",item.getRecorder());
-      intent.putExtra("sound_name",item.getSound_name());
-      intent.putExtra("sound_url",item.getSound_url());
+      intent.putExtra("desc",item.getDesc_story());
+      intent.putExtra("imageـurl",item.getImage_story());
+      intent.putExtra("sound_name",item.getSound_name_story());
+      intent.putExtra("sound_url",item.getSound_story());
       context.startActivity(intent);
     });
   }

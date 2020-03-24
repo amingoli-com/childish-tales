@@ -9,6 +9,7 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/view_1"
         android:background="@drawable/row_background"
         android:padding="@dimen/_10sdp"
         android:orientation="vertical"
@@ -42,6 +43,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/view_2"
         android:background="@drawable/row_background"
         android:padding="@dimen/_10sdp"
         android:orientation="vertical"

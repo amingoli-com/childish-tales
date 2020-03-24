@@ -16,6 +16,7 @@ import java.util.Iterator;
 import java.util.Objects;
 
 import a.childish_tales.R;
+import a.childish_tales.manager.SaveManager;
 import a.childish_tales.recyclerview.multi.MultiAdaptor;
 import a.childish_tales.recyclerview.multi.MultiItem;
 import a.childish_tales.util.file.FileUtil;
@@ -141,8 +142,7 @@ public class MainActivity extends AppCompatActivity {
 
     void additem_lakcheri(){
         try {
-            JSONObject jsonObject = new JSONObject(Objects.requireNonNull
-                    (FileUtil.readAssets(this, "list_story.json")));
+            JSONObject jsonObject = new JSONObject(getJsonMain());
             Iterator iterator = jsonObject.keys();
             while(iterator.hasNext()){
                 ArrayList<MultiItem> itemTwos = new ArrayList<>();
@@ -172,8 +172,7 @@ public class MainActivity extends AppCompatActivity {
 
     void additem_h(){
         try {
-            JSONObject jsonObject = new JSONObject(Objects.requireNonNull
-                    (FileUtil.readAssets(this, "list_story.json")));
+            JSONObject jsonObject = new JSONObject(getJsonMain());
             Iterator iterator = jsonObject.keys();
             while(iterator.hasNext()){
                 ArrayList<MultiItem> itemTwos = new ArrayList<>();
@@ -203,8 +202,7 @@ public class MainActivity extends AppCompatActivity {
 
     void additem_v(){
         try {
-            JSONObject jsonObject = new JSONObject(Objects.requireNonNull
-                    (FileUtil.readAssets(this, "list_story.json")));
+            JSONObject jsonObject = new JSONObject(getJsonMain());
             Iterator iterator = jsonObject.keys();
             while(iterator.hasNext()){
                 ArrayList<MultiItem> itemTwos = new ArrayList<>();
@@ -231,67 +229,8 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-/*
-    void addItemFromJson(){
-        String image = "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png";
-        String titl = "حضرت مهدی (عج)";
-        String des = "امام صادق علیه\u200Cالسلام فرمود: چون بلا بر بلا فزاید، (نشانۀ) رهایى از بلا باشد.\n" +
-                "\n";
 
-        ArrayList<MultiItem> itemTwo_h = new ArrayList<>();
-        for (int i = 0; i < 4; i++) {
-            itemTwo_h.add(new MultiItem(MultiItem.SLIDER_HORIZONTAL,image,titl+"-"+i));
-        }
-        itemIntroList.add(new MultiItem(MultiItem.SLIDER_HORIZONTAL,itemTwo_h));
-
-
-
-        ArrayList<MultiItem> itemTwo_v = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
-            itemTwo_v.add(new MultiItem(MultiItem.SLIDER_VERTICAL,image,titl+"-"+i,des));
-        }
-        itemIntroList.add(new MultiItem(MultiItem.SLIDER_VERTICAL,itemTwo_v));
-
-
-
-
-        itemIntroList.add(new MultiItem(MultiItem.TEXT_BOX,des));
-        itemIntroList.add(new MultiItem(MultiItem.TWO_ICON,image,titl,image,titl));
-        itemIntroList.add(new MultiItem(MultiItem.IMAGE,image,titl));
-        itemIntroList.add(new MultiItem(MultiItem.SLIDER_VERTICAL,image,titl,des));
-        itemIntroList.add(new MultiItem(MultiItem.TITLE,titl,true));
-
-
-
-
-        try {
-            JSONObject jsonObject = new JSONObject(Objects.requireNonNull
-                    (FileUtil.readAssets(this, "list_story.json")));
-            Iterator iterator = jsonObject.keys();
-            while(iterator.hasNext()){
-                ArrayList<MultiItem> itemTwos = new ArrayList<>();
-                String key = (String)iterator.next();
-                JSONObject issue = jsonObject.getJSONObject(key);
-                //  get id from  issue
-                String name = issue.optString("name");
-                JSONArray array = issue.getJSONArray("array");
-
-                String sound_url = null;
-                for (int i = 0; i < array.length(); i++) {
-                    JSONObject object = array.getJSONObject(i);
-                    String title = object.getString("title");
-                    String desc = object.getString("desc");
-                    String image_url = object.getString("image_url");
-                    String sound_name = object.getString("sound_name");
-                    if (!object.isNull("sound_url"))
-                        sound_url = object.getString("sound_url");
-                    itemTwos.add(new MultiItem(MultiItem.SLIDER_LAKCHERI,title,desc,image_url,sound_name,sound_url));
-                }
-                itemIntroList.add(new MultiItem(MultiItem.getSliderLakcheri(),itemTwos));
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+    String getJsonMain(){
+        return SaveManager.get(this).getstring_appINFO().get(SaveManager.jsonMain);
     }
-*/
 }

@@ -8,6 +8,8 @@ import android.content.SharedPreferences;
 import java.util.HashMap;
 import java.util.Map;
 
+import a.childish_tales.util.file.FileUtil;
+
 public class SaveManager extends ContextWrapper {
 
     SharedPreferences.Editor editor;
@@ -27,15 +29,15 @@ public class SaveManager extends ContextWrapper {
 
 
     /** App Info */
-    public static final String apiV6_URL = "apiV6_URL";
+    public static final String jsonMain = "jsonMain";
 
-    public void change_apiV6_URL(String local_URL) {
-        editor.putString(apiV6_URL, local_URL);
+    public void saveJsonMain(String json) {
+        editor.putString(jsonMain, json);
         editor.apply();
     }
     public Map<String, String> getstring_appINFO() {
         HashMap<String, String> hashMap = new HashMap<>();
-        hashMap.put(apiV6_URL, sharedPreferences.getString(apiV6_URL, "https://khadije.com/api/v6" ));
+        hashMap.put(jsonMain, sharedPreferences.getString(jsonMain, FileUtil.readAssets(this, "list_story.json") ));
         return hashMap;
     }
 

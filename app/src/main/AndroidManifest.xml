@@ -14,6 +14,7 @@
 
     <dist:module dist:instant="true" />
     <application
+        android:name=".manager.ApplicationManager"
         android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

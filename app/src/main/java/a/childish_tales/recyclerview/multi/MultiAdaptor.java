@@ -2,6 +2,8 @@ package a.childish_tales.recyclerview.multi;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +20,9 @@ import com.dingmouren.layoutmanagergroup.skidright.SkidRightLayoutManager;
 import java.util.ArrayList;
 
 import a.childish_tales.R;
+import a.childish_tales.activtiy.InfoStoryActivity;
+import a.childish_tales.activtiy.MainActivity;
+import a.childish_tales.activtiy.WebViewActivity;
 import a.childish_tales.recyclerview.AdapterSliderHorezontal;
 import a.childish_tales.recyclerview.AdapterSliderLakcheri;
 import a.childish_tales.recyclerview.AdapterSliderVertical;
@@ -155,6 +160,7 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     }
 
+    Intent intent = null;
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, final int listPosition) {
@@ -165,6 +171,10 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     View view = ((holder_TextBox)holder).view;
                     TextView text = ((holder_TextBox)holder).textView;
                     text.setText(object.getText());
+
+                    setIntent(object);
+                    view.setOnClickListener(this::on_click);
+
                     break;
 
                 case MultiItem.IMAGE:
@@ -219,6 +229,40 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     @Override
     public int getItemCount() {
         return itemMains.size();
+    }
+
+
+    void setIntent(MultiItem object){
+        switch (object.getOn_click()){
+            case 1:
+                intent = new Intent(mContext, InfoStoryActivity.class);
+                intent.putExtra("title",object.getStory_title());
+                intent.putExtra("desc",object.getStory_desc());
+                intent.putExtra("image",object.getStory_image());
+                intent.putExtra("sound_name",object.getStory_soundName());
+                intent.putExtra("sound",object.getStory_sound());
+                break;
+            case 2:
+//                intent = new Intent(mContext, WebViewActivity.class);
+//                intent.putExtra("url",object.getUrl());
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(object.getUrl()));
+                break;
+            case 3:
+                intent = new Intent(mContext,MainActivity.class);
+                intent.putExtra("url",object.getUrl());
+                break;
+            default:
+                intent = null;
+                break;
+        }
+    }
+    void on_click(View view){
+        view.setOnClickListener(onclick -> {
+            if (intent !=null){
+                (mContext).startActivity(intent);
+            }
+        });
     }
 
 }

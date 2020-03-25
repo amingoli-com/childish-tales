@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         String title = "حضرت مهدی (عج)";
 
 
-        itemIntroList.add(TEXT_BOX(title));
         itemIntroList.add(IMAGE(image,title));
         itemIntroList.add(IMAGE(image));
         itemIntroList.add(TITLE(title));
@@ -69,13 +68,6 @@ public class MainActivity extends AppCompatActivity {
         super.onWindowFocusChanged(hasFocus);
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE | View.SYSTEM_UI_FLAG_FULLSCREEN);
-    }
-
-    MultiItem TEXT_BOX(String text){
-        MultiItem item = new MultiItem();
-        item.setType(MultiItem.TEXT_BOX);
-        item.setText(text);
-        return item;
     }
 
     MultiItem IMAGE(String image,String title){
@@ -228,6 +220,62 @@ public class MainActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+    void JSON_SETER(){
+        try {
+            JSONObject jsonObject = new JSONObject(getJsonMain());
+            JSONArray jsonArray = jsonObject.getJSONArray("list_story");
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject object = jsonArray.getJSONObject(i);
+                String type = object.getString("type");
+                switch (type){
+                    case "TEXT_BOX":
+                        TEXT_BOX(String.valueOf(object));
+                        break;
+                    case "IMAGE":
+                        break;
+                    case "TITLE":
+                        break;
+                    case "SLIDER_L":
+                        break;
+                    case "SLIDER_H":
+                        break;
+                    case "SLIDER_V":
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    void TEXT_BOX(String json) throws JSONException {
+        MultiItem items = new MultiItem();
+        JSONObject object = new JSONObject(json);
+
+        items.setType(MultiItem.TEXT_BOX);
+        if (!object.isNull("text"))
+            items.setText(object.getString("text"));
+        if (!object.isNull("on_click"))
+            items.setOn_click(object.getInt("on_click"));
+        if (!object.isNull("url"))
+            items.setUrl(object.getString("url"));
+        if (!object.isNull("title"))
+            items.setTitle(object.getString("title"));
+        if (!object.isNull("image"))
+            items.setImage(object.getString("image"));
+        if (!object.isNull("sound_name"))
+            items.setStory_soundName(object.getString("sound_name"));
+        if (!object.isNull("sound"))
+            items.setStory_sound(object.getString("sound"));
+
+
+
+        itemIntroList.add(items);
     }
 
     String getJsonMain(){

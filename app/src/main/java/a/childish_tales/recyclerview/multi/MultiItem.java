@@ -15,8 +15,7 @@ public class MultiItem {
     String story_title,story_desc,story_image,story_soundName,story_sound;
     String text,title,desc,image;
     boolean Boolean = false;
-    String url;
-    int on_click;
+    String url,on_click;
     ArrayList<MultiItem> arrayList;
 
     public int getType() {
@@ -115,11 +114,11 @@ public class MultiItem {
         this.url = url;
     }
 
-    public int getOn_click() {
+    public String getOn_click() {
         return on_click;
     }
 
-    public void setOn_click(int on_click) {
+    public void setOn_click(String on_click) {
         this.on_click = on_click;
     }
 

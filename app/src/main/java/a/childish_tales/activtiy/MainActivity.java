@@ -264,7 +264,8 @@ public class MainActivity extends AppCompatActivity {
             items.setText(object.getString("text"));
 
         if (!object.isNull("on_click"))
-            items.setOn_click(object.getInt("on_click"));
+            items.setOn_click(object.getString("on_click"));
+        else items.setOn_click("null");
 
         if (!object.isNull("url"))
             items.setUrl(object.getString("url"));

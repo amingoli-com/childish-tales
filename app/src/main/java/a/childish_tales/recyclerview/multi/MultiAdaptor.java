@@ -160,7 +160,6 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     }
 
-    Intent intent = null;
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, final int listPosition) {
@@ -230,10 +229,10 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         return itemMains.size();
     }
 
-
+    private Intent intent = null;
     void setIntent(MultiItem object){
         switch (object.getOn_click()){
-            case 1:
+            case "audio":
                 intent = new Intent(mContext, InfoStoryActivity.class);
                 intent.putExtra("title",object.getStory_title());
                 intent.putExtra("desc",object.getStory_desc());
@@ -241,13 +240,15 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 intent.putExtra("sound_name",object.getStory_soundName());
                 intent.putExtra("sound",object.getStory_sound());
                 break;
-            case 2:
-//                intent = new Intent(mContext, WebViewActivity.class);
-//                intent.putExtra("url",object.getUrl());
+            case "web_view":
+                intent = new Intent(mContext, WebViewActivity.class);
+                intent.putExtra("url",object.getUrl());
+                break;
+            case "browser":
                 intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(object.getUrl()));
                 break;
-            case 3:
+            case "json":
                 intent = new Intent(mContext,MainActivity.class);
                 intent.putExtra("url",object.getUrl());
                 break;

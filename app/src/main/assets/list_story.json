@@ -1,50 +1,47 @@
-{
-  "list_story":
-          [
-            {
-              "type": "TEXT_BOX" ,
-              "text": "امام کاظم(ع) فرمود:\nهرکه دنیادوست شود ترس آخرت از قلبش رخت بربندد، اگر به بنده\u200Cای علمی عطا شد و او محبتش به دنیا افزون گشت، از خدا دورتر می\u200Cشود و خشم الهی بر او بیشتر خواهد شد.",
+[
+  {
+    "type": "TEXT_BOX" ,
+    "text": "امام کاظم(ع) فرمود:\nهرکه دنیادوست شود ترس آخرت از قلبش رخت بربندد، اگر به بنده\u200Cای علمی عطا شد و او محبتش به دنیا افزون گشت، از خدا دورتر می\u200Cشود و خشم الهی بر او بیشتر خواهد شد.",
 
-              "on_click": 0,
-              "url": null,
+    "on_click": 0,
+    "url": null,
 
-              "title": null,
-              "image": null,
-              "sound_name": null,
-              "sound": null
-            },
-            {
-              "type": "TEXT_BOX" ,
-              "text": "با کلیک بر روی این باکس به داستان آفرینش متصل میشوید",
-              "on_click": 1,
-              "url": null,
+    "title": null,
+    "image": null,
+    "sound_name": null,
+    "sound": null
+  },
+  {
+    "type": "TEXT_BOX" ,
+    "text": "با کلیک بر روی این باکس به داستان آفرینش متصل میشوید",
+    "on_click": 1,
+    "url": null,
 
-              "title": "داستان آفرینش",
-              "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
-              "sound_name": "adam.mp3",
-              "sound": "https://github.com/amingoli78/childish-tales/raw/master/sound/adam.mp3"
-            },
-            {
-              "type": "TEXT_BOX" ,
-              "text": "با کلیک بر روی این باکس به لینک متصل میشوید",
-              "on_click": 2,
-              "url": "http://www.yjc.ir/fa/news/6492524",
+    "title": "داستان آفرینش",
+    "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
+    "sound_name": "adam.mp3",
+    "sound": "https://github.com/amingoli78/childish-tales/raw/master/sound/adam.mp3"
+  },
+  {
+    "type": "TEXT_BOX" ,
+    "text": "با کلیک بر روی این باکس به لینک متصل میشوید",
+    "on_click": 2,
+    "url": "http://www.yjc.ir/fa/news/6492524",
 
-              "title": null,
-              "image": null,
-              "sound_name": null,
-              "sound": null
-            },
-            {
-              "type": "TEXT_BOX" ,
-              "text": "با کلیک بر روی این باکس به لیست جدید جیسون متصل میشوید",
-              "on_click": 3,
-              "url": "http://www.yjc.ir/fa/news/6492524",
+    "title": null,
+    "image": null,
+    "sound_name": null,
+    "sound": null
+  },
+  {
+    "type": "TEXT_BOX" ,
+    "text": "با کلیک بر روی این باکس به لیست جدید جیسون متصل میشوید",
+    "on_click": 3,
+    "url": "http://www.yjc.ir/fa/news/6492524",
 
-              "title": null,
-              "image": null,
-              "sound_name": null,
-              "sound": null
-            }
-          ]
-}
+    "title": null,
+    "image": null,
+    "sound_name": null,
+    "sound": null
+  }
+]

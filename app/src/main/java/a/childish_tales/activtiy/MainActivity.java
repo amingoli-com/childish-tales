@@ -1,6 +1,7 @@
 package a.childish_tales.activtiy;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,15 +50,16 @@ public class MainActivity extends AppCompatActivity {
         String image = "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png";
         String title = "حضرت مهدی (عج)";
 
+        JSON_SETER();
 
-        itemIntroList.add(IMAGE(image,title));
+        /*itemIntroList.add(IMAGE(image,title));
         itemIntroList.add(IMAGE(image));
         itemIntroList.add(TITLE(title));
         additem_lakcheri();
         itemIntroList.add(TITLE(title));
         additem_h();
         itemIntroList.add(TITLE(title));
-        additem_v();
+        additem_v();*/
 
         layoutManager= new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         mRecyclerView.setLayoutManager(layoutManager);
@@ -224,8 +226,7 @@ public class MainActivity extends AppCompatActivity {
 
     void JSON_SETER(){
         try {
-            JSONObject jsonObject = new JSONObject(getJsonMain());
-            JSONArray jsonArray = jsonObject.getJSONArray("list_story");
+            JSONArray jsonArray = new JSONArray(FileUtil.readAssets(this,"list_story.json"));
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject object = jsonArray.getJSONObject(i);
                 String type = object.getString("type");
@@ -250,6 +251,7 @@ public class MainActivity extends AppCompatActivity {
 
         } catch (JSONException e) {
             e.printStackTrace();
+            Log.d(TAG, "JSON_SETER: "+e);
         }
     }
 
@@ -260,21 +262,24 @@ public class MainActivity extends AppCompatActivity {
         items.setType(MultiItem.TEXT_BOX);
         if (!object.isNull("text"))
             items.setText(object.getString("text"));
+
         if (!object.isNull("on_click"))
             items.setOn_click(object.getInt("on_click"));
+
         if (!object.isNull("url"))
             items.setUrl(object.getString("url"));
+
         if (!object.isNull("title"))
-            items.setTitle(object.getString("title"));
+            items.setStory_title(object.getString("title"));
+
         if (!object.isNull("image"))
-            items.setImage(object.getString("image"));
+            items.setStory_image(object.getString("image"));
+
         if (!object.isNull("sound_name"))
             items.setStory_soundName(object.getString("sound_name"));
+
         if (!object.isNull("sound"))
             items.setStory_sound(object.getString("sound"));
-
-
-
         itemIntroList.add(items);
     }
 

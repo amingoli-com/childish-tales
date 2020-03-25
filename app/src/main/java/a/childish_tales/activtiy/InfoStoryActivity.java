@@ -70,7 +70,7 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
         PRDownloader.initialize(getApplicationContext(), config);
 
         sound_name = getIntent().getStringExtra("sound_name");
-        sound_url = getIntent().getStringExtra("sound_url");
+        sound_url = getIntent().getStringExtra("sound");
 
         if (sound_url!=null){
             Log.d(TAG, "onCreate: "+sound_url);
@@ -79,7 +79,7 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
                 download(sound_url,sound_name);
             }
         }
-        Glide.with(this).load(getIntent().getStringExtra("imageـurl")).into(bg_image);
+        Glide.with(this).load(getIntent().getStringExtra("image")).into(bg_image);
         title.setText(getIntent().getStringExtra("title"));
         desc.setText(getIntent().getStringExtra("desc"));
         seekBar.setOnSeekBarChangeListener(this);

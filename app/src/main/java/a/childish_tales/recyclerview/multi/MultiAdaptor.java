@@ -172,8 +172,7 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     TextView text = ((holder_TextBox)holder).textView;
                     text.setText(object.getText());
 
-                    setIntent(object);
-                    view.setOnClickListener(this::on_click);
+                    view.setOnClickListener(clickListener(object));
 
                     break;
 
@@ -257,12 +256,14 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 break;
         }
     }
-    void on_click(View view){
-        view.setOnClickListener(onclick -> {
+
+    View.OnClickListener clickListener(MultiItem object){
+        return view -> {
+            setIntent(object);
             if (intent !=null){
                 (mContext).startActivity(intent);
             }
-        });
+        };
     }
 
 }

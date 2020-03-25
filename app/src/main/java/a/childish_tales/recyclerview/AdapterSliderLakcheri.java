@@ -54,9 +54,9 @@ public class AdapterSliderLakcheri extends RecyclerView.Adapter<AdapterSliderLak
       Intent intent = new Intent(context, InfoStoryActivity.class);
       intent.putExtra("title",item.getStory_title());
       intent.putExtra("desc",item.getStory_desc());
-      intent.putExtra("imageـurl",item.getStory_image());
+      intent.putExtra("image",item.getStory_image());
       intent.putExtra("sound_name",item.getStory_soundName());
-      intent.putExtra("sound_url",item.getStory_sound());
+      intent.putExtra("sound",item.getStory_sound());
       context.startActivity(intent);
     });
   }

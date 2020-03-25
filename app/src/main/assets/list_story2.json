@@ -1,0 +1,54 @@
+{
+  "list": [
+    {
+      "type": "TEXT" ,
+      "text": "text of text",
+
+      "on_click": 1,
+      "url": "",
+
+      "image": "",
+      "sound_name": "",
+      "sound": ""
+    },
+    {
+      "type": "IMAGE",
+      "image": "url",
+      "title": "title",
+
+      "on_click": 1,
+      "url": "",
+
+      "sound_name": "",
+      "sound": ""
+    },
+    {
+      "type": "TITLE",
+      "title": "title",
+      "show_icon": false,
+
+      "on_click": 1,
+      "url": "",
+
+      "image": "",
+      "sound_name": "",
+      "sound": ""
+    },
+    {
+      "type": "SLIDER_L | SLIDER_H | SLIDER_V",
+      "list_story":
+              [
+                {
+                  "on_click": 2,
+                  "url": "",
+                  "title": "",
+                  "desc": "",
+
+                  "image": "",
+                  "sound_name": "",
+                  "sound": ""
+                }
+              ]
+    }
+  ]
+}

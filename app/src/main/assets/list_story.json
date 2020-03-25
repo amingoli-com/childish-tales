@@ -14,7 +14,7 @@
               "sound": null
             },
             {
-              "type": "TEXT" ,
+              "type": "TEXT_BOX" ,
               "text": "با کلیک بر روی این باکس به داستان آفرینش متصل میشوید",
               "on_click": 1,
               "url": null,
@@ -25,7 +25,7 @@
               "sound": "https://github.com/amingoli78/childish-tales/raw/master/sound/adam.mp3"
             },
             {
-              "type": "TEXT" ,
+              "type": "TEXT_BOX" ,
               "text": "با کلیک بر روی این باکس به لینک متصل میشوید",
               "on_click": 2,
               "url": "http://www.yjc.ir/fa/news/6492524",
@@ -36,7 +36,7 @@
               "sound": null
             },
             {
-              "type": "TEXT" ,
+              "type": "TEXT_BOX" ,
               "text": "با کلیک بر روی این باکس به لیست جدید جیسون متصل میشوید",
               "on_click": 3,
               "url": "http://www.yjc.ir/fa/news/6492524",

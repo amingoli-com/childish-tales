@@ -34,7 +34,7 @@
         android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        layout="@layout/play_sound"/>
+        layout="@layout/item_play_sound"/>
 
     <ImageView
         android:id="@+id/back"

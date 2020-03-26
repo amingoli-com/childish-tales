@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     void JSON_SETER(){
         try {
-            JSONArray jsonArray = new JSONArray(FileUtil.readAssets(this,"list_story.json"));
+            JSONArray jsonArray = new JSONArray(getJsonMain());
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject object = jsonArray.getJSONObject(i);
                 String json = String.valueOf(object);

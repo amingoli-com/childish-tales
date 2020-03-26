@@ -48,9 +48,9 @@
       },
       {
         "on_click": "json",
-        "url": "https://yjc.com/fa",
+        "url": "https://raw.githubusercontent.com/amingoli78/childish-tales/master/json/list_two.json",
         "story": {
-          "title": "داستان آفرینش",
+          "title": "JSON",
           "desc": null,
           "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
           "sound_name": "adam.mp3",

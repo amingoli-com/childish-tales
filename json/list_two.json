@@ -1,0 +1,121 @@
+[
+  {
+    "type": "TEXT_BOX" ,
+    "text": "امام کاظم(ع) فرمود:\nهرکه دنیادوست شود ترس آخرت از قلبش رخت بربندد، اگر به بنده\u200Cای علمی عطا شد و او محبتش به دنیا افزون گشت، از خدا دورتر می\u200Cشود و خشم الهی بر او بیشتر خواهد شد.",
+
+    "on_click": null,
+    "url": null,
+
+    "title": null,
+    "image": null,
+    "sound_name": null,
+    "sound": null
+  },
+  {
+    "type": "TEXT_BOX" ,
+    "text": "با کلیک بر روی این باکس به داستان آفرینش متصل میشوید",
+    "on_click": "audio",
+    "url": null,
+
+    "title": "داستان آفرینش",
+    "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
+    "sound_name": "adam.mp3",
+    "sound": "https://github.com/amingoli78/childish-tales/raw/master/sound/adam.mp3"
+  },
+  {
+    "type": "TEXT_BOX" ,
+    "text": "با کلیک بر روی این باکس به لینک متصل میشوید",
+    "on_click": "web_view",
+    "url": "http://www.yjc.ir/fa/news/6492524",
+
+    "title": null,
+    "image": null,
+    "sound_name": null,
+    "sound": null
+  },
+  {
+    "type": "TEXT_BOX" ,
+    "text": "با کلیک بر روی این باکس به بروزر گوشی متصل میشوید",
+    "on_click": "browser",
+    "url": "http://www.yjc.ir/fa/news/6492524",
+
+    "title": null,
+    "image": null,
+    "sound_name": null,
+    "sound": null
+  },
+  {
+    "type": "TEXT_BOX" ,
+    "text": "با کلیک بر روی این باکس به لیست جدید جیسون متصل میشوید",
+    "on_click": "json",
+    "url": "http://www.yjc.ir/fa/news/6492524",
+
+    "title": null,
+    "image": null,
+    "sound_name": null,
+    "sound": null
+  },
+  {
+    "type": "IMAGE" ,
+    "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
+    "title": null,
+
+    "on_click": null,
+    "url": null,
+
+    "story": null
+
+  },
+  {
+    "type": "IMAGE" ,
+    "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
+    "title": "با لمس به داستانی بروید",
+
+    "on_click": "audio",
+    "url": null,
+
+    "story": {
+      "title": "داستان آفرینش",
+      "desc": null,
+      "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
+      "sound_name": "adam.mp3",
+      "sound": "https://github.com/amingoli78/childish-tales/raw/master/sound/adam.mp3"
+    }
+  },
+  {
+    "type": "IMAGE" ,
+    "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
+    "title": "به لینک داخلی بروید",
+
+    "on_click": "web_view",
+    "url": "http://www.yjc.ir/fa/news/6492524",
+
+    "story": {
+      "title": null,
+      "desc": null,
+      "image": null,
+      "sound_name": null,
+      "sound": null
+    }
+  },
+  {
+    "type": "IMAGE" ,
+    "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
+    "title": "به لینک خارجی بروید",
+
+    "on_click": "browser",
+    "url": "http://www.yjc.ir/fa/news/6492524",
+
+    "story": ""
+  },
+  {
+    "type": "IMAGE" ,
+    "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
+    "title": "لیست جدیدی را باز کنید",
+
+    "on_click": "json",
+    "url": "http://www.yjc.ir/fa/",
+
+    "story": "amin"
+  }
+]

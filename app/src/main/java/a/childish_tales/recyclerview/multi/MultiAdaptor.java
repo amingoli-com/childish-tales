@@ -167,21 +167,17 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         if (object != null) {
             switch (object.type) {
                 case MultiItem.TEXT_BOX:
-                    View view = ((holder_TextBox)holder).view;
                     TextView text = ((holder_TextBox)holder).textView;
                     text.setText(object.getText());
-
-                    view.setOnClickListener(clickListener(object));
-
+                    ((holder_TextBox)holder).view.setOnClickListener(clickListener(object));
                     break;
 
                 case MultiItem.IMAGE:
-                    View view1 = ((holder_Image)holder).view;
                     ImageView imageView = ((holder_Image)holder).imageView;
                     TextView textView = ((holder_Image)holder).textView;
-
                     Glide.with(mContext).load(object.getImage()).into(imageView);
                     textView.setText(object.getTitle());
+                    ((holder_Image)holder).view.setOnClickListener(clickListener(object));
                     break;
 
                 case MultiItem.TITLE:
@@ -193,6 +189,7 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     }else {
                         icon.setVisibility(View.INVISIBLE);
                     }
+                    ((holder_Title)holder).view.setOnClickListener(clickListener(object));
                     break;
 
                 case MultiItem.SLIDER_LAKCHERI:

@@ -3,6 +3,7 @@ package a.childish_tales.recyclerview;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,17 +18,19 @@ import java.util.ArrayList;
 
 import a.childish_tales.R;
 import a.childish_tales.activtiy.InfoStoryActivity;
+import a.childish_tales.activtiy.MainActivity;
+import a.childish_tales.activtiy.WebViewActivity;
 import a.childish_tales.recyclerview.multi.MultiItem;
 
 public class AdapterSliderVertical extends RecyclerView.Adapter<AdapterSliderVertical.ViewHolder>{
 
   private ArrayList<MultiItem> itemIntroList;
   private LayoutInflater mInflater;
-  private Context context;
+  private Context mContext;
 
   // data is passed into the constructor
   public AdapterSliderVertical(Context context, ArrayList<MultiItem> itemIntroList) {
-    this.context = context;
+    this.mContext = context;
     this.mInflater = LayoutInflater.from(context);
     this.itemIntroList = itemIntroList;
   }
@@ -44,21 +47,13 @@ public class AdapterSliderVertical extends RecyclerView.Adapter<AdapterSliderVer
   @Override
   public void onBindViewHolder(ViewHolder holder, final int position) {
     MultiItem item = itemIntroList.get(position);
-//    ViewUtil.setImageResource(context,holder.imageView,item.getImage());
+//    ViewUtil.setImageResource(mContext,holder.imageView,item.getImage());
 
-    Glide.with(context).load(item.getStory_image()).into(holder.imageView);
+    Glide.with(mContext).load(item.getStory_image()).into(holder.imageView);
     holder.title.setText(item.getStory_title());
     holder.desc.setText(item.getStory_desc());
 
-    holder.view.setOnClickListener(view -> {
-      Intent intent = new Intent(context, InfoStoryActivity.class);
-      intent.putExtra("title",item.getStory_title());
-      intent.putExtra("desc",item.getStory_desc());
-      intent.putExtra("image",item.getStory_image());
-      intent.putExtra("sound_name",item.getStory_soundName());
-      intent.putExtra("sound",item.getStory_sound());
-      context.startActivity(intent);
-    });
+    holder.view.setOnClickListener(clickListener(item));
   }
 
   // total number of rows
@@ -80,5 +75,43 @@ public class AdapterSliderVertical extends RecyclerView.Adapter<AdapterSliderVer
       title = itemView.findViewById(R.id.title);
       desc = itemView.findViewById(R.id.desc);
     }
+  }
+
+  private Intent intent = null;
+  void setIntent(MultiItem object){
+    switch (object.getOn_click()){
+      case "audio":
+        intent = new Intent(mContext, InfoStoryActivity.class);
+        intent.putExtra("title",object.getStory_title());
+        intent.putExtra("desc",object.getStory_desc());
+        intent.putExtra("image",object.getStory_image());
+        intent.putExtra("sound_name",object.getStory_soundName());
+        intent.putExtra("sound",object.getStory_sound());
+        break;
+      case "web_view":
+        intent = new Intent(mContext, WebViewActivity.class);
+        intent.putExtra("url",object.getUrl());
+        break;
+      case "browser":
+        intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(object.getUrl()));
+        break;
+      case "json":
+        intent = new Intent(mContext, MainActivity.class);
+        intent.putExtra("url",object.getUrl());
+        break;
+      default:
+        intent = null;
+        break;
+    }
+  }
+
+  View.OnClickListener clickListener(MultiItem object){
+    return view -> {
+      setIntent(object);
+      if (intent !=null){
+        (mContext).startActivity(intent);
+      }
+    };
   }
 }

@@ -14,7 +14,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Objects;
 
 import a.childish_tales.R;
 import a.childish_tales.manager.SaveManager;
@@ -72,37 +71,7 @@ public class MainActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 
-    MultiItem IMAGE(String image,String title){
-        MultiItem item = new MultiItem();
-        item.setType(MultiItem.IMAGE);
-        item.setImage(image);
-        item.setTitle(title);
-        return item;
-    }
-    MultiItem IMAGE(String image){
-        MultiItem item = new MultiItem();
-        item.setType(MultiItem.IMAGE);
-        item.setImage(image);
-        item.setTitle(null);
-        return item;
-    }
-
-    MultiItem TITLE(String title, Boolean showFlesh){
-        MultiItem item = new MultiItem();
-        item.setType(MultiItem.TITLE);
-        item.setTitle(title);
-        item.setBoolean(showFlesh);
-        return item;
-    }
-    MultiItem TITLE(String title){
-        MultiItem item = new MultiItem();
-        item.setType(MultiItem.TITLE);
-        item.setTitle(title);
-        item.setBoolean(false);
-        return item;
-    }
-
-    MultiItem SLIDER_LAKCHERI(ArrayList<MultiItem> arrayList){
+    MultiItem SET_ITEM_SLIDER_LAKCHERI(ArrayList<MultiItem> arrayList){
         MultiItem item = new MultiItem();
         item.setType(MultiItem.SLIDER_LAKCHERI);
         item.setArrayList(arrayList);
@@ -157,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                         sound_url = object.getString("sound_url");
                     itemTwos.add(ADD_STORY_ITEM(title,desc,image_url,sound_name,sound_url));
                 }
-                itemIntroList.add(SLIDER_LAKCHERI(itemTwos));
+//                itemIntroList.add(SLIDER_L_H_V(itemTwos));
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -229,20 +198,22 @@ public class MainActivity extends AppCompatActivity {
             JSONArray jsonArray = new JSONArray(FileUtil.readAssets(this,"list_story.json"));
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject object = jsonArray.getJSONObject(i);
+                String json = String.valueOf(object);
                 String type = object.getString("type");
                 switch (type){
                     case "TEXT_BOX":
-                        TEXT_BOX(String.valueOf(object));
+                        TEXT_BOX(json);
                         break;
                     case "IMAGE":
+                        IMAGE(json);
                         break;
                     case "TITLE":
+                        TITLE(json);
                         break;
                     case "SLIDER_L":
-                        break;
                     case "SLIDER_H":
-                        break;
                     case "SLIDER_V":
+                        SLIDER_L_H_V(json,type);
                         break;
                     default:
                         break;
@@ -258,30 +229,144 @@ public class MainActivity extends AppCompatActivity {
     void TEXT_BOX(String json) throws JSONException {
         MultiItem items = new MultiItem();
         JSONObject object = new JSONObject(json);
-
         items.setType(MultiItem.TEXT_BOX);
         if (!object.isNull("text"))
             items.setText(object.getString("text"));
-
         if (!object.isNull("on_click"))
             items.setOn_click(object.getString("on_click"));
         else items.setOn_click("null");
-
         if (!object.isNull("url"))
             items.setUrl(object.getString("url"));
-
-        if (!object.isNull("title"))
-            items.setStory_title(object.getString("title"));
-
-        if (!object.isNull("image"))
-            items.setStory_image(object.getString("image"));
-
-        if (!object.isNull("sound_name"))
-            items.setStory_soundName(object.getString("sound_name"));
-
-        if (!object.isNull("sound"))
-            items.setStory_sound(object.getString("sound"));
+        try {
+            JSONObject story = object.getJSONObject("story");
+            if (!story.isNull("title"))
+                items.setStory_title(story.getString("title"));
+            if (!story.isNull("desc"))
+                items.setStory_desc(story.getString("desc"));
+            if (!story.isNull("image"))
+                items.setStory_image(story.getString("image"));
+            if (!story.isNull("sound_name"))
+                items.setStory_soundName(story.getString("sound_name"));
+            if (!story.isNull("sound"))
+                items.setStory_sound(story.getString("sound"));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         itemIntroList.add(items);
+    }
+
+    void IMAGE(String json) throws JSONException {
+        String image = "";
+        MultiItem items = new MultiItem();
+        JSONObject object = new JSONObject(json);
+        items.setType(MultiItem.IMAGE);
+        if (!object.isNull("image"))
+            image = object.getString("image");
+        items.setImage(image);
+        if (!object.isNull("title"))
+            items.setTitle(object.getString("title"));
+        if (!object.isNull("on_click"))
+            items.setOn_click(object.getString("on_click"));
+        else items.setOn_click("null");
+        if (!object.isNull("url"))
+            items.setUrl(object.getString("url"));
+        try {
+            JSONObject story = object.getJSONObject("story");
+            if (!story.isNull("title"))
+                items.setStory_title(story.getString("title"));
+            if (!story.isNull("desc"))
+                items.setStory_desc(story.getString("desc"));
+            if (!story.isNull("image"))
+                items.setStory_image(story.getString("image"));
+            if (!story.isNull("sound_name"))
+                items.setStory_soundName(story.getString("sound_name"));
+            if (!story.isNull("sound"))
+                items.setStory_sound(story.getString("sound"));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        itemIntroList.add(items);
+    }
+
+    void TITLE(String json) throws JSONException {
+        MultiItem items = new MultiItem();
+        JSONObject object = new JSONObject(json);
+        items.setType(MultiItem.TITLE);
+        if (!object.isNull("title"))
+            items.setTitle(object.getString("title"));
+        if (!object.isNull("on_click")) {
+            items.setBoolean(true);
+            items.setOn_click(object.getString("on_click"));
+        }
+        else {
+            items.setOn_click("null");
+            items.setBoolean(false);
+        }
+        if (!object.isNull("url"))
+            items.setUrl(object.getString("url"));
+        try {
+            JSONObject story = object.getJSONObject("story");
+            if (!story.isNull("title"))
+                items.setStory_title(story.getString("title"));
+            if (!story.isNull("desc"))
+                items.setStory_desc(story.getString("desc"));
+            if (!story.isNull("image"))
+                items.setStory_image(story.getString("image"));
+            if (!story.isNull("sound_name"))
+                items.setStory_soundName(story.getString("sound_name"));
+            if (!story.isNull("sound"))
+                items.setStory_sound(story.getString("sound"));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        itemIntroList.add(items);
+    }
+
+    void SLIDER_L_H_V(String json, String type) throws JSONException {
+        MultiItem multiItem = new MultiItem();
+        ArrayList<MultiItem> multiItemArrayList = new ArrayList<>();
+        switch (type){
+            case "SLIDER_L":
+                multiItem.setType(MultiItem.SLIDER_LAKCHERI);
+                break;
+            case "SLIDER_H":
+                multiItem.setType(MultiItem.SLIDER_HORIZONTAL);
+                break;
+            default:
+                multiItem.setType(MultiItem.SLIDER_VERTICAL);
+                break;
+        }
+
+        JSONObject jsonObject = new JSONObject(json);
+        JSONArray jsonArray = jsonObject.getJSONArray("list");
+        for (int i = 0; i < jsonArray.length(); i++) {
+            MultiItem item_story = new MultiItem();
+
+            JSONObject json_object_story = jsonArray.getJSONObject(i);
+            if (!json_object_story.isNull("on_click"))
+                item_story.setOn_click(json_object_story.getString("on_click"));
+            else item_story.setOn_click("null");
+            if (!json_object_story.isNull("url"))
+                item_story.setUrl(json_object_story.getString("url"));
+            try {
+                JSONObject object_story = json_object_story.getJSONObject("story");
+                if (!object_story.isNull("title"))
+                    item_story.setStory_title(object_story.getString("title"));
+                if (!object_story.isNull("desc"))
+                    item_story.setStory_desc(object_story.getString("desc"));
+                if (!object_story.isNull("image"))
+                    item_story.setStory_image(object_story.getString("image"));
+                if (!object_story.isNull("sound_name"))
+                    item_story.setStory_soundName(object_story.getString("sound_name"));
+                if (!object_story.isNull("sound"))
+                    item_story.setStory_sound(object_story.getString("sound"));
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            multiItemArrayList.add(item_story);
+        }
+        multiItem.setArrayList(multiItemArrayList);
+        itemIntroList.add(multiItem);
     }
 
     String getJsonMain(){

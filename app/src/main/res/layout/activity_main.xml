@@ -9,4 +9,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_try_again"
+        android:onClick="intent"
+        android:tag="tryAgain"
+        android:visibility="gone"
+        android:layout_below="@+id/progress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 </RelativeLayout>

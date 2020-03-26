@@ -3,6 +3,9 @@ package a.childish_tales.activtiy;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ProgressBar;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,10 +14,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import a.childish_tales.R;
+import a.childish_tales.api.Api;
+import a.childish_tales.api.ApiListener;
 import a.childish_tales.manager.SaveManager;
 import a.childish_tales.recyclerview.multi.MultiAdaptor;
 import a.childish_tales.recyclerview.multi.MultiItem;
-import a.childish_tales.util.file.FileUtil;
 
 public class MainActivity extends AppCompatActivity {
     private String TAG = "amnigoli-MainActivity";
@@ -23,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
     MultiAdaptor mAdapter;
     RecyclerView.LayoutManager layoutManager;
+    ProgressBar progressBar;
+    Button btn_try_again;
+    String url = null;
 
     @Override
     protected void onStart() {
@@ -34,19 +41,32 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        url = getIntent().getStringExtra("url");
+
+        mRecyclerView = findViewById(R.id.recycler_view);
+        progressBar = findViewById(R.id.progress);
+        btn_try_again = findViewById(R.id.btn_try_again);
 
         itemIntroList = new ArrayList<>();
-        mRecyclerView = findViewById(R.id.recycler_view);
         mAdapter = new MultiAdaptor(itemIntroList,this);
         mRecyclerView.setAdapter(mAdapter);
-        JSON_SETER();
-        layoutManager= new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
-        mRecyclerView.setLayoutManager(layoutManager);
+        setItem();
     }
 
-    void JSON_SETER(){
+    void setItem(){
+        progressBar.setVisibility(View.GONE);
+        btn_try_again.setVisibility(View.GONE);
+        if (url==null){
+            JSON_SETER();
+        }else {
+            progressBar.setVisibility(View.VISIBLE);
+            JSON_SETER_ONLINE();
+        }
+    }
+
+    void JSON_SETER(String JSON){
         try {
-            JSONArray jsonArray = new JSONArray(getJsonMain());
+            JSONArray jsonArray = new JSONArray(JSON);
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject object = jsonArray.getJSONObject(i);
                 String json = String.valueOf(object);
@@ -73,8 +93,28 @@ public class MainActivity extends AppCompatActivity {
 
         } catch (JSONException e) {
             e.printStackTrace();
-            Log.d(TAG, "JSON_SETER: "+e);
+            Log.d(TAG, "JSON_SETER_OFFLINE: "+e);
         }
+        layoutManager= new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
+        mRecyclerView.setLayoutManager(layoutManager);
+    }
+    void JSON_SETER(){
+        JSON_SETER(getJsonMain());
+    }
+
+    void JSON_SETER_ONLINE(){
+        Api.GET(url, new ApiListener() {
+            @Override
+            public void onResult(String result) {
+                JSON_SETER(result);
+                progressBar.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onFiled() {
+                btn_try_again.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     void TEXT_BOX(String json) throws JSONException {
@@ -224,10 +264,20 @@ public class MainActivity extends AppCompatActivity {
         return SaveManager.get(this).getstring_appINFO().get(SaveManager.jsonMain);
     }
 
+
+
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE | View.SYSTEM_UI_FLAG_FULLSCREEN);
+    }
+
+    public void intent(View view) {
+        switch (view.getTag().toString()){
+            case "tryAgain":
+                setItem();
+                break;
+        }
     }
 }

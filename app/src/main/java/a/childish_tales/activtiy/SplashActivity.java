@@ -26,13 +26,13 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onResult(String result) {
                 try {
-                    Log.d(TAG, "onResult-1: "+result);
+                    Log.d(TAG, "get URL List Json");
                     JSONObject jsonObject = new JSONObject(result);
                     String url = jsonObject.getString("main_json");
                     Api.GET(url, new ApiListener() {
                         @Override
                         public void onResult(String result) {
-                            Log.d(TAG, "onResult-2: "+result);
+                            Log.d(TAG, "Get List Json");
                             setJsonMain(result);
                         }
                         @Override
@@ -53,7 +53,8 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     void setJsonMain(String json){
-        Log.d(TAG, "setJsonMain: "+json);
+        Log.d(TAG, "setJsonMain: ");
+        Log.e("json", "splashActivity.class\njson main is: "+json );
         SaveManager.get(this).saveJsonMain(json);
         nextActivity();
     }

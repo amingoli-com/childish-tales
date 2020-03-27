@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import a.childish_tales.R;
 import a.childish_tales.activtiy.AudioPlayerActivity;
 import a.childish_tales.activtiy.ListViewActivity;
+import a.childish_tales.activtiy.VideoPlayerActivity;
 import a.childish_tales.activtiy.WebViewActivity;
 import a.childish_tales.recyclerview.AdapterSliderHorezontal;
 import a.childish_tales.recyclerview.AdapterSliderLakcheri;
@@ -236,6 +237,10 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 intent.putExtra("image",object.getStory_image());
                 intent.putExtra("sound_name",object.getStory_soundName());
                 intent.putExtra("sound",object.getStory_sound());
+                break;
+            case "video":
+                intent = new Intent(mContext, VideoPlayerActivity.class);
+                intent.putExtra("url",object.getUrl());
                 break;
             case "web_view":
                 intent = new Intent(mContext, WebViewActivity.class);

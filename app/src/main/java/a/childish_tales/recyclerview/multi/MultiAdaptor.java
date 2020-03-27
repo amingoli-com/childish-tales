@@ -90,9 +90,8 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         }
     }
     public static class holder_Title extends RecyclerView.ViewHolder {
-        View view;
+        View view,icon;
         TextView textView;
-        ImageView icon;
         holder_Title(View itemView) {
             super(itemView);
             view = itemView;
@@ -183,7 +182,7 @@ public class MultiAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
                 case MultiItem.TITLE:
                     TextView title1 = ((holder_Title)holder).textView;
-                    ImageView icon = ((holder_Title)holder).icon;
+                    View icon = ((holder_Title)holder).icon;
                     title1.setText(object.getTitle());
                     if (object.isBoolean()){
                         icon.setVisibility(View.VISIBLE);

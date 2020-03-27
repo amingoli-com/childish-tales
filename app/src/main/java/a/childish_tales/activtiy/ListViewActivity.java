@@ -19,6 +19,7 @@ import a.childish_tales.api.ApiListener;
 import a.childish_tales.manager.SaveManager;
 import a.childish_tales.recyclerview.multi.MultiAdaptor;
 import a.childish_tales.recyclerview.multi.MultiItem;
+import a.childish_tales.util.file.FileUtil;
 
 public class ListViewActivity extends AppCompatActivity {
     private String TAG = "amnigoli-MainActivity";
@@ -57,7 +58,7 @@ public class ListViewActivity extends AppCompatActivity {
         progressBar.setVisibility(View.GONE);
         btn_try_again.setVisibility(View.GONE);
         if (url==null){
-            JSON_SETER();
+            JSON_SETER(FileUtil.readAssets(this,"list_story.json"));
         }else {
             progressBar.setVisibility(View.VISIBLE);
             JSON_SETER_ONLINE();

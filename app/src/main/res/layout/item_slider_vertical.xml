@@ -71,7 +71,10 @@
             android:text="@string/play_story"
             android:textSize="@dimen/_7ssp"
             android:textColor="#333"
-            android:padding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </RelativeLayout>

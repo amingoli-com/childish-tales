@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -55,6 +56,7 @@ public class AdapterSliderVertical extends RecyclerView.Adapter<AdapterSliderVer
     holder.desc.setText(item.getStory_desc());
 
     holder.view.setOnClickListener(clickListener(item));
+    holder.btn_play.setOnClickListener(clickListener(item));
   }
 
   // total number of rows
@@ -66,7 +68,7 @@ public class AdapterSliderVertical extends RecyclerView.Adapter<AdapterSliderVer
 
   // stores and recycles views as they are scrolled off screen
   public class ViewHolder extends RecyclerView.ViewHolder{
-      View view;
+      View view,btn_play;
       ImageView imageView;
       TextView title,desc;
     ViewHolder(View itemView) {
@@ -75,6 +77,7 @@ public class AdapterSliderVertical extends RecyclerView.Adapter<AdapterSliderVer
       imageView = itemView.findViewById(R.id.image_view);
       title = itemView.findViewById(R.id.title);
       desc = itemView.findViewById(R.id.desc);
+      btn_play = itemView.findViewById(R.id.btn_play);
     }
   }
 

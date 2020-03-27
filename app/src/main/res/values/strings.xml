@@ -5,6 +5,6 @@
     <string name="downloading">درحال دریافت فایل صوتی داستان</string>
     <string name="warn_download">دریافت فایل با شکست مواجه شد!</string>
     <string name="try_again">تلاش مجدد</string>
-    <string name="play_story">پخش داستان</string>
+    <string name="play_story">پخش</string>
     <string name="more">بیشتر</string>
 </resources>

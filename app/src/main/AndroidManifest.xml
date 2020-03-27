@@ -23,8 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
-        <activity android:name=".activtiy.WebViewActivity"></activity>
-        <activity android:name=".activtiy.InfoStoryActivity" />
+        <activity android:name=".activtiy.VideoPlayerActivity"></activity>
+        <activity android:name=".activtiy.WebViewActivity" />
+        <activity android:name=".activtiy.AudioPlayerActivity" />
         <activity android:name=".activtiy.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activtiy.MainActivity" />
+        <activity android:name=".activtiy.ListViewActivity" />
     </application>
 
 </manifest>

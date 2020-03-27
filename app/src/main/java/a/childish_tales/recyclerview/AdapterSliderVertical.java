@@ -17,8 +17,8 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 
 import a.childish_tales.R;
-import a.childish_tales.activtiy.InfoStoryActivity;
-import a.childish_tales.activtiy.MainActivity;
+import a.childish_tales.activtiy.AudioPlayerActivity;
+import a.childish_tales.activtiy.ListViewActivity;
 import a.childish_tales.activtiy.WebViewActivity;
 import a.childish_tales.recyclerview.multi.MultiItem;
 
@@ -81,7 +81,7 @@ public class AdapterSliderVertical extends RecyclerView.Adapter<AdapterSliderVer
   void setIntent(MultiItem object){
     switch (object.getOn_click()){
       case "audio":
-        intent = new Intent(mContext, InfoStoryActivity.class);
+        intent = new Intent(mContext, AudioPlayerActivity.class);
         intent.putExtra("title",object.getStory_title());
         intent.putExtra("desc",object.getStory_desc());
         intent.putExtra("image",object.getStory_image());
@@ -97,7 +97,7 @@ public class AdapterSliderVertical extends RecyclerView.Adapter<AdapterSliderVer
         intent.setData(Uri.parse(object.getUrl()));
         break;
       case "json":
-        intent = new Intent(mContext, MainActivity.class);
+        intent = new Intent(mContext, ListViewActivity.class);
         intent.putExtra("url",object.getUrl());
         break;
       default:

@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
 import a.childish_tales.R;
 import a.childish_tales.util.file.FileUtil;
 
-public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener, SeekBar.OnSeekBarChangeListener {
+public class AudioPlayerActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener, SeekBar.OnSeekBarChangeListener {
     private String TAG = "amingoli78-InfoStoryActivity";
     int downloadId = 0;
     String sound_name = null;
@@ -59,7 +59,7 @@ public class InfoStoryActivity extends AppCompatActivity implements MediaPlayer.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info_story);
+        setContentView(R.layout.activity_audio_player);
         idFinder();
 
         // Setting timeout globally for the download network requests:

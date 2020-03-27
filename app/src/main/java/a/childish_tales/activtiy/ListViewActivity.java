@@ -20,7 +20,7 @@ import a.childish_tales.manager.SaveManager;
 import a.childish_tales.recyclerview.multi.MultiAdaptor;
 import a.childish_tales.recyclerview.multi.MultiItem;
 
-public class MainActivity extends AppCompatActivity {
+public class ListViewActivity extends AppCompatActivity {
     private String TAG = "amnigoli-MainActivity";
 
     ArrayList<MultiItem> itemIntroList;
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_list_view);
         url = getIntent().getStringExtra("url");
 
         mRecyclerView = findViewById(R.id.recycler_view);

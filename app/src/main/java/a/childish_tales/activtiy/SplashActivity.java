@@ -70,7 +70,7 @@ public class SplashActivity extends AppCompatActivity {
     }
     void nextActivity(){
         new Handler().postDelayed(() -> {
-                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    startActivity(new Intent(SplashActivity.this, ListViewActivity.class));
                     finish();
                     }
                 ,500);

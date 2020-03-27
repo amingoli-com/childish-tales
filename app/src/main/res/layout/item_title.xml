@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layoutDirection="ltr"
     android:layout_marginTop="@dimen/_7sdp"
-    
+
     android:layout_marginStart="@dimen/_8sdp"
     android:layout_marginEnd="@dimen/_7sdp"
     android:layout_width="match_parent"

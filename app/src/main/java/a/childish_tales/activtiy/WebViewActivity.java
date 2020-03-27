@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,35 +25,41 @@ public class WebViewActivity extends AppCompatActivity implements AdvancedWebVie
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web_view);
+        try {
+            setContentView(R.layout.activity_web_view);
 
-        url = getIntent().getStringExtra("url");
+            url = getIntent().getStringExtra("url");
 
-        swipeRefreshLayout = findViewById(R.id.swiperefreshlayout);
-        mWebView = findViewById(R.id.webview);
+            swipeRefreshLayout = findViewById(R.id.swiperefreshlayout);
+            mWebView = findViewById(R.id.webview);
 
-        swipeRefreshLayout.setOnRefreshListener(this);
-        swipeRefreshLayout.setRefreshing(true);
+            swipeRefreshLayout.setOnRefreshListener(this);
+            swipeRefreshLayout.setRefreshing(true);
 
-        mWebView.setScrollbarFadingEnabled(false);
-        mWebView.setHorizontalScrollBarEnabled(false);
-        mWebView.setVerticalScrollBarEnabled(false);
-        mWebView.setScrollContainer(false);
-        mWebView.getSettings().setDomStorageEnabled(true);
-        mWebView.getSettings().setPluginState(WebSettings.PluginState.ON);
-        mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.getSettings().setLoadsImagesAutomatically(true);
-        mWebView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
-        mWebView.getSettings().setSupportZoom(false);
-        mWebView.getSettings().setSavePassword(false);
-        mWebView.getSettings().setBlockNetworkImage(false);
-        mWebView.getSettings().setSupportMultipleWindows(false);
-        mWebView.getSettings().setAppCacheEnabled(true);
-        mWebView.addJavascriptInterface(this, "jsinterface");
-        mWebView.setOverScrollMode(View.OVER_SCROLL_NEVER);
-        mWebView.setListener(this, this);
-        mWebView.loadUrl(url);
-
+            mWebView.setScrollbarFadingEnabled(false);
+            mWebView.setHorizontalScrollBarEnabled(false);
+            mWebView.setVerticalScrollBarEnabled(false);
+            mWebView.setScrollContainer(false);
+            mWebView.getSettings().setDomStorageEnabled(true);
+            mWebView.getSettings().setPluginState(WebSettings.PluginState.ON);
+            mWebView.getSettings().setJavaScriptEnabled(true);
+            mWebView.getSettings().setLoadsImagesAutomatically(true);
+            mWebView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
+            mWebView.getSettings().setSupportZoom(false);
+            mWebView.getSettings().setSavePassword(false);
+            mWebView.getSettings().setBlockNetworkImage(false);
+            mWebView.getSettings().setSupportMultipleWindows(false);
+            mWebView.getSettings().setAppCacheEnabled(true);
+            mWebView.addJavascriptInterface(this, "jsinterface");
+            mWebView.setOverScrollMode(View.OVER_SCROLL_NEVER);
+            mWebView.setListener(this, this);
+            mWebView.loadUrl(url);
+        }catch (Exception e){
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            startActivity(intent);
+            finish();
+        }
         Log.d(TAG, "onCreate: ");
     }
 

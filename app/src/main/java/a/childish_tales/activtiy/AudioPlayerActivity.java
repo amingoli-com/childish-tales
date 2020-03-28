@@ -130,9 +130,6 @@ public class AudioPlayerActivity extends AppCompatActivity implements MediaPlaye
             case "next_5sec":
                 if (mp!=null){
                     if (mp.getDuration()>5500){
-                        Log.d(TAG, "intent 1: "+mp.getDuration());
-                        int t = mp.getDuration()-seekBar.getProgress();
-                        Log.d(TAG, "intent 2: "+t);
                         if (mp.getDuration()-seekBar.getProgress()>5500){
                             mp.seekTo(seekBar.getProgress()+4500);
                         }
@@ -140,7 +137,11 @@ public class AudioPlayerActivity extends AppCompatActivity implements MediaPlaye
                 }
                 break;
             case "back_5sec":
-
+                if (mp!=null){
+                    if (seekBar.getProgress()>5500){
+                        mp.seekTo(seekBar.getProgress()-4500);
+                    }
+                }
                 break;
         }
     }

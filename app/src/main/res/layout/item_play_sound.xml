@@ -92,6 +92,8 @@
             style="@style/player_cardview">
             <ImageView
                 android:src="@drawable/ic_back"
+                android:onClick="intent"
+                android:tag="back_5sec"
                 style="@style/player_image_btn"/>
         </androidx.cardview.widget.CardView>
 
@@ -112,6 +114,8 @@
             app:cardCornerRadius="@dimen/_25sdp"
             style="@style/player_cardview">
             <ImageView
+                android:onClick="intent"
+                android:tag="next_5sec"
                 android:src="@drawable/ic_next"
                 style="@style/player_image_btn"/>
         </androidx.cardview.widget.CardView>

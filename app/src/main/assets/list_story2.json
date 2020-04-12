@@ -1,54 +1,4068 @@
-{
-  "list": [
-    {
-      "type": "TEXT" ,
-      "text": "text of text",
+[
 
-      "on_click": 1,
-      "url": "",
+  {
+    "type": "SLIDER_L" ,
+    "list": [
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "منجوق و مادرش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397112_112.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397112_112.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کبوترهای متحد",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397111_284.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397111_284.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قلب من برای تو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397109_271.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397109_271.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قصه باورنکردنی پاپا جان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397108_208.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397108_208.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "فکر زمستان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397107_472.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397107_472.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شیر و پشه و عنکبوت",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397106_267.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397106_267.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سفر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397104_311.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397104_311.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دیگ کهنه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397103_746.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397103_746.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "درخت و گلنار",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397102_858.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397102_858.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پا پهن خانم",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397101_116.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397101_116.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بابا عبدالله",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397099_591.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397099_591.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آسمانِ آبی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397097_973.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397097_973.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "اسب شهری",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397095_682.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397095_682.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مریضی بچه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397057_209.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/21/397057_209.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "فاخته",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397055_209.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/21/397055_209.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خرگوش سفید و خال خالی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397054_724.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/21/397054_724.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بی بی مهربون",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397053_262.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/21/397053_262.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شنگول منگول حبه انگور",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396964_465.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/20/396964_465.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سه دوست ناراحت",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396957_723.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/20/396957_723.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سرماخوردگی کلاغ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396955_374.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/20/396955_374.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "چان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396952_847.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/20/396952_847.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بوکولای افریقا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396946_587.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/20/396946_587.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بابا بزرگ نجار",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396943_889.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/20/396943_889.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "موش زیرک",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396225_362.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396225_362.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خال خالی و تراکتور",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396223_287.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396223_287.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "زندگی‌،امید و دیگر هیچ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396221_812.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396221_812.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بوی خوش زمستان، بوی گل یخ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396220_470.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396220_470.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جوجه تیغی غمگین",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396219_586.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396219_586.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دختر و معما",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396216_364.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396216_364.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دوستان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396214_607.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396214_607.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شاخ دیوی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396212_782.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396212_782.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سبد سیب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396208_309.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396208_309.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خانه شکلاتی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396205_843.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396205_843.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "افسانه ای از سرخپوستان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396204_733.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396204_733.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مثل باران",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "393112_694.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/10/3/393112_694.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بازی با دریا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "393111_362.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/10/3/393111_362.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آهوی لاغر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "393110_831.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/10/3/393110_831.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مرد تنبور نواز",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "393109_659.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/10/3/393109_659.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "داستان شب یلدا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "393108_192.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/10/3/393108_192.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "تی تی تمساح باهوش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "392715_555.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/28/392715_555.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دختر کوچولو و عروسک فسقلی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "392714_789.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/28/392714_789.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نمیخوام اتاقمو مرتب کنم",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "392711_390.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/28/392711_390.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "همشاگردی گم شده",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "392709_375.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/28/392709_375.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "من مادر مادر بزرگم هستم",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "392707_944.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/28/392707_944.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "عروس پاییز",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "392701_399.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/28/392701_399.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جی جی جیغ جیغو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "392699_452.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/28/392699_452.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بزرگترین عید دنیا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "392696_456.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/28/392696_456.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "هزارپای پا برهنه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391427_573.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/19/391427_573.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سرزمین جوراب‌های گمشده",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391426_657.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/19/391426_657.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بیدی بی ادب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391210_558.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391210_558.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گوریل نارگیلی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391209_369.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391209_369.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "تلی تلویریونی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391208_893.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391208_893.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دوقلوهای قرمزی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391206_548.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391206_548.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "زنگوله ی عروسی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391205_547.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391205_547.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جوراب لنگه به لنگه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391204_253.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391204_253.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خاله بدو بدو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391203_891.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391203_891.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "اسبی که دنبال سوار کار میگشت",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391202_365.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391202_365.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کفش‌های هیپا و شیپا (2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391188_243.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391188_243.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کفش‌های هیپا و شیپا (1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391187_518.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391187_518.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پاداشی که خدا به درویش داد (2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391186_909.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391186_909.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پاداشی که خدا به درویش داد (1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391185_245.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391185_245.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "اولین بچه‌ای که از ترکیدن بادکنکش خوشحال شد (2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391184_392.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391184_392.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "اولین بچه‌ای که از ترکیدن بادکنکش خوشحال شد (1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "391183_475.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/16/391183_475.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "فرفره ی فری",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "390846_765.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/13/390846_765.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شوخی شوخی با هلیکوپتر هم شوخی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "390845_347.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/13/390845_347.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ماجرای سیب قرمز",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "390844_382.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/13/390844_382.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "چشمه سحر آمیز",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "390843_248.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/13/390843_248.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آدم برفی (3)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "390180_837.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/6/390180_837.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آدم برفی (2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "390179_585.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/6/390179_585.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آدم برفی (1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "390174_960.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/6/390174_960.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گوجه فرنگی سبز",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "390173_208.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/6/390173_208.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "برف نو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "390171_101.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/9/6/390171_101.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "هدیه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389260_270.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389260_270.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دانه یاقوتی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389257_310.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389257_310.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مسابقه کوفته پزی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389256_887.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389256_887.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "الاغ بی نوا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389255_473.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389255_473.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "موفرفری و موقرمزی (2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389254_771.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389254_771.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "موفرفری و موقرمزی (1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389253_608.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389253_608.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گندم سیاه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389252_523.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389252_523.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "موش ارباب و گربه خدمتکار",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389251_540.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389251_540.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بهترین آتش نشان دنیا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389248_146.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389248_146.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مری مرتب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389247_808.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389247_808.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دودو دروغگو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389245_391.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389245_391.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آدم برفی خندان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389244_284.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389244_284.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "فرار از جنگل",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389240_482.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389240_482.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "تصمیم دریا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388952_588.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/26/388952_588.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "حلزون و بوته ی گل سرخ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388951_186.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/26/388951_186.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دویدم",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388949_344.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/26/388949_344.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "لی لی لی عروسی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388948_739.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/26/388948_739.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ماهی قرمز و قورباغه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388947_669.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/26/388947_669.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نگی نگران",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388946_600.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/26/388946_600.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گاو ماه پیشونی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388945_749.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/26/388945_749.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پینوکیو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388944_474.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/26/388944_474.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کلاغ باهوش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388943_217.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/26/388943_217.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مرغ علی قلی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388461_450.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/21/388461_450.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مومو و نمدی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388460_519.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/21/388460_519.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "یه جور دیگه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388459_456.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/21/388459_456.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نبات خانمی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388458_540.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/21/388458_540.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "لک لک ها  (2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "387271_825.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/13/387271_825.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "لک لک ها  (1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "387270_573.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/13/387270_573.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گنجشک و خانم کبوتر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "387264_189.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/13/387264_189.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شکوفه های سیب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "387261_582.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/13/387261_582.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جوان بخشنده",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "387260_891.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/13/387260_891.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کاکی کنجکاو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "387104_817.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/12/387104_817.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "موش شهری موش روستایی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "386929_995.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/11/386929_995.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جشن تولد",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "386318_422.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/6/386318_422.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "لحاف ننه سرما",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "386316_921.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/6/386316_921.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شاید آفتاب بخواد نصفه شب طلوع کنه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "386315_127.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/6/386315_127.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پنی قشقرق (3)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "385546_871.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/30/385546_871.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پنی قشقرق (2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "385545_731.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/30/385545_731.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پنی قشقرق (1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "385544_623.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/30/385544_623.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ماهی کوچولو بهانه گیر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "385540_401.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/30/385540_401.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جوجه طلایی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "385536_855.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/30/385536_855.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کاکی کنجکاو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "384761_933.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/24/384761_933.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پسرک بندانگشتی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "384751_345.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/24/384751_345.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "تکالیف مدرسه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "384750_471.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/24/384750_471.mp4"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گردش حیوانات",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "384748_987.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/24/384748_987.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دروغگو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "384747_717.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/24/384747_717.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خروس رزی پیرهن پری (2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382616_770.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/9/382616_770.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خروس رزی پیرهن پری (1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382615_587.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/9/382615_587.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "حسنی و خانم حنا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382614_546.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/9/382614_546.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ابر سفید کوچولو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382613_373.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/9/382613_373.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دکتر دانا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382611_457.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/9/382611_457.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کلاغ دوستداشتنی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382610_553.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/9/382610_553.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نخود سیاه و آرزوی بزرگش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382822_442.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/10/382822_442.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "غول عینکی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382820_745.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/10/382820_745.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "چتر سفید خالدار",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382819_507.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/10/382819_507.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پسر سینی دختر نارنج",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382818_820.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/10/382818_820.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "حسنک تنبل",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "381704_600.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/3/381704_600.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "الاغ خاکستری",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "381703_807.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/3/381703_807.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نتیجه مغرور بودن",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "381701_656.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/3/381701_656.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پتوی لاکی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "381700_295.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/3/381700_295.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پیرزن و روباه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "380637_249.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/27/380637_249.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مرغ زیرک",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "380635_114.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/27/380635_114.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قلی قلقلکی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "380634_282.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/27/380634_282.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "حسن کچل",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "380633_682.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/27/380633_682.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "می‌می‌نی پشت پرده یه سکه پیدا کرده",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "380632_423.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/27/380632_423.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ضرب المثل",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "380631_707.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/27/380631_707.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خاله سوسکه کجا میری(2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "380232_197.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/25/380232_197.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خاله سوسکه کجا میری(1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "380230_873.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/25/380230_873.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "اتل متل توتوله(2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "379278_688.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/17/379278_688.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "اتل متل توتوله(1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "379277_825.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/17/379277_825.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بزبز قندی (2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "379276_449.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/17/379276_449.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بزبز قندی (1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "379275_363.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/17/379275_363.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آهو و پرندگان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "378541_507.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/12/378541_507.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گردن کج گلابی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "378539_210.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/12/378539_210.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "من آرزو دارم",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "377605_448.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/6/377605_448.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ملکه ی تنها",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "377604_643.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/6/377604_643.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ناتاشا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "377603_262.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/6/377603_262.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "میمون و پلنگ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "377602_968.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/6/377602_968.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قصه دوچرخه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "377618_746.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/6/377618_746.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آقا فیله چه مهربونه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "377617_831.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/6/377617_831.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گاو و الاغ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "377389_501.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/5/377389_501.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قلب من برای تو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "377388_624.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/6/5/377388_624.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قصه ای از قطب شمال",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "376288_466.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/30/376288_466.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قطار و ریل",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "376287_483.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/30/376287_483.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سنگ و رودخانه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "376286_607.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/30/376286_607.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "زنبور",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "376285_840.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/30/376285_840.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دل موش کوچولو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "376284_346.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/30/376284_346.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دیگ کهنه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "376072_819.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/28/376072_819.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "درخت و گلنار",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "374984_648.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/22/374984_648.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خانه جدید خارپشت",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "374656_955.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/20/374656_955.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خاله جان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "374655_555.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/20/374655_555.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "چه خانه زیبایی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "374653_996.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/20/374653_996.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "چکه آب، چکه باران",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "374652_564.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/20/374652_564.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جوجه های دارکوب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "374147_293.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/16/374147_293.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بوسه راسو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "373867_381.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/16/373867_381.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بشنو و باور نکن",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "373866_607.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/16/373866_607.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ابر کوچولو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "373756_510.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/15/373756_510.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دوست عجیب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "373753_276.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/15/373753_276.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کیک امانتی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "373752_348.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/15/373752_348.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "درسی که خرگوش کوچولو گرفت",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "372461_111.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/8/372461_111.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دو گل نیلوفر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "371704_234.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/3/371704_234.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ویلن آواز خوان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "371703_591.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/3/371703_591.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قصه بخت",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "371700_876.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/3/371700_876.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پهلوان پنبه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "371699_928.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/3/371699_928.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "هر چه میخواهد دل تنگت بگو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "371694_928.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/3/371694_928.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "لبخند چوبی (2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "371697_874.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/3/371697_874.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "لبخند چوبی (1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "371694_928.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/3/371694_928.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نیم وجبی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "370336_620.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/26/370336_620.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "درختچه آلو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "370337_701.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/26/370337_701.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "چهار شمع سیمون",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "370338_358.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/26/370338_358.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شیر و خرگوش پیر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "369290_314.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/19/369290_314.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ماهی بیرون از آب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "369289_552.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/19/369289_552.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "علی بابا و چهل دزد",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "367979_830.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/11/367979_830.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "یهودی و مسلمان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "367978_449.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/11/367978_449.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نیرنگ قورباغه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "367977_461.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/11/367977_461.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خواب خرگوش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "367019_973.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/4/367019_973.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "غلام",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "367018_534.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/4/367018_534.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مرغ ماهی خوار",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "367420_559.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/6/367420_559.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مادر پیشی کوچولو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "367016_195.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/4/367016_195.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گیلاس",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "367015_140.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/4/367015_140.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "تجربه خواهم کرد",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "366286_740.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/29/366286_740.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خسیس",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "366287_972.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/29/366287_972.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نخودی خانم",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "365486_853.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/23/365486_853.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "طوطی سبز و میوه انبه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "358179_963.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/1/29/358179_963.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جوجه تیغی خوشحال",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "356985_495.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/1/18/356985_495.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "طوطی و بازرگان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "356622_103.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/1/15/356622_103.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": " آقا و خانم کلاغ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "356260_288.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/1/11/356260_288.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پادشاه ظالم",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "355922_333.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/1/8/355922_333.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قهرمان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "354892_581.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/12/27/354892_581.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بابا برفی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "353631_925.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/12/15/353631_925.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کی از همه پر زور تره؟",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "352945_860.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/12/8/352945_860.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دریاچه قو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "352168_792.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/12/1/352168_792.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "فندوق شکن",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "351143_960.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/11/24/351143_960.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خال قزی کفش قرمزی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "350651_797.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/11/17/350651_797.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سلیمان بابا سلیمان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "349842_738.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/11/9/349842_738.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خواب و پسرک",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "349060_245.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/11/3/349060_245.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "حوض کوچک، قایق کوچک",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "348041_806.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/10/25/348041_806.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "زیر آسمان بزرگ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "347228_671.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/10/18/347228_671.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "روباه بدون دم",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "346459_444.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/10/11/346459_444.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کامی کمکی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "344848_456.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/9/22/344848_456.m4a"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بلندترین شب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "344279_344.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/9/15/344279_344.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پرنده کوچولو و درختان همیشه سبز",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "343227_202.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/8/30/343227_202.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سرگذشت دانه برف",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "342674_695.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/8/23/342674_695.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "فیل اومد آب بخوره",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "342673_631.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/8/23/342673_631.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ماه پیشونی2",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "342615_508.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/8/22/342615_508.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ماه پیشونی1",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "342614_399.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/8/22/342614_399.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دانه کوچک",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "342272_731.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/8/15/342272_731.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قارچ زیر باران",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "342235_299.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/8/14/342235_299.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پسرک چشم آبی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "341913_276.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/8/10/341913_276.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گنجشک کوچولو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "341367_146.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/30/341367_146.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آرزوی شهر خالی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "340643_455.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/19/340643_455.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گوزن",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "340070_465.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/11/340070_465.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "عمه نارنجی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "340069_415.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/11/340069_415.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سه سیب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "339907_481.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/10/339907_481.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "رویه آسترو نگه میداره یا آستر رویه رو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "339756_443.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/9/339756_443.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دندون مروارید گیس گلابتون",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "339597_879.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/8/339597_879.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "موچول مورچه کوچولو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "339485_564.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/7/339485_564.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "لک لک تنها",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "339405_421.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/5/339405_421.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قطب چجوریه؟",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "339250_393.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/4/339250_393.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پسر شیطون",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "339098_147.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/3/339098_147.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سرباز شکلاتی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "338956_255.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/2/338956_255.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سه آدم بد",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "338824_233.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/7/1/338824_233.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خودت باش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "338658_104.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/6/31/338658_104.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پسر کوچولوهای بازیگوش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "338437_299.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/6/27/338437_299.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قلعه درون ابرها",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "338283_916.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/6/26/338283_916.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شاهزاده خانم و آدم برفی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "338111_567.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/6/25/338111_567.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نخودی و دیو سیاه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "337963_103.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/6/24/337963_103.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کدو قلقله زن",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "337900_854.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/6/22/337900_854.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پادشاه گوش الاغی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "337735_713.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/6/21/337735_713.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کوهکن چینی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "337524_781.mp3",
+          "sound": "https://niniban.com/files/fa/news/1397/6/19/337524_781.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "درس طوطی‌ها",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "132919_430.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/3/9/132919_430.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "غولچه و دختر بادام",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "132435_779.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/3/8/132435_779.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "عنکبوتی که پارچه می‌بافت",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "131715_485.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/3/5/131715_485.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آنوشای حرف شنو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "131252_101.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/3/4/131252_101.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سبز گیسو(قسمت پنجم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "130666_381.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/3/3/130666_381.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سبز گیسو(قسمت چهارم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "129846_941.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/3/1/129846_941.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سبز گیسو(قسمت سوم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "128246_239.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/29/128246_239.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سبز گیسو(قسمت دوم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "127624_261.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/28/127624_261.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سبز گیسو(قسمت اول)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "127221_380.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/27/127221_380.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ببر مهربان(قسمت سوم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "126607_805.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/26/126607_805.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ببر مهربان(قسمت دوم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "126152_718.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/25/126152_718.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ببر مهربان(قسمت اول)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "124544_208.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/21/124544_208.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گیس طلا و اسب سیاه(قسمت سوم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "124102_889.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/20/124102_889.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گیس طلا و اسب سیاه(قسمت دوم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "123508_947.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/19/123508_947.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گیس طلا و اسب سیاه(قسمت اول)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "123083_926.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/18/123083_926.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مرغ تخم طلا(قسمت پنجم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "121924_161.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/15/121924_161.mp4"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مرغ تخم طلا(قسمت چهارم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "121387_790.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/14/121387_790.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مرغ تخم طلا(قسمت سوم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "120831_502.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/13/120831_502.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مرغ تخم طلا(قسمت دوم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "120274_996.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/12/120274_996.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مرغ تخم طلا(قسمت اول)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "120160_344.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/2/11/120160_344.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نمکی(قسمت چهارم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "114075_117.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/1/29/114075_117.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نمکی(قسمت سوم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "114074_321.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/1/29/114074_321.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نمکی(قسمت دوم)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "114072_599.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/1/29/114072_599.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نمکی(قسمت اول)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "108497_778.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/1/16/108497_778.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "عمو نوروز",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "105403_491.mp3",
+          "sound": "https://niniban.com/files/fa/news/1395/1/7/105403_491.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "صدای بهار",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "104324_818.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/27/104324_818.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "یک کلاغ چهل کلاغ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "104323_103.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/27/104323_103.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دو هندوانه و یک گاو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "103839_269.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/25/103839_269.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آرزوی مورچه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "103407_703.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/24/103407_703.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بی بی دامن بلند",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "102775_641.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/22/102775_641.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کفاش و سه کوچولو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "100867_236.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/16/100867_236.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مهربانی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "100583_100.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/15/100583_100.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آهوی جادو شده(2)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "99976_536.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/12/99976_536.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آهوی جادو شده(1)",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "99750_966.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/11/99750_966.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کوه آدامو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "99435_787.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/10/99435_787.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ریحانه خاتون و پسرش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "98104_481.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/3/98104_481.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آدمیزاد بدجنس",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "97895_895.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/2/97895_895.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پسری در طبل",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "97651_908.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/1/97651_908.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خارکن و موش و مار و طوطی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "97395_617.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/29/97395_617.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "زور دارم زور",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "97002_360.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/27/97002_360.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گربه کوچک",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "96758_574.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/26/96758_574.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جوجه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "96248_709.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/24/96248_709.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بادبادک محسن",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "95869_410.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/21/95869_410.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "رویه و آستر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "95600_845.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/20/95600_845.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "تنور",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "95206_471.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/19/95206_471.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خیاط خوش قول",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "94976_617.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/18/94976_617.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "یکی زیر یکی رو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "94708_104.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/17/94708_104.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جیک جیک مستون",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "94466_345.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/15/94466_345.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پیرزن و بز گمشده",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "94358_554.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/14/94358_554.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دندان مروارید",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "93975_950.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/13/93975_950.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "تکالیف مدرسه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "93543_138.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/11/93543_138.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دو خواهر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "93350_930.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/10/93350_930.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کرگدن و دم جنبونک",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360812_544.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360812_544.mp4"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آهوی گردن دراز",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360813_808.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360813_808.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دوستان صمیمی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360814_855.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360814_855.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "حلزون",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360815_889.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360815_889.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "رودخانه قصه گو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360816_779.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360816_779.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شمعدانی طلا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360817_492.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360817_492.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دانا و نادان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360819_470.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360819_470.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "چشمه سحرآمیز",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360821_560.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360821_560.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "احمد و سارا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360822_343.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360822_343.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "فیل نقاشی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360823_301.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360823_301.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بهترین نان برای مهربانترین حیوان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360824_803.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360824_803.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گودال آب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360825_229.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360825_229.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "لباس جدید پادشاه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360826_696.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360826_696.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شکارچی و طوقی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360827_236.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360827_236.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مهمان ناخوانده",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360828_745.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360828_745.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "لاک‌پشت باهوش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360837_126.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360837_126.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "درخت بخشنده",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360838_419.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360838_419.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خروس دانا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360839_381.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360839_381.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سنگ صبور",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360841_191.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360841_191.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کلاغ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360842_759.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360842_759.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جغد",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360843_439.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360843_439.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "داد و بیداد",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360844_647.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360844_647.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دختر چوپان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360845_851.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360845_851.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مورچه و کبوتر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360847_813.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360847_813.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گلدونه در باغ‌وحش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360848_543.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360848_543.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "باغ همسایه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360849_289.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360849_289.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "امیر کوچولو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360851_669.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360851_669.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بادبادک کجا میری؟",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360852_388.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360852_388.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "حاج بابا و جیرجیرک",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360854_688.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360854_688.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "تولد مادربزرگ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360855_497.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360855_497.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "توپ قلقلی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361878_215.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361878_215.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بی‌بی گلاب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361879_339.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361879_339.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خانم بهار و مداد رنگی‌ها",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361882_830.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361882_830.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آزاده و خط‌کش جادویی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361883_531.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361883_531.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آهوی نقره‌ای",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361884_459.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361884_459.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "عروسک ستاره",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361885_958.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361885_958.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "درخت سیب طلایی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361886_345.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361886_345.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آلیس در سرزمین عجایب",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361892_759.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361892_759.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دهکده مهربانی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361893_986.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361893_986.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قمری و هیزم‌شکن فقیر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361894_931.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361894_931.mp4"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "هر کسی کار خودش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361895_515.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361895_515.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کی از همه بزرگتره؟",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361896_613.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361896_613.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دیگ گلی، انگشت دونه مسی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361898_665.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361898_665.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جغدی که از تاریکی می‌ترسید",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361899_258.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361899_258.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "‎ حسنی نگو بلا بگو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361900_770.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361900_770.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "فانوس قدیمی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361901_959.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361901_959.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کتاب داستان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361902_334.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361902_334.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "فیل کوچولو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361903_983.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361903_983.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "فرشته مهربون",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361908_329.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361908_329.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شاهزاده‎ خانم و آدم‎ برفی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361909_381.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361909_381.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جنگل بزرگ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361915_438.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361915_438.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خاله سوسکه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361916_470.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361916_470.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "پرستوی باهوش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361920_483.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361920_483.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سرباز شکلاتی ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361923_324.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361923_324.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شاهزاده و قورباغه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361925_298.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361925_298.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دزدای دریایی و گنج گمشده",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361926_408.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361926_408.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سهراب و غاز وحشی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361927_802.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361927_802.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "روباه حیله‌گر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361931_860.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361931_860.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بره ناقلا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361936_121.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361936_121.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بی‌بی مهربان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "361937_171.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/26/361937_171.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بلبل زیبا",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362845_356.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362845_356.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "قلعه‌ای درون ابرها",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362847_299.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362847_299.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "تامس‌و‌دانیل‌و‌کمک‌به‌خانواده",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362851_891.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362851_891.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کلاغی‌که‌دوست‌داشت‌عقاب‌باشه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362854_331.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362854_331.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سه ‎آدم ‎بد‎‌ و‌ ماتیوی‌ مهربان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362856_451.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362856_451.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "هری و گلدان برنجی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362861_957.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362861_957.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سفر ماهی کپور",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362865_338.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362865_338.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خرس آوازه‌خوان",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362866_638.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362866_638.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دخترک مو طلایی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362867_835.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362867_835.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کمک کردن به کبک بیمار",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362868_348.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362868_348.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بهترین دوست من",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362871_388.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362871_388.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گرگ و هفت تا بزغاله",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362872_828.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362872_828.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "چتر جادویی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362873_522.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362873_522.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جوجه اردک",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362875_501.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362875_501.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خرس قطبی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362877_933.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362877_933.mp3"
+        }
+      }
+    ]
+  }
 
-      "image": "",
-      "sound_name": "",
-      "sound": ""
-    },
-    {
-      "type": "IMAGE",
-      "image": "url",
-      "title": "title",
-
-      "on_click": 1,
-      "url": "",
-
-      "sound_name": "",
-      "sound": ""
-    },
-    {
-      "type": "TITLE",
-      "title": "title",
-      "show_icon": false,
-
-      "on_click": 1,
-      "url": "",
-
-      "image": "",
-      "sound_name": "",
-      "sound": ""
-    },
-    {
-      "type": "SLIDER_L | SLIDER_H | SLIDER_V",
-      "list_story":
-              [
-                {
-                  "on_click": 2,
-                  "url": "",
-                  "title": "",
-                  "desc": "",
-
-                  "image": "",
-                  "sound_name": "",
-                  "sound": ""
-                }
-              ]
-    }
-  ]
-}
+]

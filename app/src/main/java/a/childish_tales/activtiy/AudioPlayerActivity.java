@@ -250,10 +250,10 @@ public class AudioPlayerActivity extends AppCompatActivity implements MediaPlaye
                     int total_MB = (int) (progress.totalBytes/1024/1024);
                     darsad.setText(percent+"%");
                     total_download.setText("از "+total_MB+"مگابایت");
-                    if (total_download.getAlpha()==0){
+                    /*if (total_download.getAlpha()==0){
                         total_download.animate().alpha(1).setDuration(1000);
                         darsad.animate().alpha(1).setDuration(1000);
-                    }
+                    }*/
                     cornerProgressBar.setMax((int) progress.totalBytes);
                     cornerProgressBar.setProgress((int) progress.currentBytes);
                     Log.d(TAG, "setOnProgressListener: "+progress);
@@ -300,10 +300,10 @@ public class AudioPlayerActivity extends AppCompatActivity implements MediaPlaye
                             int total_MB = (int) (progress.totalBytes/1024/1024);
                             darsad.setText(percent+"%");
                             total_download.setText("از "+total_MB+"مگابایت");
-                            if (total_download.getAlpha()==0){
+                            /*if (total_download.getAlpha()==0){
                                 total_download.animate().alpha(1).setDuration(1000);
                                 darsad.animate().alpha(1).setDuration(1000);
-                            }
+                            }*/
                             cornerProgressBar.setMax((int) progress.totalBytes);
                             cornerProgressBar.setProgress((int) progress.currentBytes);
                             Log.d(TAG, "setOnProgressListener: "+progress);

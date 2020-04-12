@@ -1,0 +1,352 @@
+[
+  {
+    "type": "TEXT_BOX",
+    "text": "امام حسين (ع) فرمود:\nپروردگارا! كسى كه از محبّت خود بهره\u200Fمندش نكردى، زيان كرده است",
+
+    "on_click": null,
+    "url": null
+  },
+  {
+    "type": "IMAGE",
+    "title": "برای پخش کارتون کلیک کنید",
+    "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
+
+    "on_click": "video",
+    "url": "https://as11.cdn.asset.aparat.com/aparat-video/97b0a4b1f00d3429239b5722d85b48bb20336651-144p.mp4"
+  },
+  {
+    "type": "TITLE",
+    "title": "مولودی امام حسین - با نوای کریمی",
+
+    "on_click": null,
+    "url": null
+  },
+  {
+    "type": "SLIDER_H" ,
+    "list": [
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ای عشق شور انگیز",
+          "desc": "سرود",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_1.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530426_429.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "آب زنید راه را",
+          "desc": "سرود",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_2.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530440_444.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بازم شب و ستاره",
+          "desc": "سرود",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_3.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1397/1/26/7864168_741.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مادر شدن سیده نساء عالمین",
+          "desc": "سرود",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_4.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1397/1/26/7864177_985.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ای که روح جهادم دادی",
+          "desc": "سرود",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_5.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1397/1/26/7864182_643.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "حسین ای که عشق همه شهدایی",
+          "desc": "سرود",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_6.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1397/1/26/7864183_313.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سر می زارم رو خاک قدماش",
+          "desc": "سرود",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_7.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/1/19/9707582_440.mp3"
+        }
+      }
+    ]
+  },
+  {
+    "type": "TITLE",
+    "title": "مولودی امام حسین - با نوای بنی‌فاطمه",
+
+    "on_click": null,
+    "url": null
+  },
+  {
+    "type": "SLIDER_H" ,
+    "list": [
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "زمستونم بهاری شد",
+          "desc": "مجید بنی فاطمه",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_8.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530236_599.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خوش به حال دل خراب من",
+          "desc": "مجید بنی فاطمه",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_9.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530239_570.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "یه عالمه فرشته از اون بالا",
+          "desc": "مجید بنی فاطمه",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_10.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530279_562.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "محاله دیگه واسه ما عاشقا",
+          "desc": "مجید بنی فاطمه",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_11.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/1/19/9706743_739.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "نفس بکش تو این هوا تو این هوای آشنا",
+          "desc": "مجید بنی فاطمه",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_12.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/1/19/9706761_495.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دنیای من به تو وابستگی داره",
+          "desc": "مجید بنی فاطمه",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_13.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/1/19/9706766_130.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "با تو زندگی برام تازگی داره",
+          "desc": "مجید بنی فاطمه",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_14.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1397/1/26/7864047_118.mp3"
+        }
+      }
+    ]
+  },
+  {
+    "type": "TITLE",
+    "title": "مولودی امام حسین - با نوای میرداماد",
+
+    "on_click": null,
+    "url": null
+  },
+  {
+    "type": "SLIDER_H" ,
+    "list": [
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جبرائیل گهواره تو تکون میده",
+          "desc": "میرداماد",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_15.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530476_714.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شب مهتاب اومد",
+          "desc": "میرداماد",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_16.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1397/1/26/7865760_331.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بگو یا قمر بنی هاشم خاک پات و تاج عالم کن",
+          "desc": "میرداماد",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_17.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1397/1/26/7865794_363.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "من یار ندارم دلدار ندارم",
+          "desc": "میرداماد",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_18.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1397/1/26/7865795_704.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شاه کربلا دستمو بگیر",
+          "desc": "میرداماد",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_19.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1397/2/12/7953871_115.mp3"
+        }
+      }
+    ]
+  },
+  {
+    "type": "TITLE",
+    "title": "مولودی امام حسین - با نوای پویانفر",
+
+    "on_click": null,
+    "url": null
+  },
+  {
+    "type": "SLIDER_H" ,
+    "list": [
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "الحمدلله الذی خلق الحسین (ع)",
+          "desc": "پویانفر",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_20.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530518_524.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "جان که تو رحمان و رحیمی",
+          "desc": "پویانفر",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_21.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530519_601.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "یا حسین بن علی قلب لدیک",
+          "desc": "پویانفر",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_22.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530530_570.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خوشا دردی که درمانش تو باشی",
+          "desc": "پویانفر",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_23.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530532_587.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "بی حرمت بی قرارم",
+          "desc": "پویانفر",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_24.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530542_196.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "ذکر قلبم شد یا اباعبدالله (ع)",
+          "desc": "پویانفر",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1398/12/21/11530594_723.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کشتی نجات به آب افتاده",
+          "desc": "پویانفر",
+          "image": "https://static1.shomanews.com/thumbnail/J5oOUgurBSMw/XXuOF53HXlytX4aLRhq9RSR-GY-OJLj41u8Hb3mD5ugCp1MIRB6dgEGTHdeDLuy2Nzr5tvFmhlvm00fmC_XgTXj1fpT2rGRrUP5e8YnKIcbWVXEbOSi_Ugk3HgW-lbmnwSiEBbYEBcS7shnK3SoCM4sXrkwx1R3LUNVYfLfxz4g,/%3Bv_kh.jpg",
+          "sound_name": "emam3_.mp3",
+          "sound": "https://cdn.yjc.ir/files/fa/news/1397/1/26/7864440_365.mp3"
+        }
+      }
+    ]
+  }
+
+]

@@ -1,58 +1,282 @@
 [
   {
-    "type": "TEXT_BOX" ,
-    "text": "امام کاظم(ع) فرمود:\nهرکه دنیادوست شود ترس آخرت از قلبش رخت بربندد، اگر به بنده\u200Cای علمی عطا شد و او محبتش به دنیا افزون گشت، از خدا دورتر می\u200Cشود و خشم الهی بر او بیشتر خواهد شد.",
+    "type": "TITLE",
+    "title": "موش کوچولو",
 
     "on_click": null,
-    "url": null,
-
-    "title": null,
-    "image": null,
-    "sound_name": null,
-    "sound": null
+    "url": null
   },
   {
-    "type": "TEXT_BOX" ,
-    "text": "با کلیک بر روی این باکس به داستان آفرینش متصل میشوید",
-    "on_click": "audio",
-    "url": null,
-
-    "title": "داستان آفرینش",
-    "image": "https://github.com/amingoli78/childish-tales/raw/master/image/creation.png",
-    "sound_name": "adam.mp3",
-    "sound": "https://github.com/amingoli78/childish-tales/raw/master/sound/adam.mp3"
+    "type": "SLIDER_L",
+    "list": [
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "موش زیرک",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396225_362.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/6/396225_362.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "موش ارباب و گربه خدمتکار",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "389251_540.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/28/389251_540.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "موش شهری موش روستایی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "386929_995.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/11/386929_995.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "دل موش کوچولو",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "376284_346.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/30/376284_346.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خارکن و موش و مار و طوطی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "97395_617.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/11/29/97395_617.mp3"
+        }
+      }
+    ]
   },
   {
-    "type": "TEXT_BOX" ,
-    "text": "با کلیک بر روی این باکس به لینک متصل میشوید",
-    "on_click": "web_view",
-    "url": "http://www.yjc.ir/fa/news/6492524",
+    "type": "TITLE",
+    "title": "خرگوش باهوش",
 
-    "title": null,
-    "image": null,
-    "sound_name": null,
-    "sound": null
+    "on_click": null,
+    "url": null
   },
   {
-    "type": "TEXT_BOX" ,
-    "text": "با کلیک بر روی این باکس به بروزر گوشی متصل میشوید",
-    "on_click": "browser",
-    "url": "http://www.yjc.ir/fa/news/6492524",
-
-    "title": null,
-    "image": null,
-    "sound_name": null,
-    "sound": null
+    "type": "SLIDER_L",
+    "list": [
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خرگوش سفید و خال خالی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397054_724.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/21/397054_724.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "درسی که خرگوش کوچولو گرفت",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "372461_111.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/5/8/372461_111.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "خواب خرگوش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "367019_973.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/4/367019_973.mp3"
+        }
+      }
+    ]
   },
   {
-    "type": "TEXT_BOX" ,
-    "text": "با کلیک بر روی این باکس به لیست جدید جیسون متصل میشوید",
-    "on_click": "json",
-    "url": "http://www.yjc.ir/fa/news/6492524",
+    "type": "TITLE",
+    "title": "کبوتر مهربان",
 
-    "title": null,
-    "image": null,
-    "sound_name": null,
-    "sound": null
+    "on_click": null,
+    "url": null
+  },
+  {
+    "type": "SLIDER_L",
+    "list": [
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کبوترهای متحد",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397111_284.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397111_284.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "گنجشک و خانم کبوتر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "387264_189.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/13/387264_189.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "مورچه و کبوتر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360847_813.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360847_813.mp3"
+        }
+      }
+    ]
+  },
+  {
+    "type": "TITLE",
+    "title": "داستان سلطان جنگل",
+
+    "on_click": null,
+    "url": null
+  },
+  {
+    "type": "SLIDER_H",
+    "list": [
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شیر و پشه و عنکبوت",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "397106_267.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/22/397106_267.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "شیر و خرگوش پیر",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "369290_314.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/4/19/369290_314.mp3"
+        }
+      }
+    ]
+  },
+  {
+    "type": "TITLE",
+    "title": "داستان‌های کلاغ سیاه",
+
+    "on_click": null,
+    "url": null
+  },
+  {
+    "type": "SLIDER_L",
+    "list": [
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "سرماخوردگی کلاغ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "396955_374.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/12/20/396955_374.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کلاغ باهوش",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "388943_217.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/8/26/388943_217.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کلاغ دوستداشتنی",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "382610_553.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/7/9/382610_553.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": " آقا و خانم کلاغ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "356260_288.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/1/11/356260_288.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "یک کلاغ چهل کلاغ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "104323_103.mp3",
+          "sound": "https://niniban.com/files/fa/news/1394/12/27/104323_103.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کلاغ",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "360842_759.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/2/19/360842_759.mp3"
+        }
+      },
+      {
+        "on_click": "audio",
+        "url": null,
+        "story": {
+          "title": "کلاغی‌که‌دوست‌داشت‌عقاب‌باشه",
+          "desc": null,
+          "image": "https://bestkid.ir/wp-content/uploads/2018/11/%D9%82%D8%B5%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86.jpg",
+          "sound_name": "362854_331.mp3",
+          "sound": "https://niniban.com/files/fa/news/1398/3/2/362854_331.mp3"
+        }
+      }
+    ]
   }
 ]

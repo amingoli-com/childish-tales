@@ -40,8 +40,8 @@
 
         <TextView
             android:id="@+id/darsad"
-            android:text="0%"
-            android:alpha="0.3"
+            android:text="%0"
+            android:alpha="1"
             android:textColor="#333"
             android:textSize="@dimen/_10ssp"
             android:layout_width="wrap_content"
